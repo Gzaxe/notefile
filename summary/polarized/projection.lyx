@@ -1,0 +1,523 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+definition
+\end_layout
+
+\begin_layout Standard
+For polarized GPD, the definition is 
+\begin_inset Formula 
+\[
+\tilde{F_{q}}=\frac{1}{2P^{+}}[\tilde{H^{q}}(x,\xi,t)\bar{u}(p_{2})\gamma^{+}\gamma_{5}u(p_{1})+\tilde{E^{q}}(x,\xi,t)\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2M}u(p_{1})]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus the definition of splitting function is 
+\begin_inset Formula 
+\[
+\bar{u}(p_{2})\Gamma^{+}u(p_{1})=\bar{u}(p_{2})[\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2M}\tilde{g}(y,t)]u(p_{1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+polarized partical spinor 
+\end_layout
+
+\begin_layout Standard
+When we calculate the non polarized partical, the spinor 
+\begin_inset Formula $u(p)\ \bar{u}(p)$
+\end_inset
+
+ need the spin average result which is 
+\begin_inset Formula $\underset{spin}{\Sigma}u(p)\bar{u}(p)=\cancel{p}+m$
+\end_inset
+
+.
+ So if we want to consider polarized which in most case is the spin of partical,
+ we still need to calculate the spinors but now we do not have the spin
+ average which means we need to get the result of 
+\begin_inset Formula $u(p)\bar{u}(p)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The most easy way to understand this calculation is we can add a projection
+ operator of spin in two side of 
+\begin_inset Formula $\underset{spin}{\Sigma}u(p)\bar{u}(p)=\cancel{p}+m$
+\end_inset
+
+.
+ The spin projection operator 
+\begin_inset Formula $\Sigma(s)$
+\end_inset
+
+ for the spin 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ partical should satisfy 
+\begin_inset Formula 
+\begin{align*}
+\Sigma(s)u(p,s) & =u(p,s)\\
+\Sigma(-s)u(p,s) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula 
+\begin{align*}
+\underset{spin}{\Sigma}\Sigma(s)u(p)\bar{u}(p) & =\Sigma(s)(\cancel{p}+m)\\
+u(p,s)\bar{u}(p,s) & =\Sigma(s)(\cancel{p}+m)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And follow the definition in this note (file:///C:/Users/DELL/Desktop/lunwen(han
+zi)/trace.pdf) we have 
+\begin_inset Formula 
+\[
+u(p,s)\bar{u}(p,s)=(\cancel{p}+m)\frac{1+\gamma_{5}\cancel{s}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $s^{\mu}$
+\end_inset
+
+is defined by 
+\begin_inset Formula $p^{\mu}$
+\end_inset
+
+and the direction of polarized beam.
+ 
+\end_layout
+
+\begin_layout Standard
+Then for a term like 
+\begin_inset Formula $u(p)\gamma^{\mu}\bar{u}(p)$
+\end_inset
+
+, we still need do the trace calc in spinor space, where we do not do average
+ in spin space.
+ So the calculation is almost same with the non polarized case only we do
+ not sum over spin so the result of spinor changed.
+\end_layout
+
+\begin_layout Subsection
+the form of s 
+\end_layout
+
+\begin_layout Standard
+The from of spin operator s in lab frame is 
+\begin_inset Formula 
+\[
+s^{\mu}=(\frac{\overrightarrow{p}.\overrightarrow{\lambda}}{m},\overrightarrow{\lambda}+\frac{\overrightarrow{p}(\overrightarrow{p}.\overrightarrow{\lambda})}{m(m+p_{0})})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $p^{\mu}=(p^{0},\overrightarrow{p}),\overrightarrow{\lambda}$
+\end_inset
+
+ is the direction of polarization.
+\end_layout
+
+\begin_layout Standard
+Overall the 
+\begin_inset Formula $s^{\mu}$
+\end_inset
+
+ is a projection of 
+\begin_inset Formula $p$
+\end_inset
+
+ on 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ direction.
+ In covariant coordinate, we choose the direction 
+\begin_inset Formula $\lambda=(0,0,1)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+s^{0} & =\frac{p^{3}}{m}\\
+s^{1} & =\frac{p^{3}}{m(m+p^{0})}p^{1}\\
+s^{2} & =\frac{p^{3}}{m(m+p^{0})}p^{2}\\
+s^{3} & =1+\frac{(p^{3})^{2}}{m(m+p^{0})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In light-cone coordinate, 
+\begin_inset Formula $s^{\mu}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{align*}
+s^{+} & =1+\frac{p^{3}}{m}+\frac{(p^{3})^{2}}{m(m+p^{0})}\\
+s^{-} & =-1+\frac{p^{3}}{m}-\frac{(p^{3})^{2}}{m(m+p^{0})}\\
+\overrightarrow{s}^{\perp} & =\frac{p^{3}}{m(m+p^{0})}*\overrightarrow{p}^{\perp}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A B in polarized splitting function
+\end_layout
+
+\begin_layout Subsection
+definition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
+B & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\frac{\gamma_{5}q^{+}}{2M}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+expand and get fg
+\end_layout
+
+\begin_layout Standard
+Replace the 
+\begin_inset Formula $\Gamma^{+}$
+\end_inset
+
+with 
+\begin_inset Formula 
+\[
+\bar{u}(p_{2})\Gamma^{+}u(p_{1})=\bar{u}(p_{2})[\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)]u(p_{1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\tilde{g}$
+\end_inset
+
+ part in
+\begin_inset Formula $A$
+\end_inset
+
+ will be 
+\begin_inset Formula 
+\begin{multline*}
+\textrm{Tr}[\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
+\frac{1}{8m}\tilde{g}\textrm{Tr}[\gamma_{5}q^{+}(\cancel{p_{1}}+m)(1+\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)(1+\gamma_{5}\cancel{s_{2}})
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expand the 
+\begin_inset Formula $(1+\gamma_{5}\cancel{s_{1}})(1+\gamma_{5}\cancel{s_{2}})$
+\end_inset
+
+ and keep 
+\begin_inset Formula $\gamma_{5}\cancel{s_{1}}$
+\end_inset
+
+, replace 
+\begin_inset Formula $q^{+}$
+\end_inset
+
+with 
+\begin_inset Formula $(p_{2}-p_{1})^{+}$
+\end_inset
+
+,we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{Tr}[\gamma_{5}(p_{2}-p_{1})^{+}(\cancel{p_{1}}+m)(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)]=4\textrm{I}(p_{2}-p_{1})^{+}ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda}$
+\end_inset
+
+ is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda} & =\frac{1}{2}ε_{+-12}p_{1}^{+}p_{2}^{1}s_{1}^{2}+\frac{1}{2}ε_{+-21}p_{1}^{+}p_{2}^{2}s_{1}^{1}+\frac{1}{2}ε_{+1-2}p_{1}^{1}p_{2}^{+}s_{1}^{2}+\frac{1}{2}ε_{+2-1}p_{1}^{2}p_{2}^{+}s_{1}^{1}\\
+ & +\frac{1}{2}ε_{+12-}p_{1}^{1}p_{2}^{2}s_{1}^{+}+\frac{1}{2}ε_{+21-}p_{1}^{2}p_{2}^{1}s_{1}^{+}\\
+ & =-p_{1}^{+}p_{2}^{1}s_{1}^{2}+p_{1}^{+}p_{2}^{2}s_{1}^{1}+p_{1}^{1}p_{2}^{+}s_{1}^{2}-p_{1}^{2}p_{2}^{+}s_{1}^{1}-p_{1}^{1}p_{2}^{2}s_{1}^{+}+p_{1}^{2}p_{2}^{1}s_{1}^{+}\\
+ & =p_{1}^{+}(p_{2}^{2}s_{1}^{1}-p_{2}^{1}s_{1}^{2})+p_{2}^{+}(p_{1}^{1}s_{1}^{2}-p_{1}^{2}s_{1}^{1})+s_{1}^{+}(p_{1}^{2}p_{2}^{1}-p_{1}^{1}p_{2}^{2})\\
+ & =p_{1}^{+}(|\overrightarrow{s_{1}^{\perp}}\times\overrightarrow{p_{2}^{\perp}}|)+p_{2}^{+}(|\overrightarrow{p_{1}^{\perp}}\times\overrightarrow{s_{1}^{\perp}}|)+s_{1}^{+}(|\overrightarrow{p_{2}^{\perp}}\times\overrightarrow{p_{1}^{\perp}}|)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since now we set the momentum as 
+\begin_inset Formula 
+\begin{align*}
+p_{1} & =(P^{+}-\frac{q^{+}}{2},P^{-}-\frac{q^{-}}{2},-\frac{\overrightarrow{q^{\perp}}|}{2})\\
+p_{2} & =(P^{+}+\frac{q^{+}}{2},P^{-}+\frac{q^{-}}{2},\frac{\overrightarrow{q^{\perp}}|}{2})\\
+\overrightarrow{s_{i}^{\perp}} & =\frac{p^{3}}{m(m+p^{0})}\overrightarrow{p_{i}^{\perp}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The cross product is 0 between 
+\begin_inset Formula $p\ s.$
+\end_inset
+
+ Then 
+\begin_inset Formula $ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda}=0$
+\end_inset
+
+.
+ Other terms are similar to the unpolarized case.
+ But due to the spin operator the projection is much more complex.
+ 
+\end_layout
+
+\begin_layout Standard
+When calculating the actual Feynman diagram, we will have two new terms,
+ 
+\begin_inset Formula $ε_{\mu\nu\rho\lambda}k^{\mu}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda}$
+\end_inset
+
+ and
+\begin_inset Formula $ε_{+\nu\rho\lambda}k^{\nu}p_{2}^{\rho}s_{1}^{\lambda}$
+\end_inset
+
+, where the 
+\begin_inset Formula $k$
+\end_inset
+
+ is the loop momentum.
+ 
+\begin_inset Formula 
+\[
+ε_{+\nu\rho\lambda}k^{\nu}p_{2}^{\rho}s_{1}^{\lambda}=k^{+}(|\overrightarrow{s_{1}^{\perp}}\times\overrightarrow{p_{2}^{\perp}}|)+p_{2}^{+}(|\overrightarrow{k^{\perp}}\times\overrightarrow{s_{1}^{\perp}}|)+s_{1}^{+}(|\overrightarrow{p_{2}^{\perp}}\times\overrightarrow{k^{\perp}}|)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\varepsilon_{\mu\nu\rho\lambda}k^{\mu}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda}\\
+=\frac{1}{2}(p_{1}^{+}p_{2}^{-}-p_{1}^{-}p_{2}^{+})*(|\overrightarrow{k^{\perp}}\times\overrightarrow{s_{1}^{\perp}}|)+\frac{1}{2}(p_{2}^{+}s_{1}^{-}-p_{2}^{-}s_{1}^{+})*(|\overrightarrow{k^{\perp}}\times\overrightarrow{p_{1}^{\perp}}|)+\frac{1}{2}(p_{1}^{-}s_{1}^{+}-p_{1}^{+}s_{1}^{-})*(|\overrightarrow{k^{\perp}}\times\overrightarrow{p_{2}^{\perp}}|)
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we can get the final form of 
+\begin_inset Formula $AB$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+A & =a_{1}*f+a_{2}*g\\
+B & =b_{1}*f+b_{2}*g
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{align*}
+f & =\frac{a_{2}B-b_{2}A}{a_{2}b_{1}-a_{1}b_{2}}\\
+g & =\frac{b_{1}A-a_{1}B}{a_{2}b_{1}-a_{1}b_{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\begin{align*}
+a_{1} & =\frac{-4P^{+2}(-8M_{B}P^{+}+4M_{B}^{2}(\xi^{2}-1)+(4P^{+2}+Q^{2})(\xi^{2}-1))^{2}}{(-8M_{B}P^{+}+4M_{B}^{2}(\xi-1)+Q^{2}(\xi-1)-4P^{+2}(1+\xi))}\\
+ & *\frac{1}{(8M_{B}P^{+}-4P^{+2}(\xi-1)+4M_{B}^{2}(1+\xi)+Q^{2}(1+\xi))}\\
+a_{2} & =\frac{-4\xi^{2}P^{+2}(4M_{B}^{3}+8M_{B}^{2}P^{+}+2P^{+}Q^{2}+M_{B}(4P^{+2}+Q^{2}))}{M_{B}(-8M_{B}P^{+}+4M_{B}^{2}(\xi-1)+Q^{2}(\xi-1)-4P^{+2}(1+\xi))}\\
+ & *\frac{(-8M_{B}P^{+}+4M_{B}^{2}(\xi^{2}-1)+(4P^{+2}+Q^{2})(\xi^{2}-1))}{(8M_{B}P^{+}-4P^{+2}(\xi-1)+4M_{B}^{2}(1+\xi)+Q^{2}(1+\xi))}\\
+b_{1} & =\frac{4\xi^{2}P^{+2}(4M_{B}^{3}+8M_{B}^{2}P^{+}+2P^{+}Q^{2}+M_{B}(4P^{+2}+Q^{2}))}{M_{B}(-8M_{B}P^{+}+4M_{B}^{2}(\xi-1)+Q^{2}(\xi-1)-4P^{+2}(1+\xi))}\\
+ & *\frac{(-8M_{B}P^{+}+4M_{B}^{2}(\xi^{2}-1)+(4P^{+2}+Q^{2})(\xi^{2}-1))}{(8M_{B}P^{+}-4P^{+2}(\xi-1)+4M_{B}^{2}(1+\xi)+Q^{2}(1+\xi))}\\
+b_{2} & =\frac{4\xi^{4}P^{+2}(4M_{B}^{3}+8M_{B}^{2}P^{+}+2P^{+}Q^{2}+M_{B}(4P^{+2}+Q^{2}))^{2}}{M_{B}^{2}(-8M_{B}P^{+}+4M_{B}^{2}(\xi-1)+Q^{2}(\xi-1)-4P^{+2}(1+\xi))}\\
+ & *\frac{1}{(8M_{B}P^{+}-4P^{+2}(\xi-1)+4M_{B}^{2}(1+\xi)+Q^{2}(1+\xi))}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the denominator 
+\begin_inset Formula $a_{2}b_{1}-a_{1}b_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

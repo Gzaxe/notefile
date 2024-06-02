@@ -1,0 +1,912 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+结论：
+\end_layout
+
+\begin_layout Standard
+目前的计算，主要改变了regulator的选取和磁矩中cT参数使用c1还是c2表示。对目前的计算方案，在包含了bubble和tadpole图的时候，最后得到的结
+果有这样的结论：1、形状因子的拟合结果都在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.9到1.0的时候能够拟合的比较好，2、奇异因子的拟合，有的计算方案下不论
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取什么值，最后的拟合结果都不是很好，而有的计算方案下，能够在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.8左右得到一个比较接近格点结果的拟合曲线。3、前两条表明形状因子和奇异因子的拟合结果对
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取值有一个出入，形状因子曲线在0.9更好，而奇异因子在0.8比较好。目前是希望能够在0.8到0.9之间寻找到一个比较平衡的中间点。
+\end_layout
+
+\begin_layout Section
+具体计算结果：
+\end_layout
+
+\begin_layout Standard
+首先是regulator为分子上是
+\begin_inset Formula $\Lambda^{2}-m^{2}$
+\end_inset
+
+，cT使用c2表示的计算：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/output/summary/725ver/ge/gemasterKey[fd[2, 1, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/output/summary/725ver/gm/ma210-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=\text{0.9}\text{时，质子形状因子GE、GM的曲线}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/gemaster220-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/maKey[fd[2, 2, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9时$
+\end_inset
+
+，中子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/gemasterKey[fd[2, 1, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/maKey[fd[2, 1, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.8时$
+\end_inset
+
+，质子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/gemaKey[fd[2, 2, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/maKey[fd[2, 2, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.8时$
+\end_inset
+
+，中子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename uds/maGEs-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename uds/maGMs-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9$
+\end_inset
+
+时，奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename uds/maGEs-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename uds/maGMs-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.8$
+\end_inset
+
+时，奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这时奇异因子的GM曲线的最好结果也只有取0.9的时候这样，也就是上面结论中提到的始终无法取得非常好的曲线。
+\end_layout
+
+\begin_layout Standard
+选取和上面一样的regulator，cT使用c1表示的计算方案，最终结果变化为：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/neKey[fd[2, 1, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/neKey[fd[2, 1, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9时$
+\end_inset
+
+，质子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/neKey[fd[2, 2, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/neKey[fd[2, 2, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9时$
+\end_inset
+
+，中子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename uds/neGEs-0.8-.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename uds/neGMs-0.8-.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.8$
+\end_inset
+
+时，奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename uds/neGEs-0.9-.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename uds/neGMs-0.9-.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9$
+\end_inset
+
+时，奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+同样也会面临奇异因子的GM曲线没办法取得非常好的结果的问题，
+\end_layout
+
+\begin_layout Standard
+如果选取regulator为分子只有
+\begin_inset Formula $\Lambda^{4}$
+\end_inset
+
+的形式，cT参数用c1表示的时候，对应结果如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/olKey[fd[2, 1, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/olKey[fd[2, 1, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.8时$
+\end_inset
+
+，质子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/olKey[fd[2, 2, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/olKey[fd[2, 2, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.8时$
+\end_inset
+
+，中子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/olKey[fd[2, 1, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/olKey[fd[2, 1, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9时$
+\end_inset
+
+，质子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ge/olKey[fd[2, 2, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gm/olKey[fd[2, 2, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9时$
+\end_inset
+
+，中子形状因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename uds/geKey[fd[2, 2, 0]]-AllCC-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename uds/gmKey[fd[2, 2, 0]]-AllCC-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.8$
+\end_inset
+
+时，奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename uds/geKey[fd[2, 2, 0]]-AllCC-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename uds/gm.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9$
+\end_inset
+
+时，奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename uds/geKey[fd[2, 2, 0]]-AllCC-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename uds/gmKey[fd[2, 2, 0]]-AllCC-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.7$
+\end_inset
+
+时，奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+此时奇异因子的曲线出现的问题是GE和GM虽然都有比较好的拟合结果但是并不能在同一个参数位置上取到，同时奇异因子和形状因子也不能同时达到非常好的结果。
+\end_layout
+
+\begin_layout Section
+目前的计划
+\end_layout
+
+\begin_layout Standard
+目前在针对上面第三种方案计算
+\begin_inset Formula $\text{\ensuremath{\Lambda}}$
+\end_inset
+
+在0.8至0.9之间会不会有一个相对较好的结果。
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,188 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\family typewriter
+关于
+\begin_inset Formula $\int d^{4}k\frac{k^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+的问题，矛盾在于，之前对
+\begin_inset Formula $\delta$
+\end_inset
+
+项的理解是，例如，
+\begin_inset Formula $\int dk^{-}\frac{1}{D_{\phi}D_{\Lambda}^{4}}=f(k^{+},k^{\perp})$
+\end_inset
+
+，在
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+的时候，根据留数定理，积分必定是0，而在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+时，
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{1}{D_{\phi}D_{\Lambda}^{4}}->\int dk^{-}\frac{1}{-(k^{\perp2}+m_{\phi}^{2})(k^{\perp2}+\Lambda^{2})^{4}}
+\]
+
+\end_inset
+
+显然积分结果发散，从留数定理角度来看，留数仍为0但此时大圆弧不为0，从而积分不再等于留数结果。那么，简单地对
+\begin_inset Formula $\int d^{4}k\frac{k^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+使用上面的方式，就会得到在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+时
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{k^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}->\int dk^{-}\frac{0}{-(k^{\perp2}+m_{\phi}^{2})(k^{\perp2}+\Lambda^{2})^{4}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里的问题是，这样的计算，按照正常的积分规则是
+\begin_inset Formula 
+\[
+\int_{-\infty}^{+\infty}dk^{-}\frac{0}{-(k^{\perp2}+m_{\phi}^{2})(k^{\perp2}+\Lambda^{2})^{4}}=0*\int_{-\infty}^{+\infty}dk^{-}\frac{1}{-(k^{\perp2}+m_{\phi}^{2})(k^{\perp2}+\Lambda^{2})^{4}}=0*(+\infty-(-\infty))=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+但是，实际上
+\begin_inset Formula 
+\[
+\int_{-\infty}^{+\infty}dk^{-}\frac{0}{-(k^{\perp2}+m_{\phi}^{2})(k^{\perp2}+\Lambda^{2})^{4}}=0*\int_{-\infty}^{+\infty}dk^{-}\frac{k^{-}}{-(k^{\perp2}+m_{\phi}^{2})(k^{\perp2}+\Lambda^{2})^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+而
+\begin_inset Formula $\int_{-\infty}^{+\infty}dk^{-}\frac{k^{-}}{-(k^{\perp2}+m_{\phi}^{2})(k^{\perp2}+\Lambda^{2})^{4}}$
+\end_inset
+
+是二次发散，相比于常数0是一个高阶无穷大。这里必须采用下面的形式计算，因为
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{k^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}=k^{+}\int dk^{-}\frac{k^{-}}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k^{+}$
+\end_inset
+
+和后面无关，所以必须在分子上保存一个
+\begin_inset Formula $k^{-}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

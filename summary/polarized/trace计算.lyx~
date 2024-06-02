@@ -1,0 +1,402 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+对于trace计算，性质是+可以拆开而乘是交换，别记错了
+\begin_inset Formula 
+\begin{align*}
+\textrm{Tr}[A+B] & =\textrm{Tr}[A]+\textrm{Tr}[B]\\
+\textrm{Tr}[A*B] & =\textrm{Tr}[B*A]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于这样的trace
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+代入
+\begin_inset Formula $\Gamma^{+}=\gamma^{+}\gamma_{5}f+g\frac{\gamma_{5}q^{+}}{2m}$
+\end_inset
+
+之后只看含有
+\begin_inset Formula $f$
+\end_inset
+
+的trace部分
+\begin_inset Formula 
+\begin{gather*}
+\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
+\frac{1}{4}\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}}+m)(1+\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)(1+\gamma_{5}\cancel{s_{2}})]
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+将
+\begin_inset Formula $(1+\gamma_{5}\cancel{s_{1}})(1+\gamma_{5}\cancel{s_{2}})$
+\end_inset
+
+展开，会有四项，按照含有
+\begin_inset Formula $\gamma_{5}\cancel{s_{1}}$
+\end_inset
+
+来区分，忽略
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+1、不含自旋的
+\begin_inset Formula 
+\[
+\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}}+m)\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+注意交换顺序不是随便换的，只能整体对易不能单个的一个一个随便换顺序啊
+\end_layout
+
+\begin_layout Standard
+2、含有一个自旋的
+\begin_inset Formula 
+\begin{gather*}
+\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}}+m)(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)]\\
+\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}}+m)\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)(\gamma_{5}\cancel{s_{2}})]
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+只看一个，把质量项也展开，得到四个
+\begin_inset Formula 
+\begin{gather*}
+\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}})]\\
+\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(m)]\\
+\textrm{Tr}[\gamma^{+}\gamma_{5}(m)(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}})]\\
+\textrm{Tr}[\gamma^{+}\gamma_{5}(m)(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(m)]
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}})]$
+\end_inset
+
+
+\begin_inset Formula $\textrm{Tr}[\gamma^{+}\gamma_{5}(m)(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(m)]$
+\end_inset
+
+都因为含有
+\begin_inset Formula $\gamma^{+}\ \gamma.p$
+\end_inset
+
+也就是gamma矩阵的个数是奇数而必然为0.剩下两个也有对称关系所以只看一个
+\begin_inset Formula 
+\begin{gather*}
+\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(m)]\\
+=m\textrm{Tr}[\gamma^{+}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{+}]
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在协变坐标下，这样四个gamma矩阵加上一个gamma5的会给出一个列维奇维塔反对称张量
+\begin_inset Formula 
+\[
+\textrm{Tr}[\gamma^{\mu}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{\nu}]=ε_{\mu\nu\rho\lambda}p_{1\rho}s_{1\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在光锥坐标系下仍然是一样的逻辑，但是注意，这里张量的指标和矢量的指标之间是张量指标等于点乘中gamma矩阵的指标，也就是
+\begin_inset Formula 
+\begin{align*}
+\textrm{Tr}[\gamma^{\mu}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{\nu}] & =\textrm{Tr}[\gamma^{\mu}\gamma.p_{1}(\gamma_{5}\cancel{s_{1}})\gamma^{\nu}]\\
+ & =\textrm{Tr}[\gamma^{\mu}\gamma^{\rho}p_{1\rho}\gamma_{5}\gamma^{\lambda}s_{1\lambda}\gamma^{\nu}]\\
+ & =\textrm{Tr}[\gamma^{\mu}\gamma^{\rho}\gamma_{5}\gamma^{\lambda}\gamma^{\nu}p_{1\rho}s_{1\lambda}]\\
+ & =\textrm{Tr}[\gamma^{\mu}\gamma^{\rho}\gamma_{5}\gamma^{\lambda}\gamma^{\nu}]p_{1\rho}s_{1\lambda}\\
+ & =ε_{\mu\nu\rho\lambda}p_{1\rho}s_{1\lambda}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+因此在光锥坐标下指标之间的对应关系会有少许的不同，因为内积的计算不同了，光锥下内积的指标不是一一对应的：
+\begin_inset Formula 
+\begin{align*}
+k.k & =k^{+}k^{-}-k^{\perp2}\\
+\gamma.k & =\frac{1}{2}(\gamma^{+}k^{-}+\gamma^{-}k^{+})-\overrightarrow{\gamma}^{\perp}.\overrightarrow{k}^{\perp}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于trace的计算是不会有问题的，该是全反对称张量就还是全反对称张量，也没有特别的系数问题，变换到光锥坐标下就只需要把指标对应换掉，当然是指
+\begin_inset Formula $\mu\nu$
+\end_inset
+
+这两个，也就是
+\begin_inset Formula 
+\begin{align*}
+\textrm{Tr}[\gamma^{+}(\cancel{p_{1}})(\gamma_{5}\cancel{s_{1}})\gamma^{+}] & =\textrm{Tr}[\gamma^{+}\gamma.p_{1}(\gamma_{5}\cancel{s_{1}})\gamma^{+}]\\
+ & =\textrm{Tr}[\gamma^{+}\gamma^{\rho}p_{1\rho}\gamma_{5}\gamma^{\lambda}s_{1\lambda}\gamma^{+}]\\
+ & =\textrm{Tr}[\gamma^{+}\gamma^{\rho}\gamma_{5}\gamma^{\lambda}\gamma^{+}p_{1\rho}s_{1\lambda}]\\
+ & =\textrm{Tr}[\gamma^{+}\gamma^{\rho}\gamma_{5}\gamma^{\lambda}\gamma^{+}]p_{1\rho}s_{1\lambda}\\
+ & =a*ε_{++\rho\lambda}p_{1\rho}s_{1\lambda}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a在上面是代表trace计算中应该是会出现一个正负号的问题在上面写的公式形式下，但是具体懒得算了，所以写个a提醒一下。
+\end_layout
+
+\begin_layout Standard
+这里的意思就是，对于
+\begin_inset Formula $\mu\nu$
+\end_inset
+
+这两个在px包计算中替换+指标的指标，只需要换回+就好，和普通的trace计算一个样。
+\end_layout
+
+\begin_layout Standard
+问题在于如何计算转换到光锥坐标之后的这个收缩，对于指标重复的，还是直接等于0。但是当指标不重复的时候，计算则分为两部分，首先是全反对称张量的值，例如
+\begin_inset Formula $\varepsilon_{+-12}$
+\end_inset
+
+，其次是上面提到的内积，其实这两个本质是一样的，都是根据坐标变换得到的。
+\end_layout
+
+\begin_layout Standard
+对于全反对称张量，垂直分量不变，直接就是协变的12，前面也没做出区分直接写了，所以就直接用好了，正负分量则是这样处理
+\begin_inset Formula 
+\begin{align*}
+\varepsilon_{+-12} & =\varepsilon_{0-12}+\varepsilon_{3-12}\\
+ & =\varepsilon_{0012}-\varepsilon_{0312}+\varepsilon_{3012}-\varepsilon_{3312}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+所以实际上就是把正负根据定义展开。
+\end_layout
+
+\begin_layout Standard
+内积部分，对于垂直方向，是完全和协变结果一样的。例如
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ε_{+-\rho\lambda}p^{\rho}s^{\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+首先，垂直分量和协变坐标下的12完全相同，这就导致不论是前面的全反对称张量还是后面的动量内积部分都不需要做出区别，在看过正负指标之后可以更好的理解这部分。对于
+\begin_inset Formula 
+\[
+ε_{+1\rho2}p^{\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+我们有两种方式来计算，
+\end_layout
+
+\begin_layout Standard
+1、第一种，先把显式存在的光锥指标+变换到协变坐标，并保持剩下的代表收缩的指标不变，（原因没有明确证明，但是，内积不随坐标变换而改变，单纯的坐标系变换，换参考系
+内积可能确实会变。）这时候由于展开内积的时候不需要
+\begin_inset Formula 
+\begin{align*}
+\varepsilon_{+1\rho2}p^{\rho} & =\varepsilon_{01\rho2}p^{\rho}+\varepsilon_{31\rho2}p^{\rho}\\
+ & =-\varepsilon_{0132}p^{3}+\varepsilon_{3102}p^{0}\\
+ & =p^{3}+p^{0}=p^{+}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+注意协变展开中也是保证收缩的时候，内积会保留对应的正负号，也就是
+\begin_inset Formula 
+\[
+\varepsilon_{01\rho2}p^{\rho}=\varepsilon_{0102}p^{0}-\varepsilon_{0112}p^{1}-\varepsilon_{0122}p^{2}-\varepsilon_{0132}p^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2、第二种，则是保持在光锥坐标下计算，这就涉及到内积的问题，首先看看简单的展开的问题
+\begin_inset Formula 
+\begin{align*}
+\varepsilon_{+1\rho2}p^{\rho} & =\varepsilon_{+1-2}p^{+}\\
+ & =(\varepsilon_{01-2}+\varepsilon_{31-2})p^{+}\\
+ & =(-\varepsilon_{0132}+\varepsilon_{3102})p^{+}\\
+ & =2p^{+}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+刚好差一个在内积中
+\begin_inset Formula $\frac{1}{2}(\gamma^{-}k^{+})$
+\end_inset
+
+的
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+。
+\end_layout
+
+\end_body
+\end_document

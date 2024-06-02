@@ -1,0 +1,335 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+我们以tadpole 额外顶点图为例，计算中实际要计算的积分是
+\begin_inset Formula 
+\[
+A=\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\textrm{Tr}[2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\tilde{F}(k)\frac{i}{D_{\phi}(k)}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+那么对于这个积分，我们将分子和分母做化简并变形到这样的形式：
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{a_{1}(k^{-})^{2}+a_{2}k^{-}+a_{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+判断是否存在
+\begin_inset Formula $\delta$
+\end_inset
+
+项的方式是取
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+，比较分子分母中
+\begin_inset Formula $k^{-}$
+\end_inset
+
+的幂次。那么对上面的积分取
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+，分母上
+\begin_inset Formula $D_{\phi}(k)D_{\Lambda}^{4}(k)$
+\end_inset
+
+都不再含有
+\begin_inset Formula $k^{-}$
+\end_inset
+
+，只有
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+会贡献一个平方项，同时分子中也存在平方项（这里不详细给出分子的形式），所以判断存在
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+项。但是，
+\begin_inset Formula $\delta$
+\end_inset
+
+项还有一个要求就是在
+\begin_inset Formula $k^{+}\cancel{=}0$
+\end_inset
+
+的时候积分为0，而由于在
+\begin_inset Formula $k^{+}\cancel{=}0$
+\end_inset
+
+的时候，积分必然能够使用留数定理计算，这则要求分母的奇点必须在x轴的同一侧。具体来看分母上的奇点，
+\begin_inset Formula $D_{\phi}(k)D_{\Lambda}^{4}(k)$
+\end_inset
+
+的奇点的虚数部分是
+\begin_inset Formula $\text{\ensuremath{\frac{-i\epsilon}{k^{+}}}}$
+\end_inset
+
+，由于
+\begin_inset Formula $k^{+}>0$
+\end_inset
+
+所以奇点必然在x轴下方，而
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+的奇点虚数部分则是
+\begin_inset Formula $\frac{-i\epsilon}{k^{+}+q^{+}}$
+\end_inset
+
+，由于
+\begin_inset Formula $k^{+}=(y+\xi)P^{+},q^{+}=-2\xi P^{+}$
+\end_inset
+
+，所以会在
+\begin_inset Formula $y<\xi$
+\end_inset
+
+时奇点在x轴上方，导致积分不是恒定为0。这样就能判断，这个积分是
+\begin_inset Formula $\delta+normal$
+\end_inset
+
+的形式。
+\end_layout
+
+\begin_layout Standard
+那么在分离
+\begin_inset Formula $\delta$
+\end_inset
+
+项的时候就要注意上面两方面的要求。首先对于正常积分部分，需要满足的就是保证在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候分子上不存在
+\begin_inset Formula $k^{-2}$
+\end_inset
+
+，积分变为
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{a_{1}(k^{-})^{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}+\frac{a_{2}k^{-}+a_{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里后半部分是肯定能够使用留数定理计算的正常积分，需要处理的是前半部分。
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{a_{1}(k^{-})^{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+首先，考虑到分子上只有
+\begin_inset Formula $(k^{-})^{2}$
+\end_inset
+
+，我们最好不要添加更高的幂次，所以
+\begin_inset Formula $D_{\Lambda}(k)$
+\end_inset
+
+一定会保存下来，最多幂次降低。而考虑到上面所说的奇点问题，在
+\begin_inset Formula $0<k^{+}<-q^{+}$
+\end_inset
+
+的时候，对
+\begin_inset Formula $a_{1}$
+\end_inset
+
+这部分
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+仍然贡献一个和
+\begin_inset Formula $D_{\phi}(k)D_{\Lambda}^{4}(k)$
+\end_inset
+
+不同侧的奇点，积分不恒为0。所以我们在分母上因为不添加高幂次必然保存
+\begin_inset Formula $D_{\Lambda}(k)$
+\end_inset
+
+，那么如果也保留
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+，就不可能得到一个在
+\begin_inset Formula $k^{+}\cancel{=}0$
+\end_inset
+
+的时候恒为0的积分。所以这里在约化并分离得到
+\begin_inset Formula $\delta$
+\end_inset
+
+ term的时候就必须把
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+完全消去。这部分是我所说的，必须做这样的约化的意思。
+\end_layout
+
+\begin_layout Standard
+但是在分子上，我们能做不同的分离方案。例如，现在上面的公式中表达的意思是把
+\begin_inset Formula $(k^{-})^{2}$
+\end_inset
+
+完全放到
+\begin_inset Formula $\delta$
+\end_inset
+
+函数中去，但是实际上，我们能对
+\begin_inset Formula $a_{1}(k^{-})^{2}$
+\end_inset
+
+做这样的变形，
+\begin_inset Formula 
+\[
+a_{1}(k^{-})^{2}=c_{1}k^{+}(k^{-})^{2}+c_{2}(k^{-})^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $c_{1}$
+\end_inset
+
+和
+\begin_inset Formula $c_{2}$
+\end_inset
+
+两个系数都不含
+\begin_inset Formula $k^{+}$
+\end_inset
+
+，那么积分变为
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{c_{2}(k^{-})^{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}+\frac{c_{1}k^{+}(k^{-})^{2}+a_{2}k^{-}+a_{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这样显然是一个不同的分离方式，第二项在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候也保证了分子上不存在
+\begin_inset Formula $(k^{-})^{2}$
+\end_inset
+
+，所以也是一个正常积分。这个分离方式，经过验证和上面的方案计算得到的splitting function结果是一致的。
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,312 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+the one loop Feynman diagrams
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram h and j :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Gamma_{h}^{+} & =\bar{u}(p')\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\tilde{F}^{2}(k)\frac{i}{D_{\phi}(k)}\gamma^{+}\delta(y+\xi-\frac{k^{+}}{P^{+}})u(p);\\
+\Gamma_{j}^{+} & =\bar{u}(p')\frac{C_{\phi\phi}^{mag}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\tilde{F}^{2}(k)\frac{i}{D_{\phi}(k)}\frac{\sigma^{+\nu}q_{\nu}}{2M_{N}}\delta(y+\xi-\frac{k^{+}}{P^{+}})u(p);
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The splitting functions of these two diagrams are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+f_{h} & =\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\tilde{F}^{2}(k)\frac{i}{D_{\phi}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+g_{j} & =\frac{C_{\phi\phi}^{mag}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\tilde{F}^{2}(k)\frac{i}{D_{\phi}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the previous paper, one of the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ terms is 
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{1}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})=\int d^{2}k^{\perp}\int dx\frac{\Gamma(5)}{\Gamma(1)\Gamma(4)}\frac{1}{4!}x(1-x)^{4}\frac{\partial^{3}}{\partial^{3}\Omega}\frac{2\pi i}{k^{\perp2}+\Omega}\delta(y+\xi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\begin{align*}
+\tilde{F}(k) & =\frac{(\Lambda^{2}-m_{\phi}^{2})^{2}}{D_{\Lambda}^{2}(k)};\,D_{\Lambda}(k)=\Lambda^{2}-k^{2}\\
+\Omega & =xm_{\phi}^{2}+(1-x)\Lambda^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then one can get the splitting function of diagram h and j, for example
+ 
+\begin_inset Formula $f_{h}^{p\pi^{\pm}}=0.0977421\delta(y+\xi)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+For the diagram i, the amplitude is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma_{i}^{+}=\bar{u}(p')\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\tilde{F}(k)\frac{i}{D_{\phi}(k)}2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})u(p)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The splitting function can not be given like diagram h.
+ The trace
+\begin_inset Formula $A=\textrm{Tr}[\Gamma_{i}^{+}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]$
+\end_inset
+
+ now is 
+\begin_inset Formula 
+\[
+A=\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\textrm{Tr}[2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\tilde{F}(k)\frac{i}{D_{\phi}(k)}[\tilde{F}(k+q)-\tilde{F}(k)]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ can be separated as
+\begin_inset Formula 
+\[
+A=\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{a_{1}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}+\frac{a_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})
+\]
+
+\end_inset
+
+the 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ does not contain 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ and the order of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+in 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+is lower than the denominator when 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+is 0 that means the 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+part can be integrated normally and the 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+part is the delta term.
+\end_layout
+
+\begin_layout Standard
+In the 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ part, the integral is 
+\begin_inset Formula 
+\begin{gather*}
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{a_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+a_{2}=\frac{2(m_{\phi}^{2}-\Lambda^{2})^{4}q^{+}(2k+q)^{+}(4P^{+2}+2P^{+}q^{+}-q^{+2}+4\xi P^{+2})}{(k^{+}+q^{+})^{2}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the same equation as diagram h, 
+\begin_inset Formula 
+\begin{multline*}
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{a_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})=\\
+\int d^{2}k^{\perp}\int dx\frac{\Gamma(5)}{\Gamma(1)\Gamma(4)}\frac{1}{4!}x(1-x)^{4}\frac{\partial^{3}}{\partial^{3}\Omega}\frac{2\pi i}{k^{\perp2}+\Omega}\int dk^{+}a_{2}\delta(k^{+})\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+\end{multline*}
+
+\end_inset
+
+and the integral of 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ is
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+\int dk^{+}a_{2}\delta(k^{+})\delta(y+\xi-\frac{k^{+}}{P^{+}})=\delta(y+\xi)*a_{2}|_{k^{+}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

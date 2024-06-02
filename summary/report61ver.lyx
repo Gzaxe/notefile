@@ -1,0 +1,1462 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+只拟合核子情况下的形状因子与奇异因子曲线
+\end_layout
+
+\begin_layout Section
+形状因子曲线：
+\end_layout
+
+\begin_layout Standard
+在只拟合核子的情况下，考虑所有图的贡献，除了中子 的GE曲线，剩下三个形状因子的结果有这样的特点：在同一
+\begin_inset Formula $\Lambda\text{下取}$
+\end_inset
+
+不同的C的变化比较小，而在不同
+\begin_inset Formula $\Lambda$
+\end_inset
+
+之间整体上呈现出随着
+\begin_inset Formula $\Lambda$
+\end_inset
+
+的变大而逐渐贴近实验结果的趋势。
+\end_layout
+
+\begin_layout Standard
+下面是质子GE、GM与中子GM在不同
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取值下的曲线：（均是第一行为质子的GE、GM曲线，第二行是中子的GM曲线）
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 1, 0]]-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 1, 0]]-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 2, 0]]-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 1, 0]]-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 1, 0]]-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 2, 0]]-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.75
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 1, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 1, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 2, 0]]-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 1, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 1, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 2, 0]]-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 1, 0]]-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 1, 0]]-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 2, 0]]-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.95
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 1, 0]]-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 1, 0]]-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 2, 0]]-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 1, 0]]-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 1, 0]]-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GM/Key[fd[2, 2, 0]]-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+从上面的曲线来看，对于这三个形状因子来说，
+\begin_inset Formula $\Lambda$
+\end_inset
+
+在0.9到1.0都可以接受，同一
+\begin_inset Formula $\Lambda$
+\end_inset
+
+下C的取值都是取1.0最好。
+\end_layout
+
+\begin_layout Standard
+而对于中子的GE曲线，数值上随着
+\begin_inset Formula $\Lambda$
+\end_inset
+
+变大而变大。相对于实验结果，有一个从小于实验变到大于实验的过程。具体图像如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 2, 0]]-0.7.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 2, 0]]-0.75.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.75
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 2, 0]]-0.8.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 2, 0]]-0.9.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 2, 0]]-0.95.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.95
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 2, 0]]-1.0.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/ALLCC/GE/Key[fd[2, 2, 0]]-1.1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+所以对于GE的曲线，在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.8到1.0都可以接受，这和之前三个形状因子的取值也比较接近。
+\end_layout
+
+\begin_layout Standard
+综合来看，对于形状因子，取
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.9或0.95是相对最好的，此时不同C之间结果十分接近，暂时没有最优C。
+\end_layout
+
+\begin_layout Section
+不考虑bubble图的奇异因子
+\end_layout
+
+\begin_layout Standard
+首先是不考虑bubble图的情况下奇异因子的结果：
+\end_layout
+
+\begin_layout Standard
+整体上，奇异因子受
+\begin_inset Formula $\Lambda$
+\end_inset
+
+和C的影响都比较大，对于中子奇异因子的结果，不论是GE、GM都有这样的趋势：在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+较小的时候都接近于0并且不同C之间差异较小，当
+\begin_inset Formula $\Lambda$
+\end_inset
+
+增大之后曲线绝对值变大，开始贴近格点的结果，同时C的影响也逐渐明显。具体结果如下：（从左至右分别为中子GE、GM曲线）
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GE/Key[fd[2, 2, 0]]-AllCC-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GM/Key[fd[2, 2, 0]]-AllCC-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GE/Key[fd[2, 2, 0]]-AllCC-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GM/Key[fd[2, 2, 0]]-AllCC-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.75
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GE/Key[fd[2, 2, 0]]-AllCC-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GM/Key[fd[2, 2, 0]]-AllCC-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GE/Key[fd[2, 2, 0]]-AllCC-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GM/Key[fd[2, 2, 0]]-AllCC-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GE/Key[fd[2, 2, 0]]-AllCC-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GM/Key[fd[2, 2, 0]]-AllCC-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.95
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GE/Key[fd[2, 2, 0]]-AllCC-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GM/Key[fd[2, 2, 0]]-AllCC-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GE/Key[fd[2, 2, 0]]-AllCC-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/Non bubble/UDS/GM/Key[fd[2, 2, 0]]-AllCC-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+从结果上看，在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.9到1.1之间都能选取出比较接近格点结果的曲线，并且此时也能选出对应的最好的C。比如取
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.95的话那么相应的C就应该取1.0。由于格点结果的误差比较大，感觉不太能具体确定一组参数取值，此外之前何方成师兄的结果在论文里没有写具体的C取值，所以也不太清
+楚具体是否能对上，但大概是接近的。
+\end_layout
+
+\begin_layout Section
+考虑bubble图的奇异因子
+\end_layout
+
+\begin_layout Standard
+在考虑进bubble图之后，奇异因子的结果就有非常大的变化。整体上趋势和之前变化不大，但是数值上偏差较大。具体如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GE/Key[fd[2, 2, 0]]-AllCC-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GM/Key[fd[2, 2, 0]]-AllCC-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.7
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GE/Key[fd[2, 2, 0]]-AllCC-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GM/Key[fd[2, 2, 0]]-AllCC-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.75
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GE/Key[fd[2, 2, 0]]-AllCC-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GM/Key[fd[2, 2, 0]]-AllCC-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GE/Key[fd[2, 2, 0]]-AllCC-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GM/Key[fd[2, 2, 0]]-AllCC-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GE/Key[fd[2, 2, 0]]-AllCC-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GM/Key[fd[2, 2, 0]]-AllCC-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.95
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GE/Key[fd[2, 2, 0]]-AllCC-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GM/Key[fd[2, 2, 0]]-AllCC-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GE/Key[fd[2, 2, 0]]-AllCC-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/gpd-local/picture/N/uds/GM/Key[fd[2, 2, 0]]-AllCC-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+GM曲线在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.8到0.95之间的时候都有比较好的曲线，而GE的结果在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+大于0.75的时候都偏离的比较大。因此没有一个非常贴合格点数据的曲线。
+\end_layout
+
+\begin_layout Standard
+要看具体bubble图贡献的部分还在修改程序的过程中。
+\end_layout
+
+\end_body
+\end_document

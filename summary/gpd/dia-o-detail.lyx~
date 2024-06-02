@@ -1,0 +1,1313 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+The amplitude of diagram o, 
+\begin_inset Formula $\Gamma_{o}^{+}$
+\end_inset
+
+ is expressed as
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 23411/dia-o.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+diagram O
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{o}^{+}=\int\frac{d^{4}k}{(2\pi)^{4}}k_{\lambda}\Theta^{\lambda\sigma}\tilde{F}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+M_{1}}{D_{B}(p'-k)}S_{\sigma\alpha}(p'-k)\frac{\sigma^{+\beta}q_{\beta}}{2M_{1}}\frac{\cancel{p}-\cancel{k}+M_{1}}{D_{B}(p-k)}S_{\alpha\rho}(p-k)\Theta^{\rho\nu}k_{\nu}\tilde{F}(k)\delta(y-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\begin{align*}
+\Theta^{\alpha\beta} & =i\sigma^{\alpha\beta}\\
+S_{\alpha\beta}(p-k) & =\frac{1}{3}(\gamma^{\alpha}\gamma^{\beta})+\frac{2p^{\alpha}p^{\beta}}{3M^{2}}+\frac{\gamma^{\alpha}p^{\beta}-\gamma^{\beta}p^{\alpha}}{3M}-g^{\alpha\beta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The splitting functions now are defined as
+\begin_inset Formula 
+\[
+\bar{\mu}(p')\Gamma_{o}^{+}\mu(p)=\bar{\mu}(p')[\gamma^{+}f+\frac{i\sigma^{+\nu}q_{\nu}}{2M_{1}}g]\mu(p)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+is the mass of input and output baryon.
+ Due to 
+\begin_inset Formula $\frac{i\sigma^{+\nu}q_{\nu}}{2M_{1}}=\gamma^{+}-\frac{(p_{1}+p_{2})^{+}}{2M_{1}}$
+\end_inset
+
+, the equation can be write in this way
+\begin_inset Formula 
+\[
+\bar{\mu}(p')\Gamma_{o}^{+}\mu(p)=\bar{\mu}(p')[\gamma^{+}(f+g)-\frac{(p+p')^{+}}{2M_{1}}g]\mu(p)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to get the splitting function
+\begin_inset Formula $f\textrm{and}g$
+\end_inset
+
+, I use these two trace terms to project them
+\begin_inset Formula 
+\begin{align*}
+\textrm{A=Tr}[\Gamma^{+}(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})] & =(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})}]}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})}\frac{P^{+}}{M_{1}}]\\
+\textrm{B=Tr}[\Gamma^{+}(\cancel{p}+M_{1})(\cancel{p'}+M_{1})]\frac{P^{+}}{M_{1}} & =(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M_{1})(\cancel{p'}+M_{1})}]\frac{P^{+}}{M_{1}}}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M_{1})(\cancel{p'}+M_{1})(}\frac{P^{+}}{M_{1}})^{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These two terms are derived in this way, firstly A is defined as
+\begin_inset Formula 
+\begin{align*}
+\textrm{A} & =\underset{spin}{\Sigma}\bar{\mu}(p')\Gamma^{+}u(p)\bar{\mu}(p)\gamma^{+}\mu(p')\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we use the relationship between 
+\begin_inset Formula $\Gamma^{+}$
+\end_inset
+
+and 
+\begin_inset Formula $f\ g$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\textrm{A} & =\underset{spin}{\Sigma}\bar{\mu}(p')[\gamma^{+}(f+g)-\frac{(p+p')^{+}}{2M_{1}}g]u(p)\bar{\mu}(p)\gamma^{+}\mu(p')\\
+ & =\textrm{Tr}[(\gamma^{+}(f+g)-\frac{(p+p')^{+}}{2M_{1}}g)(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})]\\
+ & =\textrm{Tr}[\gamma^{+}(f+g)(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})-\frac{(p+p')^{+}}{2M_{1}}g(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because the splitting functions are not calculated in trace, the equation
+ can be rewrote as
+\begin_inset Formula 
+\[
+\textrm{A}=(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})}]}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M_{1})\gamma^{+}(\cancel{p'}+M_{1})}\frac{(p+p')^{+}}{2M_{1}}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the frame we use now, we have 
+\begin_inset Formula 
+\[
+\frac{(p+p')^{+}}{2}=P^{+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so we can get the equation of A above.
+\end_layout
+
+\begin_layout Standard
+The B part is almost same.
+\begin_inset Formula 
+\begin{align*}
+\textrm{B} & =\underset{spin}{\Sigma}\bar{\mu}(p')\Gamma^{+}u(p)\bar{\mu}(p)\frac{(p+p')^{+}}{2M_{1}}\mu(p')\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p}+M_{1})\frac{P^{+}}{M_{1}}(\cancel{p'}+M_{1})]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we replace the 
+\begin_inset Formula $\Gamma^{+}$
+\end_inset
+
+ with 
+\begin_inset Formula $f\ g$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\textrm{B} & =\underset{spin}{\Sigma}\bar{\mu}(p')\Gamma^{+}u(p)\bar{\mu}(p)\frac{(p+p')^{+}}{2M_{1}}\mu(p')\\
+ & =\underset{spin}{\Sigma}\bar{\mu}(p')[\gamma^{+}(f+g)-\frac{(p+p')^{+}}{2M_{1}}g]u(p)\bar{\mu}(p)\frac{(p+p')^{+}}{2M_{1}}\mu(p')\\
+ & =\textrm{Tr}[(\gamma^{+}(f+g)-\frac{(p+p')^{+}}{2M_{1}}g)(\cancel{p}+M_{1})\frac{P^{+}}{M_{1}}(\cancel{p'}+M_{1})]\\
+ & =\textrm{Tr}[(\gamma^{+}(f+g)(\cancel{p}+M_{1})\frac{P^{+}}{M_{1}}(\cancel{p'}+M_{1})]-\textrm{Tr}[\frac{(p+p')^{+}}{2M_{1}}g(\cancel{p}+M_{1})\frac{P^{+}}{M_{1}}(\cancel{p'}+M_{1})]\\
+ & =(f+g)\textrm{Tr}[(\gamma^{+}(\cancel{p}+M_{1})(\cancel{p'}+M_{1})]\frac{P^{+}}{M_{1}}-g\textrm{Tr}[(\cancel{p}+M_{1})(\cancel{p'}+M_{1})](\frac{P^{+}}{M_{1}})^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the "Package-X" which is a program package for Mathematica to calculate
+ the Dirac matrices, we can get the result of A and B showed above.
+\end_layout
+
+\begin_layout Standard
+The residue theory part can be calculated by Mathematica almost automatically
+ which is very slow for this diagram.
+ The time to get the residue directly from A or B will take at least several
+ days.
+ In fact, I calculate it for two days and still can not get the result.
+\end_layout
+
+\begin_layout Standard
+I change the calculation in this method to make it quicker.A can be write
+ in this way, the numerator is expand in order of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+and these Ack are the coefficients.
+\begin_inset Formula 
+\[
+\textrm{A}=\frac{\textrm{Ack4}k^{-4}+\textrm{Ack3}k^{-3}+\textrm{Ack2}k^{-2}+\textrm{Ack1}k^{-}+\textrm{Ack0}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\int dk^{-}\textrm{A}$
+\end_inset
+
+ can be got by
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\textrm{A} & =\int dk^{-}\textrm{\frac{\textrm{Ack4}k^{-4}+\textrm{Ack3}k^{-3}+\textrm{Ack2}k^{-2}+\textrm{Ack1}k^{-}+\textrm{Ack0}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}}\\
+ & =\textrm{Ack4}\int dk^{-}\textrm{\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}}+\textrm{Ack3}\int dk^{-}\textrm{\frac{k^{-3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}}\\
+ & +\textrm{Ack2}\int dk^{-}\textrm{\frac{k^{-2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}}+\textrm{Ack1}\int dk^{-}\textrm{\frac{k^{-}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}}\\
+ & +\textrm{Ack0}\int dk^{-}\textrm{\frac{1}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}}\\
+ & =\textrm{Ack4}*residue(\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)})+\textrm{Ack3}residue(\frac{k^{-3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)})\\
+ & +\textrm{Ack2}residue(\frac{k^{-2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)})+\textrm{Ack1}residue(\frac{k^{-}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)})\\
+ & +\textrm{Ack0}residue(\frac{1}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $residue(\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)})$
+\end_inset
+
+ means the residue of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+in 
+\begin_inset Formula $\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}$
+\end_inset
+
+ which is equal to 
+\begin_inset Formula $\int dk^{-}\textrm{\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}}$
+\end_inset
+
+ due to residue theory.
+ Now we only need to calculate the residue of a very simple form which only
+ needs few minutes to finish the calculation.
+\end_layout
+
+\begin_layout Standard
+After we finish the Dirac matrix calculation,the 
+\begin_inset Formula $k$
+\end_inset
+
+ in the numerator of A and B will be consist of 
+\begin_inset Formula $(p.k),(p'.k),k^{2}$
+\end_inset
+
+, and the delta part calculation starts from here.
+ For example, we have this form in B
+\begin_inset Formula 
+\[
+\textrm{B}->\frac{(p.k)(p'.k)^{3}k^{2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to get the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term, we need to cancel the baryon propagator in the denominator.
+ So I replace the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $(p.k)$
+\end_inset
+
+ with 
+\begin_inset Formula $D_{B}(p-k)$
+\end_inset
+
+, the specific replacement is 
+\begin_inset Formula 
+\begin{align*}
+(p.k) & =\frac{D_{B}(p-k)-D_{\phi}(k)-m_{\phi}^{2}+M_{2}^{2}-M_{1}^{2}}{-2}\\
+(p'.k) & =\frac{D_{B}(p'-k)-D_{\phi}(k)-m_{\phi}^{2}+M_{2}^{2}-M_{1}^{2}}{-2}\\
+k^{2} & =D_{\phi}(k)+m_{\phi}^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here in the first equation, in left side the power of 
+\begin_inset Formula $k$
+\end_inset
+
+ is 1, but in right side we have 
+\begin_inset Formula $k^{2}$
+\end_inset
+
+ in 
+\begin_inset Formula $D_{B}(p-k)\textrm{and}D_{\phi}(k)$
+\end_inset
+
+ which can be canceled in 
+\begin_inset Formula $D_{B}(p-k)-D_{\phi}(k)$
+\end_inset
+
+.
+ But after we replace the 
+\begin_inset Formula $(p.k)$
+\end_inset
+
+, we will expand the numerator and then the power of 
+\begin_inset Formula $k$
+\end_inset
+
+ in the numerator will be higher and can not be canceled in form.
+ For example, 
+\begin_inset Formula $\frac{(p.k)(p'.k)^{3}k^{2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}$
+\end_inset
+
+ will be 
+\begin_inset Formula 
+\begin{align*}
+\frac{(p.k)(p'.k)^{3}k^{2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)} & =\frac{(\frac{D_{B}(p-k)-D_{\phi}(k)-m_{\phi}^{2}+M_{2}^{2}-M_{1}^{2}}{-2})(\frac{D_{B}(p'-k)-D_{\phi}(k)-m_{\phi}^{2}+M_{2}^{2}-M_{1}^{2}}{-2})^{3}(D_{\phi}(k)+m_{\phi}^{2})}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}\\
+ & =\frac{D_{B}(p-k)D_{B}^{3}(p'-k)D_{\phi}(k)}{4D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}+\frac{D_{B}(p-k)D_{B}^{3}(p'-k)m_{\phi}^{2}}{4D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the first term in second line, 
+\begin_inset Formula $\frac{D_{B}(p-k)D_{B}^{3}(p'-k)D_{\phi}(k)}{4D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}=\frac{D_{B}^{2}(p'-k)}{4D_{\Lambda}^{4}}=\frac{k^{4}}{k^{8}}$
+\end_inset
+
+, and the power of 
+\begin_inset Formula $k$
+\end_inset
+
+ shows this term is divergent.
+ And this is why we have divergence in this diagram although the original
+ integral 
+\begin_inset Formula $\int d^{4}k\frac{(p.k)(p'.k)^{3}k^{2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)\ D_{B}(p'-k)}$
+\end_inset
+
+ is converged.
+ In other diagram we also do the same replacement of 
+\begin_inset Formula $(p.k)$
+\end_inset
+
+, but the power of 
+\begin_inset Formula $(p.k)$
+\end_inset
+
+ in other diagrams is lower so they are converged.
+ 
+\end_layout
+
+\begin_layout Standard
+The divergence does not only exist in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ In fact, in most cases, the residue part is also divergent which will cancel
+ with the divergence in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ I will explain the cancel of divergence after I show the calculation of
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+\end_layout
+
+\begin_layout Standard
+After we replace the 
+\begin_inset Formula $(p.k),(p'.k),k^{2}$
+\end_inset
+
+, the expression of A and B, from here I'll use B part as example, will
+ be expand as sum of fractions consist of propagators which is 
+\begin_inset Formula 
+\[
+B=\frac{\textrm{Tr}[\Gamma_{o}^{+}(\cancel{p}+M)(\cancel{p'}+M)]\frac{P^{+}}{M}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)D_{B}(p_{2}-k)}=\Sigma\frac{D_{B}^{2}(p'-k)}{D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The particular form of these fractions is listed below
+\begin_inset Formula 
+\[
+\textrm{Order3 part}\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\textrm{Order2 part}\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}^{3}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\textrm{Order1 part}\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}\ \frac{D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\textrm{Order0 part}\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}^{2}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{1}{D_{\phi}D_{\Lambda}^{4}}\ \frac{1}{D_{\Lambda}^{4}}\ \frac{D_{\phi}}{D_{\Lambda}^{4}}\ \frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These fractions are classified by the power of baryon propagator, for example
+ in 
+\begin_inset Formula $\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}$
+\end_inset
+
+ the power of baryon propagator in numerator is 3 and in denominator is
+ 1,so its order is 
+\begin_inset Formula $3-1=2$
+\end_inset
+
+.
+ The reason for this is in same order, the calculation of different fractions
+ is similar.
+ 
+\end_layout
+
+\begin_layout Standard
+There is one problem in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term calculation, which is the fractions contain 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+.
+ Because the B is 
+\begin_inset Formula $B=\frac{\textrm{Tr}[\Gamma_{o}^{+}(\cancel{p}+M)(\cancel{p'}+M)]\frac{P^{+}}{M}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)D_{B}(p_{2}-k)}$
+\end_inset
+
+, in the numerator of B we have plus term.
+ In above, we ignore these plus term because that we only need care about
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ and many plus terms such as 
+\begin_inset Formula $P^{+}$
+\end_inset
+
+and 
+\begin_inset Formula $q^{+}$
+\end_inset
+
+do not contain 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ But we do have 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+term.
+ Those fractions contain 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ have forms in below
+\begin_inset Formula 
+\[
+\frac{k^{+}D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\frac{k^{+}D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{k^{+}D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{k^{+}D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\frac{k^{+}D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{k^{+}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{k^{+}D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{k^{+}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}}{D_{\Lambda}^{4}}\ \frac{k^{+}D_{\phi}}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First I will show how to calculate the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term without 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+.The main opinion is that we cancel the baryon propagator in denominator
+ and then we change the fractions to be in this form 
+\begin_inset Formula 
+\[
+\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For this form, we want to get the result of this integral
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}
+\]
+
+\end_inset
+
+First we use Feynman parameter, 
+\begin_inset Formula 
+\[
+\text{\ensuremath{\frac{1}{A^{a}B^{b}}=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(xA+(1-x)B)^{a+b}}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)} & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(xD_{\phi}+(1-x)D_{\Lambda})^{a+b}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Omega=xm_{\phi}^{2}+(1-x)\Lambda^{2}$
+\end_inset
+
+.
+ Then the power of denominator of 
+\begin_inset Formula $\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}$
+\end_inset
+
+can be lower through derivation
+\begin_inset Formula 
+\[
+\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b}}=\frac{1}{(a+b-1)!}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{1}{(k^{2}-\Omega)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the end we get 
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}\\
+=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{1}{(a+b-1)!}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega)^{2}}\\
+=\frac{1}{(a+b-1)!}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now the integral changes to be 
+\begin_inset Formula $\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}$
+\end_inset
+
+ which is 
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}=\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This result is got by comparing the result with covirant result.
+\end_layout
+
+\begin_layout Standard
+The integral 
+\begin_inset Formula $\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+ will be 
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}\\
+=\frac{1}{(a+b-1)!}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can be calculated now.
+ Besides we have some terms which contain 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ in the numerator, these terms are treated in this way
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)} & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}(k^{-})^{n}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{(k^{-})^{n}}{(k^{2}-\Omega+i\epsilon)^{a+b}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}(-1)^{n}\frac{1}{(a+b-n)*(a+b-n+1)...*(a+b-1)}\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b-n}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $k^{-n}$
+\end_inset
+
+is replaced by 
+\begin_inset Formula $\frac{\partial^{n}}{\partial k^{+n}}$
+\end_inset
+
+, then we have almost same path as 
+\begin_inset Formula $\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)} & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}(-1)^{n}\frac{1}{(a+b-n)*(a+b-n+1)...*(a+b-1)}\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{1}{(a+b-n-1)!}\frac{\partial^{a+b-n-2}}{\partial\Omega^{a+b-n-2}}\frac{1}{(k^{2}-\Omega)^{2}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}(-1)^{n}\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{1}{(a+b-1)!}\frac{\partial^{a+b-n-2}}{\partial\Omega^{a+b-n-2}}\frac{1}{(k^{2}-\Omega)^{2}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}(-1)^{n}\frac{1}{(a+b-1)!}\frac{\partial^{a+b-n-2}}{\partial\Omega^{a+b-n-2}}\frac{2\pi i}{k^{\perp^{2}}+\Omega}\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And we use an approximate of 
+\begin_inset Formula $\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})=-\frac{\delta(k^{+})}{k^{+}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we can get the 
+\begin_inset Formula $\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}->\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})$
+\end_inset
+
+.
+ Notice that under 
+\begin_inset Formula $\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})=-\frac{\delta(k^{+})}{k^{+}}$
+\end_inset
+
+, the integral 
+\begin_inset Formula $\int dk^{-}\frac{k^{-}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}=0$
+\end_inset
+
+ but 
+\begin_inset Formula $\int dk^{-}\frac{k^{+}k^{-}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}\neq0$
+\end_inset
+
+.
+ This will make those contain 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ in coefficient terms like 
+\begin_inset Formula $\frac{k^{+}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}$
+\end_inset
+
+ different with those which don't.
+\end_layout
+
+\begin_layout Standard
+Next I'll show how to change each forms above to be 
+\begin_inset Formula $\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In order 3 case, we only have 
+\begin_inset Formula $\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}=\frac{(D_{\phi}+m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2}-2p_{1}.k)^{3}}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expand the numerator then we have these terms
+\begin_inset Formula 
+\[
+\frac{D_{\phi}^{3}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{(p_{1}.k)^{3}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{\phi}(p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{(p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{\phi}^{2}(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{\phi}(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{\phi}^{2}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{1}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And those terms can be calculated in this way
+\begin_inset Formula 
+\begin{align*}
+\frac{(p_{1}.k)^{3}}{D_{\phi}D_{\Lambda}^{4}} & =0\textrm{due to the odd power in numerator}\\
+\frac{D_{\phi}^{3}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}\ \textrm{divergence}\\
+\frac{(p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(p_{1}^{+}k^{-})^{2}+(p_{1}^{-}k^{+}-p_{1}^{\perp}.k^{\perp})p_{1}^{+}k^{-}+(p_{1}^{-}k^{+})^{2}+(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\phi}D_{\Lambda}^{4}}\\
+ & =\frac{(p_{1}^{+}k^{-})^{2}}{D_{\phi}D_{\Lambda}^{4}}+\frac{p_{1}^{-}k^{+}p_{1}^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}-\frac{p_{1}^{\perp}.k^{\perp}p_{1}^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}+\frac{(p_{1}^{-}k^{+})^{2}}{D_{\phi}D_{\Lambda}^{4}}+\frac{(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{\phi}(p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(p_{1}^{+}k^{-})^{2}+(p_{1}^{-}k^{+}-p_{1}^{\perp}.k^{\perp})p_{1}^{+}k^{-}+(p_{1}^{-}k^{+})^{2}+(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\Lambda}^{4}}\\
+ & =\frac{(p_{1}^{+}k^{-})^{2}}{D_{\Lambda}^{4}}+\frac{p_{1}^{-}k^{+}p_{1}^{+}k^{-}}{D_{\Lambda}^{4}}-\frac{p_{1}^{\perp}.k^{\perp}p_{1}^{+}k^{-}}{D_{\Lambda}^{4}}+\frac{(p_{1}^{-}k^{+})^{2}}{D_{\Lambda}^{4}}+\frac{(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\Lambda}^{4}}\\
+\frac{(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}} & =0\\
+\frac{D_{\phi}(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(p_{1}.k)}{D_{\Lambda}^{4}}=0\\
+\frac{D_{\phi}^{2}(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}} & =(D_{\Lambda}+\Lambda^{2}-m_{\phi}^{2})\frac{(p_{1}.k)}{D_{\Lambda}^{4}}\\
+ & =\frac{(p_{1}.k)}{D_{\Lambda}^{3}}+(\Lambda^{2}-m_{\phi}^{2})\frac{(p_{1}.k)}{D_{\Lambda}^{4}}\\
+\frac{D_{\phi}^{2}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{D_{\phi}}{D_{\Lambda}^{4}}=\frac{(D_{\Lambda}+\Lambda^{2}-m_{\phi}^{2})}{D_{\Lambda}^{4}}=\frac{1}{D_{\Lambda}^{3}}+\frac{\Lambda^{2}-m_{\phi}^{2}}{D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where there are some terms still need to calculated, how to deal with these
+ terms are showed below
+\begin_inset Formula 
+\begin{align*}
+\frac{(p_{1}^{+}k^{-})^{2}}{D_{\phi}D_{\Lambda}^{4}},\frac{p_{1}^{-}k^{+}p_{1}^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{(p_{1}^{+}k^{-})^{2}}{D_{\Lambda}^{4}},\frac{p_{1}^{-}k^{+}p_{1}^{+}k^{-}}{D_{\Lambda}^{4}}- & >\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})\\
+\frac{p_{1}^{\perp}.k^{\perp}p_{1}^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{p_{1}^{\perp}.k^{\perp}p_{1}^{+}k^{-}}{D_{\Lambda}^{4}} & =0\ \textrm{due to}k^{\perp}\textrm{after}\int d^{2}k^{\perp}\textrm{will be 0}\\
+\frac{(p_{1}^{-}k^{+})^{2}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{(p_{1}^{-}k^{+})^{2}}{D_{\Lambda}^{4}}- & >k^{+2}\delta(k^{+})=0\\
+\frac{(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\Lambda}^{4}}\ \frac{(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\phi}D_{\Lambda}^{4}} & \textrm{the}\int k^{-}\textrm{part is same with}\frac{1}{D_{\phi}D_{\Lambda}^{4}}\ \frac{1}{D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For those have 
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+ in the numerator, the 
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+ do not changes 
+\begin_inset Formula $\int k^{-}$
+\end_inset
+
+,and 
+\begin_inset Formula $\int d^{2}k^{\perp}$
+\end_inset
+
+ can be calculated normally.
+ The divergent term 
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}$
+\end_inset
+
+ is treated in this way, we do not need to calculate it, the divergence
+ must be canceled in finial result, so I reduce it into this simplest form
+ 
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}$
+\end_inset
+
+ and keep it.
+\end_layout
+
+\begin_layout Standard
+In order 2 case, we have 
+\begin_inset Formula 
+\begin{gather*}
+\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}^{3}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because the calculation method of 
+\begin_inset Formula $\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}^{3}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}$
+\end_inset
+
+ is same, the only difference is the power of 
+\begin_inset Formula $D_{\phi}$
+\end_inset
+
+ which only affects the 
+\begin_inset Formula $a$
+\end_inset
+
+ in 
+\begin_inset Formula $\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+.
+ So in below I only show the detail of 
+\begin_inset Formula $\frac{1}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+ terms, the 
+\begin_inset Formula $\frac{1}{D_{\Lambda}^{4}}$
+\end_inset
+
+part is similar.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{(D_{B}(p_{2}-k)+2k.q)^{3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}(D_{B}^{2}(p_{2}-k)+6D_{B}(p_{2}-k)k.q+12(k.q)^{2}+\frac{8(k.q)^{3}}{D_{B}(p_{2}-k)})\\
+\frac{(k.q)^{3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{(\frac{1}{2}k^{-}q^{+})^{3}+\frac{3}{8}(k^{-}q^{+})^{2}(k^{+}q^{-}-2k^{\perp}.q^{\perp})+\frac{3}{8}(k^{-}q^{+})(k^{+}q^{-}-2k^{\perp}.q^{\perp})^{2}+Constant}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}(k)}*((\frac{\xi}{1+\xi})^{3}(D_{B}^{2}+3D_{B}k^{-}p_{1}^{+})\\
+ & +\frac{3}{2}(\frac{\xi}{1+\xi})^{2}(4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-})+3(\frac{\xi}{1+\xi})(k^{\perp}.q^{\perp})^{2}\\
+ & =(\frac{\xi}{1+\xi})^{3}(\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)}+\frac{3D_{B}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)})+\frac{3}{2}(\frac{\xi}{1+\xi})^{2}\frac{4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-}}{D_{\Lambda}^{4}(k)}\\
+ & +3(\frac{\xi}{1+\xi})\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)}\\
+\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)} & =\frac{(D_{\phi}+m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})^{2}}{D_{\Lambda}^{4}(k)}+\frac{(-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & +2\frac{(-2p.k)D_{\phi}}{D_{\Lambda}^{4}(k)}+2\frac{(-2p.k)(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})}{D_{\Lambda}^{4}(k)}+2\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})D_{\phi}}{D_{\Lambda}^{4}(k)}\\
+\frac{D_{B}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)} & =\frac{(k^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{k^{2}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-2\frac{p.kk^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}+(M_{1}^{2}-M_{2}^{2})\frac{k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{k^{+}k^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-\frac{k^{+}p^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-\frac{(k^{-}p^{+})^{2}}{D_{\Lambda}^{4}(k)}+\frac{2p^{\perp}.k^{\perp}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}+(M_{1}^{2}-M_{2}^{2})\frac{k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+\frac{p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}}{D_{\Lambda}^{4}(k)} & =-\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All terms here can be calculated by method I showed above.
+ The next is 
+\begin_inset Formula $\frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}}$
+\end_inset
+
+part
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}}\\
+ & =\frac{D_{\phi}^{2}+(m_{\phi}^{2}-M^{2})^{2}+(2p_{1}.k)^{2}+2D_{\phi}(m_{\phi}^{2}-M^{2})-4D_{\phi}p_{1}.k-4p_{1}.k(m_{\phi}^{2}-M^{2})}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)^{2}}{D_{\Lambda}^{4}}\\
+ & =\frac{D_{\phi}^{2}+(m_{\phi}^{2}-M^{2})^{2}+(2p_{1}.k)^{2}+2D_{\phi}(m_{\phi}^{2}-M^{2})-4D_{\phi}p_{1}.k-4p_{1}.k(m_{\phi}^{2}-M^{2})}{D_{\Lambda}^{4}}\\
+\frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{2}.k)}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{2}.k)}{D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order1 part we have these form of propagator
+\begin_inset Formula 
+\begin{gather*}
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}\ \frac{D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}$
+\end_inset
+
+ is calculated by
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{(D_{B}(p_{2}-k)+2k.q)^{2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}(D_{B}(p_{2}-k)+4(k.q)+\frac{4(k.q)^{2}}{D_{B}(p_{2}-k)})\\
+\frac{(k.q)^{2}}{D_{B}(p_{2}-k)} & =\frac{(\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp})^{2}}{D_{B}(p_{2}-k)}=\frac{(\frac{1}{2}k^{-}q^{+})^{2}}{D_{B}(p_{2}-k)}+\frac{\frac{1}{2}k^{+}q^{-}k^{-}q^{+}-k^{-}q^{+}k^{\perp}.q^{\perp}}{D_{B}(p_{2}-k)}+Constant\\
+ & =\frac{(\frac{1}{2}k^{-}q^{+})^{2}}{D_{B}(p_{2}-k)}=(\frac{\xi}{1-\xi})^{2}\frac{(k^{-}p_{2}^{+})^{2}}{D_{B}(p_{2}-k)}\\
+ & =(\frac{\xi}{1-\xi})^{2}\frac{(D_{B}(p_{2}-k)-(D_{B}(p_{2}-k)+k^{-}p_{2}^{+}))^{2}}{D_{B}(p_{2}-k)}\\
+ & =(\frac{\xi}{1-\xi})^{2}\frac{D_{B}^{2}(p_{2}-k)+(D_{B}(p_{2}-k)+k^{-}p_{2}^{+})^{2}-2D_{B}(p_{2}-k)(D_{B}(p_{2}-k)+k^{-}p_{2}^{+})}{D_{B}(p_{2}-k)}\\
+ & =-(\frac{\xi}{1-\xi})^{2}(D_{B}(p_{2}-k)+2k^{-}p_{2}^{+})\\
+D_{B}(p_{2}-k)+k^{-}p_{2}^{+} & =(p_{2}^{+}-k^{+})p_{2}^{-}+k^{+}k^{-}-(p_{2}^{\perp}-k^{\perp})^{2}-M^{2}\\
+\frac{(k.q)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp}}{D_{\phi}D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+ is calculated in this way 
+\begin_inset Formula 
+\[
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}=\frac{D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+How to calculate these terms has been listed above.
+ In order 0 we have 
+\begin_inset Formula 
+\begin{gather*}
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}^{2}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{1}{D_{\phi}D_{\Lambda}^{4}}\ \frac{1}{D_{\Lambda}^{4}}\ \frac{D_{\phi}}{D_{\Lambda}^{4}}\ \frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second line can be directly calculated.
+ In first line, take 
+\begin_inset Formula $\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}$
+\end_inset
+
+ as an example
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{D_{B}(p_{2}-k)+2k.q}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}=\frac{1}{D_{\phi}D_{\Lambda}^{4}}(1+2\frac{k.q}{D_{B}(p_{2}-k)})\\
+\frac{1}{D_{\phi}D_{\Lambda}^{4}}\frac{k.q}{D_{B}(p_{2}-k)} & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}\frac{\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp}}{D_{B}(p_{2}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}\frac{\frac{1}{2}k^{-}q^{+}}{D_{B}(p_{2}-k)}=\frac{1}{D_{\phi}D_{\Lambda}^{4}}\frac{-\xi}{1-\xi}\frac{k^{-}p_{2}^{+}}{D_{B}(p_{2}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}\frac{\xi}{1-\xi}\frac{D_{B}(p_{2}-k)-((p_{2}^{+}-k^{+})p_{2}^{-}+k^{+}k^{-}-(p_{2}^{\perp}-k^{\perp})^{2}-M^{2})}{D_{B}(p_{2}-k)}\\
+ & =\frac{\xi}{1-\xi}\frac{1}{D_{\phi}D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\delta$
+\end_inset
+
+ terms which contain 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ are treated in this method.
+ First we cancel the baryon propagator in the denominator as those terms
+ without 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\frac{k^{+}D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\frac{k^{+}D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{k^{+}D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{k^{+}D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\frac{k^{+}D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{k^{+}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{k^{+}D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{k^{+}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}}{D_{\Lambda}^{4}}\ \frac{k^{+}D_{\phi}}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For example, 
+\begin_inset Formula 
+\begin{align*}
+\frac{k^{+}D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{k^{+}(D_{B}(p_{2}-k)+2k.q)^{2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+ & =\frac{k^{+}}{D_{\phi}D_{\Lambda}^{4}}(D_{B}(p_{2}-k)+4(k.q)+\frac{4(k.q)^{2}}{D_{B}(p_{2}-k)})\\
+\frac{(k.q)^{2}}{D_{B}(p_{2}-k)} & =\frac{(\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp})^{2}}{D_{B}(p_{2}-k)}=\frac{(\frac{1}{2}k^{-}q^{+})^{2}}{D_{B}(p_{2}-k)}+\frac{\frac{1}{2}k^{+}q^{-}k^{-}q^{+}-k^{-}q^{+}k^{\perp}.q^{\perp}}{D_{B}(p_{2}-k)}+Constant\\
+ & =\frac{(\frac{1}{2}k^{-}q^{+})^{2}}{D_{B}(p_{2}-k)}=(\frac{\xi}{1-\xi})^{2}\frac{(k^{-}p_{2}^{+})^{2}}{D_{B}(p_{2}-k)}\\
+ & =(\frac{\xi}{1-\xi})^{2}\frac{(D_{B}(p_{2}-k)-(D_{B}(p_{2}-k)+k^{-}p_{2}^{+}))^{2}}{D_{B}(p_{2}-k)}\\
+ & =(\frac{\xi}{1-\xi})^{2}\frac{D_{B}^{2}(p_{2}-k)+(D_{B}(p_{2}-k)+k^{-}p_{2}^{+})^{2}-2D_{B}(p_{2}-k)(D_{B}(p_{2}-k)+k^{-}p_{2}^{+})}{D_{B}(p_{2}-k)}\\
+ & =-(\frac{\xi}{1-\xi})^{2}(D_{B}(p_{2}-k)+2k^{-}p_{2}^{+})\\
+D_{B}(p_{2}-k)+k^{-}p_{2}^{+} & =(p_{2}^{+}-k^{+})p_{2}^{-}+k^{+}k^{-}-(p_{2}^{\perp}-k^{\perp})^{2}-M^{2}\\
+\frac{k^{+}(k.q)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{k^{+}\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp}k^{+}}{D_{\phi}D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The difference is with an extra 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+, some terms in form of 
+\begin_inset Formula $\int dk^{-}\frac{k^{-}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+ which is 0 without 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ will become 
+\begin_inset Formula $\int dk^{-}\frac{k^{+}k^{-}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}\neq0$
+\end_inset
+
+.
+ For example, the 
+\begin_inset Formula $\frac{k^{+}(k.q)}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+, without this 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{(k.q)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp}}{D_{\phi}D_{\Lambda}^{4}}\\
+ & =\frac{1}{2}\frac{k^{+}q^{-}}{D_{\phi}D_{\Lambda}^{4}}+\frac{1}{2}\frac{k^{-}q^{+}}{D_{\phi}D_{\Lambda}^{4}}-\frac{k^{\perp}.q^{\perp}}{D_{\phi}D_{\Lambda}^{4}}\\
+ & ->k^{+}\delta(k^{+})+\frac{\delta(k^{+})}{k^{+}}-\frac{k^{\perp}}{(k^{\perp2}+\Omega)^{3}}\delta(k^{+})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This terms finial result is 0.
+ In second line, the first term contribute 
+\begin_inset Formula $\int k^{+}\delta(k^{+})dk^{+}=0$
+\end_inset
+
+, the second term is 
+\begin_inset Formula $\int\frac{\delta(k^{+})}{k^{+}}dk^{+}=0$
+\end_inset
+
+, the third term is 0 because 
+\begin_inset Formula $\int d^{2}k^{\perp}\frac{k^{\perp}}{(k^{\perp2}+\Omega)^{3}}=0$
+\end_inset
+
+.
+ But with a 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+, the 
+\begin_inset Formula $\frac{k^{+}(k.q)}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\frac{(k.q)}{D_{\phi}D_{\Lambda}^{4}}=\frac{\frac{1}{2}k^{+}(k^{+}q^{-}+k^{-}q^{+})-k^{+}k^{\perp}.q^{\perp}}{D_{\phi}D_{\Lambda}^{4}}=\frac{1}{2}\frac{k^{+}k^{+}q^{-}}{D_{\phi}D_{\Lambda}^{4}}+\frac{1}{2}\frac{k^{+}k^{-}q^{+}}{D_{\phi}D_{\Lambda}^{4}}-\frac{k^{+}k^{\perp}.q^{\perp}}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first and the third term are still 0, but the second term 
+\begin_inset Formula $\frac{k^{+}k^{-}q^{+}}{D_{\phi}D_{\Lambda}^{4}}\neq0$
+\end_inset
+
+.
+ The complete process of these terms with 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+still need some time to check.
+ I'll update it later.
+\end_layout
+
+\end_body
+\end_document

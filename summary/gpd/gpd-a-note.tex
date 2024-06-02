@@ -1,0 +1,626 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\begin{figure}[H]
+\includegraphics{23411/fig1}
+
+\caption{the one loop Feynman diagrams}
+\end{figure}
+
+For the diagram i, the amplitude is 
+
+\begin{align*}
+\Gamma_{i}^{+} & =\bar{u}(p')\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\tilde{F}(k)\frac{i}{D_{\phi}(k)}2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})u(p)\\
+ & =\bar{u}(p')[\gamma^{+}f+\frac{\sigma^{+\nu}q_{\nu}}{2M}g]u(p)
+\end{align*}
+
+To get the splitting function we need to calculate these two trace
+\begin{align*}
+A & =\textrm{Tr}[\Gamma_{i}^{+}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\\
+ & =\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\textrm{Tr}[2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\tilde{F}(k)\frac{i}{D_{\phi}(k)}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{a_{1}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}+\frac{a_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+ 
+\begin{align*}
+B & =\textrm{Tr}[\Gamma_{i}^{+}(\cancel{p}+M_{N})(\cancel{p'}+M_{N})]\frac{P^{+}}{M}\\
+ & =\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\textrm{Tr}[2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}(\cancel{p}+M_{N})(\cancel{p'}+M_{N})]\frac{P^{+}}{M}\tilde{F}(k)\frac{i}{D_{\phi}(k)}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{b_{1}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}+\frac{b_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+where 
+\[
+\tilde{F}(k)=(\frac{\Lambda^{2}-m_{\phi}^{2}}{D_{\Lambda}(k)})^{2}\,D_{\Lambda}(k)=\Lambda^{2}-k^{2}
+\]
+
+If the power of the $k^{-}$ in the denominator of the integral and
+the $k^{-}$ in the numerator are same when $k^{+}$ is 0 , the integral
+should contain a $\delta$ term. In this case, the power of $k^{-}$
+in denominator and numerator are both 2. In the previous paper, we
+have some equations to calculate the $\delta$ term, one them is 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{1}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})=\int d^{2}k^{\perp}\int dx\frac{\Gamma(5)}{\Gamma(1)\Gamma(4)}\frac{1}{4!}x(1-x)^{4}\frac{\partial^{3}}{\partial^{3}\Omega}\frac{2\pi i}{k^{\perp2}+\Omega}\delta(y+\xi)
+\]
+
+So I separate the numerator of the integral in this form. First, $\textrm{numerator of }A$
+can be expressed as 
+\[
+\textrm{numerator of }A=c_{1}(k^{-})^{2}+c_{2}k^{-}+c_{3}
+\]
+
+where $c_{i}$ represent the coefficient. Then I put the $c_{1}(k^{-})^{2}$
+in this term $D_{\Lambda}^{2}(k+q)*a_{2}$ which means 
+\begin{align*}
+\textrm{numerator of }A & =a_{1}+D_{\Lambda}^{2}(k+q)*a_{2}\\
+a_{2} & =\frac{c_{1}}{((k^{+})^{2}+2k^{+}q^{+}+(q^{+})^{2})}\\
+D_{\Lambda}^{2}(k+q) & =(\Lambda^{2}-(k+q)^{2})^{2}\\
+ & =((k^{+})^{2}+2k^{+}q^{+}+(q^{+})^{2})(k^{-})^{2}+...
+\end{align*}
+
+With this transition, the power of $k^{-}$ in $a_{1}$ is 1 when
+$k^{+}$is 0 which means the $a_{1}$ term does not contain $\delta$
+term and the $a_{2}$ is the $\delta$ term and can be calculated
+using the equation.The $a_{1}$ and $a_{2}$ in diagram i is given
+as
+\begin{align*}
+a_{1} & =2(2k^{+}+q^{+})^{2}(m_{\phi}^{2}-\Lambda^{2})^{4}\\
+ & (\frac{(2k^{+}+q^{+})((k^{\perp}+q^{\perp})^{2}-k^{-}q^{+}-q^{+}q^{-}-k^{+}(k^{-}+q^{-})+\Lambda^{2})^{2}(-2P^{+}q^{+}+q^{+2}-4P^{+2}(1+\xi))}{(k^{+}+q^{+})^{2}}\\
+ & +(k^{\perp2}+(k^{\perp}+q^{\perp})^{2}-2k^{+}k^{-}-k^{-}q^{+}-k^{+}q^{-}-q^{+}q^{-}+2\Lambda^{2})\\
+ & *(2(k^{\perp}+q^{\perp})^{2}P^{+}-4(p^{\perp}-k^{\perp})^{2}P^{+}-4M_{N}^{2}P^{+}-4k^{-}P^{+2}\\
+ & -4k^{+}P^{+}P^{-}+4P^{+2}P^{-}-(k^{\perp}+q^{\perp})^{2}q^{+}-2k^{-}P^{+}q^{+}+k^{-}q^{+2}\\
+ & +k^{\perp2}(2P^{+}+q^{+})-2k^{+}P^{+}q^{-}+k^{+}q^{+}q^{-}-2P^{+}q^{+}q^{-}+q^{+2}q^{-}\\
+ & -4k^{-}P^{+2}\xi+4P^{+2}P^{-}\xi-(2k^{+}-2P^{+}+q^{+})q^{2})\\
+a_{2} & =\frac{2(2k^{+}+q^{+})^{2}(m_{\phi}^{2}-\Lambda^{2})^{4}}{(k^{+}+q^{+})^{2}}(2P^{+}q^{+}-q^{+2}+4P^{+2}(1+\xi))
+\end{align*}
+ 
+
+Then we can get the normal and $\delta$ term of $f$ and $g$
+
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+The $g$ is 0 for diagram i. The $f_{res}$ is showed in fig.2. And
+the $\delta$ term, $\delta f=-0.0977421\delta(y+\xi)$. The result
+of $f$ and $g$ can be checked by compare the integral with the previous
+form factor work.
+\begin{equation}
+F_{1}=\widetilde{F}(q)\int dy(f_{res}+\delta f)
+\end{equation}
+
+where $\widetilde{F}(q)$ is the regulator of photon which we introduce
+by hand in form factor calculation to get the $Q^{2}$ dependence.
+In GPD calculation this $Q$ dependence comes from the input GPD.
+The result of eq.1,with $Q^{2}=1$ is $0.0324215*\widetilde{F}(1)=0.00810537$,
+while the result in form factor is $0.00810465$
+
+\begin{figure}
+\includegraphics[scale=0.5]{424/fres-xi0\lyxdot 1}
+
+\caption{$f_{res}$($\xi=0.1,Q^{2}=1GeV^{2}$) }
+
+\end{figure}
+
+The positive part of $f_{res}$ is small but not zero which is showed
+in Fig.3. To check whether the $f_{res}$ is $\delta$ function when
+$\xi$ is 0, I have these $\xi f_{res}$ figure showed in Fig.4.
+
+\begin{figure}
+\includegraphics[scale=0.5]{424/fres-zheng}\caption{$f_{res}(y),y>0$}
+
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{424/xi-fres-delta}
+
+\caption{$\xi f_{res}$ with $\xi=0.1,0.01,0.001,0.0001$}
+\end{figure}
+
+Still the positive part is not zero and is showed in Fig.5. And these
+two figure prove that $f_{res}$ approach to the $\delta(y+\text{\ensuremath{\xi}})$
+in the zero skewness. 
+
+\begin{figure}
+\includegraphics[scale=0.5]{424/xi-fres-zheng}
+
+\caption{$\xi f_{res}(y),y>0$ }
+
+\end{figure}
+
+For diagram b in Fig1, the contribution is 
+\[
+\Gamma_{b}^{+}=\int\cancel{k}\gamma_{5}\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\gamma^{+}\frac{\cancel{p}-\cancel{k}+m_{N}}{D_{B}(p-k)}\cancel{k}\gamma_{5}\delta(y-\frac{k^{+}}{P^{+}})
+\]
+
+I do the same separate in diagram i case. The $A$ part is 
+\begin{align*}
+A_{b} & =\text{\ensuremath{\int(\Lambda^{2}-m_{\phi}^{2})^{4}\frac{\textrm{Tr}[\cancel{k}\gamma_{5}(\cancel{p'}-\cancel{k}+m_{N})\gamma^{+}(\cancel{p}-\cancel{k}+m_{N})\cancel{k}\gamma_{5}]}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}}}\delta(y-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{b_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}+\frac{b_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+Then first term is normal integral which can be calculated with residue
+theorem and the second term is $\delta$ term. The normal part can
+be expressed as 
+\begin{multline*}
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{b_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}\delta(y-\frac{k^{+}}{P^{+}})\\
+=\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{b'_{1}k^{-}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}+\frac{b_{1}''}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)})\delta(y-\frac{k^{+}}{P^{+}})
+\end{multline*}
+
+This week, I check the integral above. The integral should have no
+issue and the contribution of diagram b can be calculated using the
+similar method as diagram i. Last week I made a mistake in my program.
+The splitting function can be expressed as
+\begin{align*}
+f & =f_{1}+f_{2}+f_{\delta}\delta(y)\\
+g & =g_{1}+g_{2}+g_{\delta}\delta(y)
+\end{align*}
+
+the $f_{1}+f_{2}$ means the normal part of the splitting function
+which is separated in $k^{+}=(1-\xi)P^{+}$ due to the singularity
+comes from $D_{B}(p'-k)=(p'-k)^{2}-M^{2}+i\epsilon$ change it's position
+from upside to the down side of the axis and the $f_{\delta}\delta(y+\xi)$
+is the $\delta$ term. 
+
+The splitting function should satisfy that $\int_{-\xi}^{1}dyf(y)$
+and $\int_{-\xi}^{1}dyg(y)$ are $\xi$ independent. For diagram b,
+the result is, with $\xi=0.1,0.2$, ignore some coefficient
+\[
+\int_{-\xi}^{1-2\xi}dyf_{1}(y)+\int_{1-2\xi}^{1}dyf_{2}(y)+f_{\delta}=7.27795
+\]
+
+and 
+\[
+\int_{-\xi}^{1-2\xi}dyg_{1}(y)+\int_{1-2\xi}^{1}dyg_{2}(y)+g_{\delta}=-6.566548599
+\]
+
+When $\xi=0.1,Q^{2}=1GeV^{2}$, the splitting function looks like
+this 
+\begin{figure}
+\includegraphics{pic/b-f1}
+
+\caption{$f_{1}$from diagram b}
+
+\end{figure}
+
+\begin{figure}
+\includegraphics{pic/b-f2}
+
+\caption{$f_{2}$from diagram b}
+
+\end{figure}
+
+\begin{figure}
+\includegraphics{pic/b-g1}
+
+\caption{$g_{1}$from diagram b}
+\end{figure}
+
+\begin{figure}
+\includegraphics{pic/b-g2}
+
+\caption{$g_{2}$from diagram b}
+\end{figure}
+
+The $\delta$ term is 
+\begin{align*}
+f_{\delta}\delta(y+\xi) & =5.2702\delta(y+\xi)\\
+g_{\delta}\delta(y+\xi) & =0
+\end{align*}
+
+As to zero skewness case, the diagram b in fig.1 is different from
+previous diagram. In previous calculation including the tadpole and
+meson loop contribution, the reason why the normal integral turns
+to a $\delta$ function when $\xi$ goes to zero is the denominator
+of these integral. For example, in the tadpole diagram, the normal
+integral can be expressed as
+\begin{equation}
+\int d^{4}k\frac{c_{1}k^{-}+c_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}
+\end{equation}
+
+When $\xi=0$, the first two term of denominator of eq.2 have no changes.
+The last term $D_{\Lambda}^{2}(k+q)$ will become, notice that $\xi=0$
+means $q^{+}=0$ 
+\begin{align*}
+D_{\Lambda}^{2}(k+q) & =(k^{+}+q^{+})(k^{-}+q^{-})-(k^{\perp}-q^{\perp})^{2}-\Lambda^{2}+i\epsilon\\
+ & =k^{+}(k^{-}+q^{-})-(k^{\perp}-q^{\perp})^{2}-\Lambda^{2}+i\epsilon
+\end{align*}
+
+Then if we choose $k^{+}=0$, the denominator of integral does not
+have the $k^{-}$ and the integral will become like 
+\[
+\int dk^{-}\frac{c_{1}k^{-}+c_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}=\int k^{-}(c'_{1}k^{-}+c'_{2})
+\]
+
+This is a line divergence. And when $k^{+}\neq0$, the imaginary part
+of singularities of the integral are same
+\begin{align*}
+k^{-} & =\frac{-i\epsilon}{k^{+}}+\frac{(k^{\perp}-q^{\perp})^{2}+\Lambda^{2}}{k^{+}}-q^{-}\\
+k^{-} & =\frac{-i\epsilon}{k^{+}}+\frac{k^{\perp}{}^{2}+\Lambda^{2}}{k^{+}}\\
+k^{-} & =\frac{-i\epsilon}{k^{+}}+\frac{k^{\perp}{}^{2}+m_{\phi}^{2}}{k^{+}}
+\end{align*}
+
+which means the integral should be 0, because the residue theorem.
+So the normal integral when $\xi\neq0$ will become a $\delta$ function
+when $\xi=0$, and we can choose a small $\xi$ to check this change.
+We should have images like fig.4, for diagram i or previous meson
+loop contribution. However, for diagram b, the normal integral is
+like 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{b_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+The last two terms of denominator does not change when $\xi=0$, which
+is 
+\[
+D_{B}(p-k)=(p^{+}-k^{+})(p^{-}-k^{-})-(p^{\perp}-k^{\perp})^{2}-M_{N}^{2}+i\epsilon
+\]
+
+This integral is still converged when $\xi=0$, so we won't have similar
+images like fig.4. To prove this, I choose $\xi=0.1,0.01,0.001$ and
+the splitting functions are showed in below.
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/b-f-xi1} \includegraphics[scale=0.5]{pic/b-f-xi2}
+
+\includegraphics[scale=0.5]{pic/b-f-xi3}
+
+\caption{$f$ when $\xi=0.01,0.001,0.0001$}
+
+\end{figure}
+\begin{figure}
+\includegraphics[scale=0.5]{pic/b-g-xi1} \includegraphics[scale=0.5]{pic/b-g-xi2}
+
+\includegraphics[scale=0.5]{pic/b-g-xi3}
+
+\caption{$g$ when $\xi=0.01,0.001,0.0001$}
+\end{figure}
+
+We can see the function is tend to be same when $\xi$ goes to 0.
+The three dimension images of the splitting function from diagram
+b are showed below.
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/b-f-3D}
+
+\includegraphics[scale=0.5]{pic/b-g-3D}
+
+\caption{3 dimension picture from diagram b}
+
+\end{figure}
+
+For diagram c in fig.1, the equation is similar to diagram b which
+is
+\[
+\Gamma_{c}^{+}=\int\cancel{k}\gamma_{5}\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\frac{i\sigma^{+\nu}q_{\nu}}{2M_{N}}\frac{\cancel{p}-\cancel{k}+m_{N}}{D_{B}(p-k)}\cancel{k}\gamma_{5}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+And the result of splitting function is also similar to diagram b.
+The splitting function can be expressed as 
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+the $f_{res}$ and $g_{res}$ is the normal integral part and the
+second term is the $\delta$ function. First, the $\xi$ independece
+is checked. 
+\begin{align*}
+\int_{-\xi}^{1}dyf & =-1.86186\\
+\int_{-\xi}^{1}dyg & =-2.15724
+\end{align*}
+
+The $\delta g=-5.2702\delta(y+\xi)$, but the $\delta f$ changes
+with different $\xi$ that is
+\begin{align*}
+\delta f & =-0.106469\delta(y+\xi),\xi=0.1\\
+\delta f & =-0.439183\delta(y+\xi),\xi=0.2
+\end{align*}
+
+The normal integral part of splitting function is similar to the diagram
+b condition. When $\xi=0.1,Q^{2}=1GeV^{2}$, the splitting function
+looks like this 
+
+\begin{figure}
+\includegraphics{pic/c-f1}
+
+\caption{$f_{1}$from diagram c}
+\end{figure}
+
+\begin{figure}
+\includegraphics{pic/c-f2}
+
+\caption{$f_{2}$from diagram c}
+\end{figure}
+
+\begin{figure}
+\includegraphics{pic/c-g1}
+
+\caption{$g_{1}$from diagram c}
+\end{figure}
+
+\begin{figure}
+\includegraphics{pic/c-g2}
+
+\caption{$g_{2}$from diagram c}
+\end{figure}
+
+Also the splitting function is not a $\delta$ function when $\xi$
+goes to 0. Just like diagram b, we get 
+\begin{figure}
+\includegraphics[scale=0.5]{pic/c-f-xi1} \includegraphics[scale=0.5]{pic/c-f-xi2}
+
+\includegraphics[scale=0.5]{pic/c-f-xi3}
+
+\caption{$f$ when $\xi=0.01,0.001,0.0001$}
+\end{figure}
+\begin{figure}
+\includegraphics[scale=0.5]{pic/c-g-xi1} \includegraphics[scale=0.5]{pic/c-g-xi2}
+
+\includegraphics[scale=0.5]{pic/c-g-xi3}
+
+\caption{$g$ when $\xi=0.01,0.001,0.0001$}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/c-f-3D}
+
+\includegraphics[scale=0.5]{pic/c-g-3D}
+
+\caption{3 dimension picture from diagram c}
+\end{figure}
+
+For diagram d and e, the KR diagram with normal vertex. The calculation
+is finished and the result is checked by compare the integral with
+the form factor result. The contribution from these diagrams is 
+\[
+\Gamma_{(d+e)}^{+}=\int F(k)^{2}\frac{i}{D_{\phi}(k)}(\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}\gamma^{\mu}\gamma_{5}+\gamma^{\mu}\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5})\delta(y-\frac{k^{+}}{P^{+}})
+\]
+
+The result is separated into two part
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+The lowest moment of splitting function should be equal to the form
+factor calculation 
+\begin{align*}
+F(q)*\int dy(f_{res}+\delta f) & =F_{1}\\
+F(q)*\int dy(g_{res}+\delta g) & =F_{2}
+\end{align*}
+
+And when $Q^{2}=1MeV^{2}$ the integral is 
+\begin{align*}
+\int dy(f_{res}+\delta f) & =0.139276\\
+F_{1} & =0.0348211\\
+F(q) & =\frac{1}{4}
+\end{align*}
+
+The $g$ part should be 0, but the result from splitting function
+is not very small, $\int dy(g_{res}+\delta g)=-0.000376259$. We can
+exam the function $g(y)$, the image can be given as
+
+\begin{figure}
+\includegraphics{pic/d-g-xi1}
+
+\caption{$g(y)$ from diagram d}
+\end{figure}
+
+First, we can choose more point when we fit the function and calculate
+the integral with higher precision. Then at most points, the function
+is smaller than $10^{-6}$. The image now beome.
+\begin{figure}
+\includegraphics{pic/d-g-xi1-hp}
+
+\caption{$g(y)$ from diagram d with higher precison}
+
+\end{figure}
+
+For the points where the value is still around $0.01$, one can separate
+the range of $k^{\perp}$, from $[0,\infty]$ to $[0,10]+[10,\infty]$.
+The $g(y)$ will become around $10^{-8}$. So the $g(y)$ is 0 in
+these two diagram. 
+
+The $\delta f=5.270055544$
+
+The normal part of $f$ with $\xi=0.1$ can be given as 
+\begin{figure}
+\includegraphics[scale=0.5]{pic/d-f-xi1}\includegraphics[scale=0.5]{pic/e-f-xi1}
+
+\caption{$f_{res}$ from diagram d and e}
+\end{figure}
+ 
+
+The images show that the two diagrams have same contribution to the
+form factor, but different contribution to the splitting function
+although the difference is not significant when $\xi=0.1$.
+
+When $\xi$ goes to 0, the splitting function behave like 
+\begin{figure}
+\includegraphics[scale=0.5]{pic/d-f-xi01}\includegraphics[scale=0.5]{pic/d-f-xi001}
+
+\includegraphics[scale=0.5]{pic/d-f-xi0001}
+
+\caption{$f$ from diagram d with small $\xi$}
+
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/e-f-xi01}\includegraphics[scale=0.5]{pic/e-f-xi001}
+
+\includegraphics[scale=0.5]{pic/e-f-xi0001}
+
+\caption{$f$ from diagram e with small $\xi$}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/d-f-3D}
+
+\includegraphics[scale=0.5]{pic/d-g-3D}
+
+\caption{3 dimension picture from diagram d}
+\end{figure}
+
+The splitting function has normal part when $\xi=0$ like diagram
+b.
+
+For diagram f and g, the additional KR diagram from nonlocal Lagrangian.
+The contribution can be expressed as
+\begin{align*}
+\Gamma_{(f+g)}^{+} & =\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k)}\tilde{F}(k)[\frac{2k^{+}-q^{+}}{2kq-q^{2}}(\tilde{F}(k)-\tilde{F}(k-q))\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\\
+ & +\frac{2k^{+}+q^{+}}{2kq+q^{2}}(\tilde{F}(k+q)-\tilde{F}(k))(\cancel{k}+\cancel{q})\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5}]\delta(y-\frac{k^{+}}{P^{+}})
+\end{align*}
+The splitting function still is separated to two part. 
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+These two diagrams have same $\delta$ term 
+\begin{align*}
+\delta f & =-2.6351\delta(y)\\
+\delta g & =0
+\end{align*}
+
+The normal integral is different from other cases. The lowest moment
+of splitting function from single diagram is $\xi$ dependent and
+two result are different. In the normal KR diagram, the result is
+same no matter the position of the vertex. The lowest moment of the
+normal part splitting function from diagram f is listed below with
+$\xi=0.1\ Q^{2}=1GeV^{2}$ ignoring some coefficient
+\begin{align*}
+\int dyf_{f} & =3.614491865\;\xi=0.1\\
+\int dyf_{f} & =4.121612607\;\xi=0.2
+\end{align*}
+
+And for diagram g the result is 
+\begin{align*}
+\int dyf_{g} & =2.600249573\;\xi=0.1\\
+\int dyf_{g} & =2.093126056\;\xi=0.2
+\end{align*}
+
+The result of these two diagram is
+\begin{align*}
+\int dyf & =\int dy(f_{f}+f_{g})\\
+ & =6.21474\;\xi=0.1\\
+ & =6.21474\;\xi=0.2
+\end{align*}
+
+For $g$ part, the result is same.
+\begin{align*}
+\int dyg_{f} & =1.890929104\;\xi=0.1\\
+\int dyg_{f} & =1.383799830\;\xi=0.2
+\end{align*}
+\begin{align*}
+\int dyg_{g} & =2.905187580\;\xi=0.1\\
+\int dyg_{g} & =3.412314403\;\xi=0.2
+\end{align*}
+
+\begin{align*}
+\int dyg & =\int dy(g_{f}+g_{g})\\
+ & =4.79612\;\xi=0.1\\
+ & =4.79611\;\xi=0.2
+\end{align*}
+
+And compared with the form factor result, we should have
+\begin{align*}
+\tilde{F}(q)\int dyf & =F_{1}\\
+\tilde{F}(q)\int dyg & =F_{2}
+\end{align*}
+
+In the other diagram like diagram d and e, the normal KR diagrams,
+the equation is satisfied even if only one diagram's contribution
+considered. But for diagram f and g, the additional KR diagrams, we
+must consider two diagram's contribution together. With $\xi=0.1\ Q^{2}=1GeV^{2}$,
+the form factor should be
+\begin{align*}
+\tilde{F}(q)\int dyf & =0.00695274\\
+\tilde{F}(q)\int dyg & =0.0353042
+\end{align*}
+
+While the form factor result from previous work is
+\begin{align*}
+F_{1} & =0.00695275\\
+F_{2} & =0.0353042
+\end{align*}
+
+The image of the splitting function is given below.
+\begin{figure}
+\includegraphics[scale=0.5]{pic/f-f-xi1}\includegraphics[scale=0.5]{pic/f-g-xi1}
+
+\caption{$f$ and $g$ from diagram f}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/g-f-xi1}\includegraphics[scale=0.5]{pic/g-g-xi1}
+
+\caption{$f$ and $g$ from diagram g}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/f+g-f-xi1}\includegraphics[scale=0.5]{pic/f+g-g-xi1}
+
+\caption{$f$ and $g$ from diagram f+g}
+\end{figure}
+
+Where $f_{f+g}=f_{f}+f_{g}\;g_{f+g}=g_{f}+g_{g}$
+
+When $\xi$ goes to 0, the splitting function act like images showed
+below.
+\begin{figure}
+\includegraphics[scale=0.5]{pic/f-f-xix1}\includegraphics[scale=0.5]{pic/f-f-xix2}
+
+\includegraphics[scale=0.5]{pic/f-f-xix3}
+
+\caption{$f$ from diagram f with small $\xi$}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/f-g-xix1}\includegraphics[scale=0.5]{pic/f-g-xix2}
+
+\includegraphics[scale=0.5]{pic/f-g-xix3}
+
+\caption{$g$ from diagram f with small $\xi$}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/g-f-xix1}\includegraphics[scale=0.5]{pic/g-f-xix2}
+
+\includegraphics[scale=0.5]{pic/g-f-xix3}
+
+\caption{$f$ from diagram g with small $\xi$}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.5]{pic/g-g-xix1}\includegraphics[scale=0.5]{pic/g-g-xix2}
+
+\includegraphics[scale=0.5]{pic/g-g-xix3}
+
+\caption{$g$ from diagram g with small $\xi$}
+\end{figure}
+
+The $f$ function from both two diagrams become $\delta$ function
+when $\xi$ is 0, and the $g$ function are goes to a certain function.
+
+Next, the 3 dimension images of splitting functions from some of the
+Feynman diagrams have been obtained. With $\xi=0.1$, the splitting
+function $f(y,\xi,t)$ or $g(y,\xi,t)$ are showed above.
+\end{document}

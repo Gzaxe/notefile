@@ -1,0 +1,329 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+I use "Package-X" to calculate the Dirac matrices and first line in code
+ is command to call this package.
+ The 
+\begin_inset Formula $\Gamma_{o}^{+}$
+\end_inset
+
+ and two trace are 
+\begin_inset Formula 
+\[
+\Gamma_{o}^{+}=\int\frac{d^{4}k}{(2\pi)^{4}}k_{\lambda}\Theta^{\lambda\sigma}\tilde{F}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}S_{\sigma\alpha}(p'-k)\frac{\sigma^{+\beta}q_{\beta}}{2M_{B}}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}S_{\alpha\rho}(p-k)\Theta^{\rho\nu}k_{\nu}\tilde{F}(k)\delta(y-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\textrm{A=Tr}[\Gamma^{+}(\cancel{p}+M)\gamma^{+}(\cancel{p'}+M)] & =(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M)\gamma^{+}(\cancel{p'}+M)}]}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M)\gamma^{+}(\cancel{p'}+M)}\frac{P^{+}}{M}]\\
+\textrm{B=Tr}[\Gamma^{+}(\cancel{p}+M)(\cancel{p'}+M)]\frac{P^{+}}{M} & =(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M)(\cancel{p'}+M)}]\frac{P^{+}}{M}}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M)(\cancel{p'}+M)(}\frac{P^{+}}{M})^{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The SDecpk is function 
+\begin_inset Formula $S_{\alpha\rho}(p-k)$
+\end_inset
+
+ in decuplet intermediate amplitude which is defined as
+\begin_inset Formula 
+\[
+S_{\alpha\beta}(p-k)=\frac{1}{3}(\gamma^{\alpha}\gamma^{\beta})+\frac{2p^{\alpha}p^{\beta}}{3M^{2}}+\frac{\gamma^{\alpha}p^{\beta}-\gamma^{\beta}p^{\alpha}}{3M}-g^{\alpha\beta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I input the trace part of A as Atr in the code and A in code is whole integral
+ with propagators.
+ The A is in covirant frame so I transform A into the light front and get
+ A1.
+ In A2, I rewrite the 
+\begin_inset Formula $k.q\ k^{2}\ k.p$
+\end_inset
+
+ in form of propagators.
+ This will make the calculation of 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term easier.
+ In A3, all terms are replaced to be 
+\begin_inset Formula $k^{+}k^{-}k^{\perp}$
+\end_inset
+
+, and can be calculated with residue theory.
+ In the program, I use some code name to represent some terms in 
+\begin_inset Formula $\Gamma_{o}^{+}$
+\end_inset
+
+.
+ Their relationship is listed below.
+\begin_inset Formula 
+\begin{align*}
+\textrm{mm}- & >m_{\phi}\\
+\textrm{MB}- & >\textrm{the input baryon mass}\\
+\textrm{MT}- & >\textrm{intermediate decuplet baryon mass}\\
+\textrm{p1}- & >p_{1}\\
+\textrm{p2}- & >p_{2}\\
+\textrm{k1,k2,k3}- & >k^{+}\ k^{-}\ k^{\perp}\\
+\textrm{q1,q2,q3}- & >q^{+}\ q^{-}\ q^{\perp}\\
+\textrm{P1}- & >P^{+}\\
+\textrm{P2,P21}- & >p_{1}^{-}\ p_{2}^{-}\\
+\textrm{Dmk}- & >D_{\phi}(k)\\
+\textrm{DL}- & >D_{\Lambda}(k)\\
+\textrm{Fk}- & >\tilde{F}(k)=(\frac{\Lambda^{2}-m_{\phi}^{2}}{D_{\Lambda}(k)})^{2}\\
+\textrm{DB,DB2}- & >D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)\\
+\textrm{DT,DT2}- & >D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)\textrm{but with  decuplet baryon mass }
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then I calculated the residue part.
+ In order to make the calculation quicker, I calculate in this way.
+ A can be write in this way, the numerator is expand in order of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+and these Ack are the coefficients.
+\begin_inset Formula 
+\[
+\textrm{A}=\frac{\textrm{Ack4}k^{-4}+\textrm{Ack3}k^{-3}+\textrm{Ack2}k^{-2}+\textrm{Ack1}k^{-}+\textrm{Ack0}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\int dk^{-}\textrm{A}$
+\end_inset
+
+ can be got by
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\textrm{A} & =\int dk^{-}\textrm{\frac{\textrm{Ack4}k^{-4}+\textrm{Ack3}k^{-3}+\textrm{Ack2}k^{-2}+\textrm{Ack1}k^{-}+\textrm{Ack0}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}}\\
+ & =\int dk^{-}\textrm{\frac{\textrm{Ack4}k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}}+\int dk^{-}\textrm{\frac{\textrm{Ack3}k^{-3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}}\\
+ & +\int dk^{-}\textrm{\frac{\textrm{Ack2}k^{-2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}}+\int dk^{-}\textrm{\frac{\textrm{Ack1}k^{-}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}}\\
+ & +\int dk^{-}\textrm{\frac{\textrm{Ack0}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}}\\
+ & =\textrm{Ack4}*residue(\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)})+\textrm{Ack3}residue(\frac{k^{-3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)})\\
+ & +\textrm{Ack2}residue(\frac{k^{-2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)})+\textrm{Ack1}residue(\frac{k^{-}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)})\\
+ & +\textrm{Ack0residue(\frac{1}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $residue(\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)})$
+\end_inset
+
+ means the residue of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+in 
+\begin_inset Formula $\frac{k^{-4}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{1}-k)\ D_{B}(p_{2}-k)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Because the pole of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+changes when 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ is different, there are two section of residue result.
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset Formula $\delta$
+\end_inset
+
+ part calculation, these three functions are result of terms like 
+\begin_inset Formula $\frac{1}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\textrm{iintx2} & =\frac{k^{+}k^{-}}{D_{\phi}D_{\Lambda}^{4}}\\
+\textrm{iintx3} & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}\\
+\textrm{iintx4} & =\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\phi}D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In dA2, I rewrite the A to be combination of propagators like 
+\begin_inset Formula $\frac{D_{B}}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+.
+ The myCount4 function is defined to tell the order of terms in dA2.
+ For example, this code 
+\begin_inset Quotes eld
+\end_inset
+
+Select[dA2, myCount4[#] == 2 &]
+\begin_inset Quotes erd
+\end_inset
+
+ will give all order 2 terms in dA2.Then in Ad2,Ad1 and Ad0, I calculate
+ the contribution to 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term of terms in dA2 in different order .
+ The method to calculate the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term is showed in another note.
+ The opinion is, first we get all certain order terms in dA2 then follow
+ the replacement derivable theoretically and change all terms to be several
+ certain forms like 
+\begin_inset Formula $\frac{1}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+ which can be calculated directly.
+ Then add different order together, we get the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term result.
+\end_layout
+
+\begin_layout Standard
+The B part is similar to A part.
+ The difference is, in B part, the order of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+in numerator is higher.
+ Then I replace those code name to be 
+\begin_inset Formula $k^{\perp}\ y\ Q\ \Lambda$
+\end_inset
+
+.
+ And I change the 
+\begin_inset Formula $\int d^{2}k^{\perp}$
+\end_inset
+
+to be 
+\begin_inset Formula $\int k^{\perp}dk^{\perp}d\theta$
+\end_inset
+
+, which make the numerical calculation easier.
+ In the end, we can get the splitting function 
+\begin_inset Formula $f\ g$
+\end_inset
+
+ by A and B
+\end_layout
+
+\end_body
+\end_document

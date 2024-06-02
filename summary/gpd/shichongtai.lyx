@@ -1,0 +1,355 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+对于十重态磁顶点彩虹图，计算
+\begin_inset Formula 
+\[
+\textrm{B=Tr}[\Gamma^{+}(\cancel{p}+M)(\cancel{p'}+M)]\frac{P^{+}}{M}=(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M)(\cancel{p'}+M)}]\frac{P^{+}}{M}}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M)(\cancel{p'}+M)(}\frac{P^{+}}{M})^{2}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+中的
+\begin_inset Formula $\delta$
+\end_inset
+
+项。首先B的分母只有传播子，将分子上存在的
+\begin_inset Formula $k$
+\end_inset
+
+用重子传播子替换，并将分式上下相消之后展开成求和的形式（这一步会带来发散项）。从而B变成了一系列形如
+\begin_inset Formula $\frac{D_{B}}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+的求和。对这些展开之后的分式，按照分子分母上重子传播子的幂次差分类，例如
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{\phi}}{D_{\Lambda}^{4}}\quad order0\\
+\frac{D_{\phi}D_{B}}{D_{\Lambda}^{4}}\quad order1\\
+\frac{D_{B}^{3}(p'-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)}\quad order2\\
+\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}\quad order3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这样分类之后，只有这四类是含有
+\begin_inset Formula $\delta$
+\end_inset
+
+项的，并且每一类的计算方式有所不同。
+\end_layout
+
+\begin_layout Standard
+对于order3情况，这类的特点是分母上没有重子传播子，系数中没有光锥坐标下的分量，并且，其结果中发散项会相互抵消，因而可以对这一类的
+\begin_inset Formula $\delta$
+\end_inset
+
+项计算和协变积分对比，结果是一致的。
+\end_layout
+
+\begin_layout Standard
+对于order2情况，计算的程序是
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/picture/屏幕截图 2023-10-29 193136.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+order2情况，之前的程序
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/picture/屏幕截图 2023-10-29 181622.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+order2情况，现在的程序，区别在于用黄色标记出的地方
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可以看到这样的计算方式相当于是手动的做替换，所以需要对order2情况下所出现的所有形式及系数有具体的认知才能正确的给出替换。例如此时有这样的形式
+\begin_inset Formula $\frac{D_{B}^{2}}{D_{\Lambda}^{4}}$
+\end_inset
+
+，那么计算的时候把分子替换成
+\begin_inset Formula $D_{B}(p_{1}-k)=D_{\phi}(k)+M_{octet}^{2}-M_{decuplet}^{2}+m_{\phi}^{2}-2p_{1}.k$
+\end_inset
+
+，会得到（用
+\begin_inset Formula $M$
+\end_inset
+
+代表所有质量项）
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{2}}{D_{\Lambda}^{4}} & =\frac{(D_{\phi}(k)+M_{octet}^{2}-M_{decuplet}^{2}+m_{\phi}^{2}-2p_{1}.k)^{2}}{D_{\Lambda}^{4}}\\
+ & =\frac{D_{\phi}^{2}(k)}{D_{\Lambda}^{4}}+\frac{M^{2}}{D_{\Lambda}^{4}}+\frac{(2p_{1}.k)^{2}}{D_{\Lambda}^{4}}+\frac{2MD_{\phi}(k)}{D_{\Lambda}^{4}}-\frac{4k.p_{1}D_{\phi}(k)}{D_{\Lambda}^{4}}-\frac{4Mk.p_{1}}{D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+第一项
+\begin_inset Formula $\frac{D_{\phi}^{2}(k)}{D_{\Lambda}^{4}}$
+\end_inset
+
+发散不需要计算，之后逐次对
+\begin_inset Formula $(2p_{1}.k)^{2},p_{1}.k$
+\end_inset
+
+做替换就能得到这一项对
+\begin_inset Formula $\delta$
+\end_inset
+
+的贡献。问题在于这样的形式
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{3}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{(D_{B}(p_{2}-k)+2k.q)^{3}}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+ & =\frac{D_{B}^{2}(p_{2}-k)+6D_{B}(p_{2}-k)k.q+12(k.q)^{2}}{D_{\Lambda}^{4}}+\frac{(2k.q)^{3}}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里出现了其他图计算中没有的
+\begin_inset Formula $(k.q)^{2},D_{B}(p_{2}-k)k.q$
+\end_inset
+
+，之前没有发现这两项。那么按照之前的做法，这两项会把
+\begin_inset Formula $k.q$
+\end_inset
+
+的结果直接带入，但是这里的
+\begin_inset Formula $k.q$
+\end_inset
+
+是用于计算
+\begin_inset Formula $\frac{k.q}{D_{\Lambda}^{4}}$
+\end_inset
+
+的，也就是
+\begin_inset Formula 
+\[
+\frac{k.q}{D_{\Lambda}^{4}}=\frac{\frac{1}{2}(k^{-}q^{+}+k^{+}q^{-})-k^{\perp}.q^{\perp}}{D_{\Lambda}^{4}}=\frac{\frac{1}{2}(k^{-}q^{+}+k^{+}q^{-})}{D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+此时，舍去了垂直分量，而
+\begin_inset Formula $\frac{(k.q)^{2}}{D_{\Lambda}^{4}}$
+\end_inset
+
+中，垂直分量是不能舍去的，因而产生错误。现在的修改是将
+\begin_inset Formula $\frac{(k.q)^{2}}{D_{\Lambda}^{4}}$
+\end_inset
+
+单独做替换，从而不再使用
+\begin_inset Formula $\frac{k.q}{D_{\Lambda}^{4}}$
+\end_inset
+
+的结果，而
+\begin_inset Formula $D_{B}(p_{2}-k)k.q$
+\end_inset
+
+则是将重子传播子替换为
+\begin_inset Formula $D_{B}(p_{1}-k)=D_{\phi}(k)+M_{octet}^{2}-M_{decuplet}^{2}+m_{\phi}^{2}-2p_{1}.k$
+\end_inset
+
+之后再单独对
+\begin_inset Formula $D_{\phi}(k)k.q,p_{1}.k*k.q$
+\end_inset
+
+做替换来计算。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $yp.k$
+\end_inset
+
+的问题是，order2的情况相比于其他图也出现了新的系数中含有
+\begin_inset Formula $k^{+}$
+\end_inset
+
+的形式，即
+\begin_inset Formula 
+\[
+k^{+}\frac{D_{B}^{2}}{D_{\Lambda}^{4}D_{\phi}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这样还是对分子传播子做替换，就会产生
+\begin_inset Formula $\frac{y(p.k)^{2}}{D_{\Lambda}^{4}D_{\phi}},\frac{yp,k}{D_{\Lambda}^{4}D_{\phi}},\frac{yD_{\phi}}{D_{\Lambda}^{4}D_{\phi}}$
+\end_inset
+
+的形式，其中
+\begin_inset Formula $\frac{y(p.k)^{2}}{D_{\Lambda}^{4}D_{\phi}}$
+\end_inset
+
+是之前没有考虑的，由于其结果为0和现有计算方式结果一致，所以不单独拿出来做替换。
+\end_layout
+
+\begin_layout Standard
+剩下两个order的情况和其他图一致，检查之后没有问题。
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,109 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-feynman}
+\begin{document}
+	
+	\begin{tikzpicture}[
+		decuplet/.style={ % 自定义一个重子的双线
+			double distance=1pt,
+			postaction={decorate}, decoration={
+				markings, mark=at position .6 with {
+					\arrow{Triangle[angle=40:2pt 3]}
+				},
+			}
+		}
+		]
+		\begin{feynman}
+				%% fig t
+			\vertex (t1) at (0,0);
+			\vertex[right =1cm  of t1] (t2);
+			\vertex[right =2cm  of t1] (t3);
+			\vertex[right =3cm  of t1, dot,anchor=center] (t4){};
+			\vertex[right =4cm  of t1] (t5);
+			\node[above =0.5 cm  of t5] {$t$};
+			%% fig u
+			\vertex[above right =0 cm and 5 cm of t1](u1);
+			\vertex[right =1cm  of u1, dot,anchor=center] (u2){};
+			\vertex[right =2cm  of u1] (u3);
+			\vertex[right =3cm  of u1] (u4);
+			\vertex[right =4cm  of u1] (u5);
+			\node[above =0.5 cm  of u5] {$u$};
+				%% fig r
+			\vertex[above right =2.5 cm and 0 cm of t1](r1);
+			\vertex[right =1cm  of r1] (r2);
+			\vertex[right =2cm  of r1] (r3);
+			\vertex[right =3cm  of r1,crossed dot,anchor=center] (r4){};
+			\vertex[right =4cm  of r1] (r5);
+			\node[above =0.5 cm  of r5] {$r$};
+				%% fig s
+			\vertex [above right =0 cm and 5 cm of r1](s1);
+			\vertex[right =1cm  of s1,crossed dot,anchor=center] (s2){};
+			\vertex[right =2cm  of s1] (s3);
+			\vertex[right =3cm  of s1] (s4);
+			\vertex[right =4cm  of s1] (s5);
+			\node[above =0.5cm of s5] {$s$};
+			%% fig f
+			\vertex[above right = 2.5 cm and 0 cm of r1] (f1);
+			\vertex[right =1cm  of f1] (f2);
+			\vertex[right =2cm  of f1] (f3);
+			\vertex[right =3cm  of f1, dot,anchor=center] (f4){};
+			\vertex[right =4cm  of f1] (f5);
+			\node[above =0.5 cm  of f5] {$f$};		
+			%% fig g
+			\vertex[above right = 0 cm and 5 cm of f1] (g1);
+			\vertex[right =1cm  of g1, dot,anchor=center] (g2){};
+			\vertex[right =2cm  of g1] (g3);
+			\vertex[right =3cm  of g1] (g4);
+			\vertex[right =4cm  of g1] (g5);
+			\node[above =0.5cm of g5] {$g$};
+				%% fig d
+			\vertex [above right =2.5 cm and 0 cm of f1] (d1);
+			\vertex[right =1cm  of d1] (d2);
+			\vertex[right =2cm  of d1] (d3);
+			\vertex[right =3cm  of d1, crossed dot,anchor=center] (d4){};
+			\vertex[right =4cm  of d1] (d5);
+			\node[above =0.5 cm  of d5] {$d$};
+			%% fig e
+			\vertex[above right =0 cm and 5 cm of d1] (e1);
+			\vertex[right =1cm  of e1, crossed dot,anchor=center] (e2){};
+			\vertex[right =2cm  of e1] (e3);
+			\vertex[right =3cm  of e1] (e4);
+			\vertex[right =4cm  of e1] (e5);
+			\node[above =0.5cm of e5] {$e$};
+			
+			% 对各个顶点连线
+			\diagram*{
+				{
+					[edge=plain]
+					(r1) --  (r2), (r4)-- (r5),
+					(s1) --  (s2), (s4)-- (s5),
+					(t1) --  (t2), (t4)-- (t5),
+					(u1) --  (u2), (u4)-- (u5),
+					(f1) -- (f2)--(f4)-- (f5),
+					(g1) -- (g2)--(g4)-- (g5),
+					(d1) -- (d2)--(d4)-- (d5),
+					(e1) -- (e2)--(e4)-- (e5),		
+					},
+				% 介子连线
+				{
+					[edge= charged scalar]
+					(r2) --[half left](r4),
+					(s2) --[half left](s4),
+					(t2) --[half left](t4),
+					(u2) --[half left](u4),
+					(f2) --[half left](f4),
+					(g2) --[half left](g4),
+					(d2) --[half left](d4),
+					(e2) --[half left](e4),
+				}
+			};
+			%% 添加重子双线
+			\draw[decuplet]	 (r2) -- (r4);
+			\draw[decuplet]	 (s2) -- (s4);
+			\draw[decuplet]	 (t2) -- (t4);
+			\draw[decuplet]	 (u2) -- (u4);
+		\end{feynman}
+	\end{tikzpicture}
+
+\end{document}

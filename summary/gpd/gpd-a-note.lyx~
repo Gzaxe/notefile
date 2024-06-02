@@ -1,0 +1,2791 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 23411/fig1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+the one loop Feynman diagrams
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the diagram i, the amplitude is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Gamma_{i}^{+} & =\bar{u}(p')\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\tilde{F}(k)\frac{i}{D_{\phi}(k)}2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})u(p)\\
+ & =\bar{u}(p')[\gamma^{+}f+\frac{\sigma^{+\nu}q_{\nu}}{2M}g]u(p)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To get the splitting function we need to calculate these two trace 
+\begin_inset Formula 
+\begin{align*}
+A & =\textrm{Tr}[\Gamma_{i}^{+}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\\
+ & =\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\textrm{Tr}[2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\tilde{F}(k)\frac{i}{D_{\phi}(k)}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{a_{1}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}+\frac{a_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+B & =\textrm{Tr}[\Gamma_{i}^{+}(\cancel{p}+M_{N})(\cancel{p'}+M_{N})]\frac{P^{+}}{M}\\
+ & =\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\textrm{Tr}[2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}(\cancel{p}+M_{N})(\cancel{p'}+M_{N})]\frac{P^{+}}{M}\tilde{F}(k)\frac{i}{D_{\phi}(k)}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{b_{1}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}+\frac{b_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula 
+\[
+\tilde{F}(k)=(\frac{\Lambda^{2}-m_{\phi}^{2}}{D_{\Lambda}(k)})^{2}\,D_{\Lambda}(k)=\Lambda^{2}-k^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the power of the 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ in the denominator of the integral and the 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ in the numerator are same when 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ is 0 , the integral should contain a 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ In this case, the power of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ in denominator and numerator are both 2.
+ In the previous paper, we have some equations to calculate the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term, one them is 
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{1}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})=\int d^{2}k^{\perp}\int dx\frac{\Gamma(5)}{\Gamma(1)\Gamma(4)}\frac{1}{4!}x(1-x)^{4}\frac{\partial^{3}}{\partial^{3}\Omega}\frac{2\pi i}{k^{\perp2}+\Omega}\delta(y+\xi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So I separate the numerator of the integral in this form.
+ First, 
+\begin_inset Formula $\textrm{numerator of }A$
+\end_inset
+
+ can be expressed as 
+\begin_inset Formula 
+\[
+\textrm{numerator of }A=c_{1}(k^{-})^{2}+c_{2}k^{-}+c_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ represent the coefficient.
+ Then I put the 
+\begin_inset Formula $c_{1}(k^{-})^{2}$
+\end_inset
+
+ in this term 
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)*a_{2}$
+\end_inset
+
+ which means 
+\begin_inset Formula 
+\begin{align*}
+\textrm{numerator of }A & =a_{1}+D_{\Lambda}^{2}(k+q)*a_{2}\\
+a_{2} & =\frac{c_{1}}{((k^{+})^{2}+2k^{+}q^{+}+(q^{+})^{2})}\\
+D_{\Lambda}^{2}(k+q) & =(\Lambda^{2}-(k+q)^{2})^{2}\\
+ & =((k^{+})^{2}+2k^{+}q^{+}+(q^{+})^{2})(k^{-})^{2}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With this transition, the power of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ in 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ is 1 when 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+is 0 which means the 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ term does not contain 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term and the 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ is the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term and can be calculated using the equation.The 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ in diagram i is given as
+\begin_inset Formula 
+\begin{align*}
+a_{1} & =2(2k^{+}+q^{+})^{2}(m_{\phi}^{2}-\Lambda^{2})^{4}\\
+ & (\frac{(2k^{+}+q^{+})((k^{\perp}+q^{\perp})^{2}-k^{-}q^{+}-q^{+}q^{-}-k^{+}(k^{-}+q^{-})+\Lambda^{2})^{2}(-2P^{+}q^{+}+q^{+2}-4P^{+2}(1+\xi))}{(k^{+}+q^{+})^{2}}\\
+ & +(k^{\perp2}+(k^{\perp}+q^{\perp})^{2}-2k^{+}k^{-}-k^{-}q^{+}-k^{+}q^{-}-q^{+}q^{-}+2\Lambda^{2})\\
+ & *(2(k^{\perp}+q^{\perp})^{2}P^{+}-4(p^{\perp}-k^{\perp})^{2}P^{+}-4M_{N}^{2}P^{+}-4k^{-}P^{+2}\\
+ & -4k^{+}P^{+}P^{-}+4P^{+2}P^{-}-(k^{\perp}+q^{\perp})^{2}q^{+}-2k^{-}P^{+}q^{+}+k^{-}q^{+2}\\
+ & +k^{\perp2}(2P^{+}+q^{+})-2k^{+}P^{+}q^{-}+k^{+}q^{+}q^{-}-2P^{+}q^{+}q^{-}+q^{+2}q^{-}\\
+ & -4k^{-}P^{+2}\xi+4P^{+2}P^{-}\xi-(2k^{+}-2P^{+}+q^{+})q^{2})\\
+a_{2} & =\frac{2(2k^{+}+q^{+})^{2}(m_{\phi}^{2}-\Lambda^{2})^{4}}{(k^{+}+q^{+})^{2}}(2P^{+}q^{+}-q^{+2}+4P^{+2}(1+\xi))
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Then we can get the normal and 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term of 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $g$
+\end_inset
+
+ is 0 for diagram i.
+ The 
+\begin_inset Formula $f_{res}$
+\end_inset
+
+ is showed in fig.2.
+ And the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term, 
+\begin_inset Formula $\delta f=-0.0977421\delta(y+\xi)$
+\end_inset
+
+.
+ The result of 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ can be checked by compare the integral with the previous form factor work.
+\begin_inset Formula 
+\begin{equation}
+F_{1}=\widetilde{F}(q)\int dy(f_{res}+\delta f)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\widetilde{F}(q)$
+\end_inset
+
+ is the regulator of photon which we introduce by hand in form factor calculatio
+n to get the 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ dependence.
+ In GPD calculation this 
+\begin_inset Formula $Q$
+\end_inset
+
+ dependence comes from the input GPD.
+ The result of eq.1,with 
+\begin_inset Formula $Q^{2}=1$
+\end_inset
+
+ is 
+\begin_inset Formula $0.0324215*\widetilde{F}(1)=0.00810537$
+\end_inset
+
+, while the result in form factor is 
+\begin_inset Formula $0.00810465$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 424/fres-xi0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{res}$
+\end_inset
+
+(
+\begin_inset Formula $\xi=0.1,Q^{2}=1GeV^{2}$
+\end_inset
+
+) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The positive part of 
+\begin_inset Formula $f_{res}$
+\end_inset
+
+ is small but not zero which is showed in Fig.3.
+ To check whether the 
+\begin_inset Formula $f_{res}$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta$
+\end_inset
+
+ function when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ is 0, I have these 
+\begin_inset Formula $\xi f_{res}$
+\end_inset
+
+ figure showed in Fig.4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 424/fres-zheng.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{res}(y),y>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 424/xi-fres-delta.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\xi f_{res}$
+\end_inset
+
+ with 
+\begin_inset Formula $\xi=0.1,0.01,0.001,0.0001$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Still the positive part is not zero and is showed in Fig.5.
+ And these two figure prove that 
+\begin_inset Formula $f_{res}$
+\end_inset
+
+ approach to the 
+\begin_inset Formula $\delta(y+\text{\ensuremath{\xi}})$
+\end_inset
+
+ in the zero skewness.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 424/xi-fres-zheng.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\xi f_{res}(y),y>0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram b in Fig1, the contribution is 
+\begin_inset Formula 
+\[
+\Gamma_{b}^{+}=\int\cancel{k}\gamma_{5}\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\gamma^{+}\frac{\cancel{p}-\cancel{k}+m_{N}}{D_{B}(p-k)}\cancel{k}\gamma_{5}\delta(y-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I do the same separate in diagram i case.
+ The 
+\begin_inset Formula $A$
+\end_inset
+
+ part is 
+\begin_inset Formula 
+\begin{align*}
+A_{b} & =\text{\ensuremath{\int(\Lambda^{2}-m_{\phi}^{2})^{4}\frac{\textrm{Tr}[\cancel{k}\gamma_{5}(\cancel{p'}-\cancel{k}+m_{N})\gamma^{+}(\cancel{p}-\cancel{k}+m_{N})\cancel{k}\gamma_{5}]}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}}}\delta(y-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{b_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}+\frac{b_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then first term is normal integral which can be calculated with residue
+ theorem and the second term is 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ The normal part can be expressed as 
+\begin_inset Formula 
+\begin{multline*}
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{b_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}\delta(y-\frac{k^{+}}{P^{+}})\\
+=\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{b'_{1}k^{-}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}+\frac{b_{1}''}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)})\delta(y-\frac{k^{+}}{P^{+}})
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This week, I check the integral above.
+ The integral should have no issue and the contribution of diagram b can
+ be calculated using the similar method as diagram i.
+ Last week I made a mistake in my program.
+ The splitting function can be expressed as
+\begin_inset Formula 
+\begin{align*}
+f & =f_{1}+f_{2}+f_{\delta}\delta(y)\\
+g & =g_{1}+g_{2}+g_{\delta}\delta(y)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the 
+\begin_inset Formula $f_{1}+f_{2}$
+\end_inset
+
+ means the normal part of the splitting function which is separated in 
+\begin_inset Formula $k^{+}=(1-\xi)P^{+}$
+\end_inset
+
+ due to the singularity comes from 
+\begin_inset Formula $D_{B}(p'-k)=(p'-k)^{2}-M^{2}+i\epsilon$
+\end_inset
+
+ change it's position from upside to the down side of the axis and the 
+\begin_inset Formula $f_{\delta}\delta(y+\xi)$
+\end_inset
+
+ is the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ 
+\end_layout
+
+\begin_layout Standard
+The splitting function should satisfy that 
+\begin_inset Formula $\int_{-\xi}^{1}dyf(y)$
+\end_inset
+
+ and 
+\begin_inset Formula $\int_{-\xi}^{1}dyg(y)$
+\end_inset
+
+ are 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independent.
+ For diagram b, the result is, with 
+\begin_inset Formula $\xi=0.1,0.2$
+\end_inset
+
+, ignore some coefficient
+\begin_inset Formula 
+\[
+\int_{-\xi}^{1-2\xi}dyf_{1}(y)+\int_{1-2\xi}^{1}dyf_{2}(y)+f_{\delta}=7.27795
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+\int_{-\xi}^{1-2\xi}dyg_{1}(y)+\int_{1-2\xi}^{1}dyg_{2}(y)+g_{\delta}=-6.566548599
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\xi=0.1,Q^{2}=1GeV^{2}$
+\end_inset
+
+, the splitting function looks like this 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-f1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{1}$
+\end_inset
+
+from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-f2.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{2}$
+\end_inset
+
+from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-g1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g_{1}$
+\end_inset
+
+from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-g2.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g_{2}$
+\end_inset
+
+from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term is 
+\begin_inset Formula 
+\begin{align*}
+f_{\delta}\delta(y+\xi) & =5.2702\delta(y+\xi)\\
+g_{\delta}\delta(y+\xi) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As to zero skewness case, the diagram b in fig.1 is different from previous
+ diagram.
+ In previous calculation including the tadpole and meson loop contribution,
+ the reason why the normal integral turns to a 
+\begin_inset Formula $\delta$
+\end_inset
+
+ function when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ goes to zero is the denominator of these integral.
+ For example, in the tadpole diagram, the normal integral can be expressed
+ as
+\begin_inset Formula 
+\begin{equation}
+\int d^{4}k\frac{c_{1}k^{-}+c_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+, the first two term of denominator of eq.2 have no changes.
+ The last term 
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+ will become, notice that 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+ means 
+\begin_inset Formula $q^{+}=0$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+D_{\Lambda}^{2}(k+q) & =(k^{+}+q^{+})(k^{-}+q^{-})-(k^{\perp}-q^{\perp})^{2}-\Lambda^{2}+i\epsilon\\
+ & =k^{+}(k^{-}+q^{-})-(k^{\perp}-q^{\perp})^{2}-\Lambda^{2}+i\epsilon
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then if we choose 
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+, the denominator of integral does not have the 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ and the integral will become like 
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{c_{1}k^{-}+c_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}=\int k^{-}(c'_{1}k^{-}+c'_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is a line divergence.
+ And when 
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+, the imaginary part of singularities of the integral are same
+\begin_inset Formula 
+\begin{align*}
+k^{-} & =\frac{-i\epsilon}{k^{+}}+\frac{(k^{\perp}-q^{\perp})^{2}+\Lambda^{2}}{k^{+}}-q^{-}\\
+k^{-} & =\frac{-i\epsilon}{k^{+}}+\frac{k^{\perp}{}^{2}+\Lambda^{2}}{k^{+}}\\
+k^{-} & =\frac{-i\epsilon}{k^{+}}+\frac{k^{\perp}{}^{2}+m_{\phi}^{2}}{k^{+}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which means the integral should be 0, because the residue theorem.
+ So the normal integral when 
+\begin_inset Formula $\xi\neq0$
+\end_inset
+
+ will become a 
+\begin_inset Formula $\delta$
+\end_inset
+
+ function when 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+, and we can choose a small 
+\begin_inset Formula $\xi$
+\end_inset
+
+ to check this change.
+ We should have images like fig.4, for diagram i or previous meson loop contribut
+ion.
+ However, for diagram b, the normal integral is like 
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{b_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The last two terms of denominator does not change when 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+, which is 
+\begin_inset Formula 
+\[
+D_{B}(p-k)=(p^{+}-k^{+})(p^{-}-k^{-})-(p^{\perp}-k^{\perp})^{2}-M_{N}^{2}+i\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This integral is still converged when 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+, so we won't have similar images like fig.4.
+ To prove this, I choose 
+\begin_inset Formula $\xi=0.1,0.01,0.001$
+\end_inset
+
+ and the splitting functions are showed in below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pic/b-f-xi2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-f-xi3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ when 
+\begin_inset Formula $\xi=0.01,0.001,0.0001$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-g-xi1.pdf
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pic/b-g-xi2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-g-xi3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+ when 
+\begin_inset Formula $\xi=0.01,0.001,0.0001$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can see the function is tend to be same when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ goes to 0.
+ The three dimension images of the splitting function from diagram b are
+ showed below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-f-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/b-g-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 dimension picture from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram c in fig.1, the equation is similar to diagram b which is
+\begin_inset Formula 
+\[
+\Gamma_{c}^{+}=\int\cancel{k}\gamma_{5}\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\frac{i\sigma^{+\nu}q_{\nu}}{2M_{N}}\frac{\cancel{p}-\cancel{k}+m_{N}}{D_{B}(p-k)}\cancel{k}\gamma_{5}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the result of splitting function is also similar to diagram b.
+ The splitting function can be expressed as 
+\begin_inset Formula 
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the 
+\begin_inset Formula $f_{res}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{res}$
+\end_inset
+
+ is the normal integral part and the second term is the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ function.
+ First, the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independece is checked.
+ 
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{1}dyf & =-1.86186\\
+\int_{-\xi}^{1}dyg & =-2.15724
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\delta g=-5.2702\delta(y+\xi)$
+\end_inset
+
+, but the 
+\begin_inset Formula $\delta f$
+\end_inset
+
+ changes with different 
+\begin_inset Formula $\xi$
+\end_inset
+
+ that is
+\begin_inset Formula 
+\begin{align*}
+\delta f & =-0.106469\delta(y+\xi),\xi=0.1\\
+\delta f & =-0.439183\delta(y+\xi),\xi=0.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The normal integral part of splitting function is similar to the diagram
+ b condition.
+ When 
+\begin_inset Formula $\xi=0.1,Q^{2}=1GeV^{2}$
+\end_inset
+
+, the splitting function looks like this 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-f1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{1}$
+\end_inset
+
+from diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-f2.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{2}$
+\end_inset
+
+from diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-g1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g_{1}$
+\end_inset
+
+from diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-g2.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g_{2}$
+\end_inset
+
+from diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also the splitting function is not a 
+\begin_inset Formula $\delta$
+\end_inset
+
+ function when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ goes to 0.
+ Just like diagram b, we get 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pic/c-f-xi2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-f-xi3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ when 
+\begin_inset Formula $\xi=0.01,0.001,0.0001$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-g-xi1.pdf
+	scale 50
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pic/c-g-xi2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-g-xi3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+ when 
+\begin_inset Formula $\xi=0.01,0.001,0.0001$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-f-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/c-g-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 dimension picture from diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram d and e, the KR diagram with normal vertex.
+ The calculation is finished and the result is checked by compare the integral
+ with the form factor result.
+ The contribution from these diagrams is 
+\begin_inset Formula 
+\[
+\Gamma_{(d+e)}^{+}=\int F(k)^{2}\frac{i}{D_{\phi}(k)}(\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}\gamma^{\mu}\gamma_{5}+\gamma^{\mu}\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5})\delta(y-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result is separated into two part
+\begin_inset Formula 
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The lowest moment of splitting function should be equal to the form factor
+ calculation 
+\begin_inset Formula 
+\begin{align*}
+F(q)*\int dy(f_{res}+\delta f) & =F_{1}\\
+F(q)*\int dy(g_{res}+\delta g) & =F_{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And when 
+\begin_inset Formula $Q^{2}=1MeV^{2}$
+\end_inset
+
+ the integral is 
+\begin_inset Formula 
+\begin{align*}
+\int dy(f_{res}+\delta f) & =0.0696379\\
+F_{1} & =0.0174106\\
+F(q) & =\frac{1}{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $g$
+\end_inset
+
+ part should be 0, but the result from splitting function is not very small,
+ 
+\begin_inset Formula $\int dy(g_{res}+\delta g)=-0.000376259$
+\end_inset
+
+.
+ We can exam the function 
+\begin_inset Formula $g(y)$
+\end_inset
+
+, the image can be given as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/d-g-xi1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g(y)$
+\end_inset
+
+ from diagram d
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, we can choose more point when we fit the function and calculate the
+ integral with higher precision.
+ Then at most points, the function is smaller than 
+\begin_inset Formula $10^{-6}$
+\end_inset
+
+.
+ The image now beome.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/d-g-xi1-hp.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g(y)$
+\end_inset
+
+ from diagram d with higher precison
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the points where the value is still around 
+\begin_inset Formula $0.01$
+\end_inset
+
+, one can separate the range of 
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+, from 
+\begin_inset Formula $[0,\infty]$
+\end_inset
+
+ to 
+\begin_inset Formula $[0,10]+[10,\infty]$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $g(y)$
+\end_inset
+
+ will become around 
+\begin_inset Formula $10^{-8}$
+\end_inset
+
+.
+ So the 
+\begin_inset Formula $g(y)$
+\end_inset
+
+ is 0 in these two diagram.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\delta f=5.270055544$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The normal part of 
+\begin_inset Formula $f$
+\end_inset
+
+ with 
+\begin_inset Formula $\xi=0.1$
+\end_inset
+
+ can be given as 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/d-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/e-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{res}$
+\end_inset
+
+ from diagram d and e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The images show that the two diagrams have same contribution to the form
+ factor, but different contribution to the splitting function although the
+ difference is not significant when 
+\begin_inset Formula $\xi=0.1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\xi$
+\end_inset
+
+ goes to 0, the splitting function behave like 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/d-f-xi01.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/d-f-xi001.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/d-f-xi0001.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ from diagram d with small 
+\begin_inset Formula $\xi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/e-f-xi01.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/e-f-xi001.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/e-f-xi0001.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ from diagram e with small 
+\begin_inset Formula $\xi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/d-f-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/d-g-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 dimension picture from diagram d
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/e-f-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/e-g-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 dimension picture from diagram e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The splitting function has normal part when 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+ like diagram b.
+\end_layout
+
+\begin_layout Standard
+For diagram f and g, the additional KR diagram from nonlocal Lagrangian.
+ The contribution can be expressed as
+\begin_inset Formula 
+\begin{align*}
+\Gamma_{(f+g)}^{+} & =\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k)}\tilde{F}(k)[\frac{2k^{+}-q^{+}}{2kq-q^{2}}(\tilde{F}(k)-\tilde{F}(k-q))\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\\
+ & +\frac{2k^{+}+q^{+}}{2kq+q^{2}}(\tilde{F}(k+q)-\tilde{F}(k))(\cancel{k}+\cancel{q})\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5}]\delta(y-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+The splitting function still is separated to two part.
+ 
+\begin_inset Formula 
+\begin{align*}
+f & =f_{res}+\delta f\\
+g & =g_{res}+\delta g
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These two diagrams have same 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term 
+\begin_inset Formula 
+\begin{align*}
+\delta f & =-2.6351\delta(y)\\
+\delta g & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The normal integral is different from other cases.
+ The lowest moment of splitting function from single diagram is 
+\begin_inset Formula $\xi$
+\end_inset
+
+ dependent and two result are different.
+ In the normal KR diagram, the result is same no matter the position of
+ the vertex.
+ The lowest moment of the normal part splitting function from diagram f
+ is listed below with 
+\begin_inset Formula $\xi=0.1\ Q^{2}=1GeV^{2}$
+\end_inset
+
+ ignoring some coefficient
+\begin_inset Formula 
+\begin{align*}
+\int dyf_{f} & =3.614491865\;\xi=0.1\\
+\int dyf_{f} & =4.121612607\;\xi=0.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And for diagram g the result is 
+\begin_inset Formula 
+\begin{align*}
+\int dyf_{g} & =2.600249573\;\xi=0.1\\
+\int dyf_{g} & =2.093126056\;\xi=0.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result of these two diagram is
+\begin_inset Formula 
+\begin{align*}
+\int dyf & =\int dy(f_{f}+f_{g})\\
+ & =6.21474\;\xi=0.1\\
+ & =6.21474\;\xi=0.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $g$
+\end_inset
+
+ part, the result is same.
+\begin_inset Formula 
+\begin{align*}
+\int dyg_{f} & =1.890929104\;\xi=0.1\\
+\int dyg_{f} & =1.383799830\;\xi=0.2
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int dyg_{g} & =2.905187580\;\xi=0.1\\
+\int dyg_{g} & =3.412314403\;\xi=0.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int dyg & =\int dy(g_{f}+g_{g})\\
+ & =4.79612\;\xi=0.1\\
+ & =4.79611\;\xi=0.2
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And compared with the form factor result, we should have
+\begin_inset Formula 
+\begin{align*}
+\tilde{F}(q)\int dyf & =F_{1}\\
+\tilde{F}(q)\int dyg & =F_{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the other diagram like diagram d and e, the normal KR diagrams, the equation
+ is satisfied even if only one diagram's contribution considered.
+ But for diagram f and g, the additional KR diagrams, we must consider two
+ diagram's contribution together.
+ With 
+\begin_inset Formula $\xi=0.1\ Q^{2}=1GeV^{2}$
+\end_inset
+
+, the form factor should be
+\begin_inset Formula 
+\begin{align*}
+\tilde{F}(q)\int dyf & =0.00695274\\
+\tilde{F}(q)\int dyg & =0.0353042
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While the form factor result from previous work is
+\begin_inset Formula 
+\begin{align*}
+F_{1} & =0.00695275\\
+F_{2} & =0.0353042
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The image of the splitting function is given below.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/f-g-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/g-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/g-g-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f+g-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/f+g-g-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram f+g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $f_{f+g}=f_{f}+f_{g}\;g_{f+g}=g_{f}+g_{g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $\xi$
+\end_inset
+
+ goes to 0, the splitting function act like images showed below.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-f-xix1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/f-f-xix2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-f-xix3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ from diagram f with small 
+\begin_inset Formula $\xi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-g-xix1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/f-g-xix2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-g-xix3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram f with small 
+\begin_inset Formula $\xi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/g-f-xix1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/g-f-xix2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/g-f-xix3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ from diagram g with small 
+\begin_inset Formula $\xi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/g-g-xix1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/g-g-xix2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/g-g-xix3.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram g with small 
+\begin_inset Formula $\xi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-f-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-g-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 dimension picture from diagram f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/g-f-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/g-g-3D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 dimension picture from diagram g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $f$
+\end_inset
+
+ function from both two diagrams become 
+\begin_inset Formula $\delta$
+\end_inset
+
+ function when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ is 0, and the 
+\begin_inset Formula $g$
+\end_inset
+
+ function are goes to a certain function.
+\end_layout
+
+\begin_layout Standard
+Next, the 3 dimension images of splitting functions from some of the Feynman
+ diagrams have been obtained.
+ With 
+\begin_inset Formula $\xi=0.1$
+\end_inset
+
+, the splitting function 
+\begin_inset Formula $f(y,\xi,t)$
+\end_inset
+
+ or 
+\begin_inset Formula $g(y,\xi,t)$
+\end_inset
+
+ are showed above.
+\end_layout
+
+\end_body
+\end_document

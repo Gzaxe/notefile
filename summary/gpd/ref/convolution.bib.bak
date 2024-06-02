@@ -1,0 +1,23 @@
+@Article{Polyakov,
+  author = {M. V. Polyakov and C. Weiss},
+  title  = {Skewed and double distributions in the pion and the nucleon},
+  issn   = {0556-2821},
+  volume = {60},
+  doi    = {10.1103/physrevd.60.114017},
+}
+
+@Article{Diehl2005,
+  author = {M. Diehl and Th Feldmann and R. Jakob and P. Kroll},
+  title  = {Generalized parton distributionsfrom nucleon form factor data},
+  year   = {2005},
+  issn   = {1434-6044},
+  pages  = {1-39},
+  volume = {39},
+  doi    = {10.1140/epjc/s2004-02063-4},
+}
+
+@Article{,
+  title = {Gravitational form factors of the proton from lattice QCD},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

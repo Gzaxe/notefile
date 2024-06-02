@@ -1,0 +1,386 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+The convolution formula is
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >x>\xi\\
+\int_{\xi}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >\xi>x\\
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2\xi}f(y,\xi,t)\frac{1}{\pi}\frac{\xi}{1-y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{1-y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{1-y,|x|\}\\
+\int_{-x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for 
+\begin_inset Formula $E(x,\xi,t)$
+\end_inset
+
+ the formula is same just replace the 
+\begin_inset Formula $f$
+\end_inset
+
+ with 
+\begin_inset Formula $g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Then we need the GPD and GDA function of valence quark in proton.
+ In double distribution representation, the GPDs of proton can be write
+ in this form
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Polyakov"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+H(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)h(\beta,\alpha,t)+\theta(\xi-|x|)D(\frac{x}{\xi},t)\\
+E(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)e(\beta,\alpha,t)-\theta(\xi-|x|)D(\frac{x}{\xi},t)\\
+\tilde{H}(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)\tilde{h}(\beta,\alpha,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is similar to the meson condition.
+ For 
+\begin_inset Formula $\int d\alpha d\beta\delta(x-\beta-\alpha\xi)h(\beta,\alpha,t)$
+\end_inset
+
+, like meson loop case, we have
+\begin_inset Formula 
+\begin{align*}
+h(\beta,\alpha,t) & =h_{0}(\beta,\alpha)H(\beta,0,t)\\
+e(\beta,\alpha,t) & =h_{0}(\beta,\alpha)E(\beta,0,t)\\
+\tilde{h}(\beta,\alpha,t) & =h_{0}(\beta,\alpha)\tilde{H}(\beta,0,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $h_{0}(\beta,\alpha)=\frac{\Gamma(2b+2)}{2^{2b+1}\Gamma^{2}(b+1)}\frac{((1-|\beta|)^{2}-\alpha^{2})^{b}}{(1-|\beta|)^{2b+1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The zero skewness GPDs are parameterized as
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Diehl2005"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+H(x,0,t) & =q(x)exp(tf_{q}(x))\\
+E(x,0,t) & =e^{q}(x)exp(tg_{q}(x))\\
+\tilde{H}(x,0,t) & =\Delta q(x)exp(tf_{q}(x))
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the 
+\begin_inset Formula $q,f_{q},e^{q},g_{q}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{align*}
+xq(x) & =A_{0}x^{A_{1}}(1-x)^{A_{2}}e^{A_{3}x}(1+e^{A_{4}}x)^{A_{5}}\\
+f_{q}(x) & =\alpha_{1}(1-x)^{3}log\frac{1}{x}+B_{q}(1-x)^{3}+A_{q}x(1-x)^{2}\\
+e^{q}(x) & =N_{q}\kappa_{q}x^{-a}(1-x)^{b_{q}}\\
+g_{q}(x) & =\alpha_{2}(1-x)^{3}log\frac{1}{x}+D_{q}(1-x)^{3}+C_{q}x(1-x)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here the 
+\begin_inset Formula $f_{q},g_{q}$
+\end_inset
+
+ is related to the form of 
+\begin_inset Formula $q,e^{q}$
+\end_inset
+
+, so I think we need to keep the original result from the reference.
+ 
+\end_layout
+
+\begin_layout Standard
+There is a new problem.
+ For these model, they are all based on the zero skewness case and they
+ do not need 
+\begin_inset Formula $x<0$
+\end_inset
+
+.
+ For example the 
+\begin_inset Formula $f_{q}(x)$
+\end_inset
+
+ has a log so it will give a image term if 
+\begin_inset Formula $x<0$
+\end_inset
+
+.
+ No this is not a problem, I mistake in the form of 
+\begin_inset Formula $\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}$
+\end_inset
+
+ which make a term should be 
+\begin_inset Formula $\beta$
+\end_inset
+
+ to be x.
+\end_layout
+
+\begin_layout Standard
+In a Lattice paper, we can get the t-dependence of D-term in dipole form.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Daniel"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D(t)=\frac{\alpha}{(1-\frac{t}{\Lambda^{2}})^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In meson loop case, the 
+\begin_inset Formula $x$
+\end_inset
+
+-dependence of D-term is 
+\begin_inset Formula 
+\[
+D(x,t)=\frac{15x(1-x^{2})D(t)}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is kept in baryon calculation since we do not have the model of 
+\begin_inset Formula $x$
+\end_inset
+
+-dependence of D-term.The form 
+\begin_inset Formula $x(1-x^{2})$
+\end_inset
+
+ is because the 
+\begin_inset Formula $D(x)$
+\end_inset
+
+ is odd and 
+\begin_inset Formula $D(1)=0$
+\end_inset
+
+the second one is not sure.
+ The coefficient comes from 
+\begin_inset Formula $\int xD(x,t)dt=D(t)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The GDA does not have a new model.
+ So I follow Fangcheng's method.
+ And the GDA for proton in DD description is
+\begin_inset Formula 
+\begin{align*}
+\Phi_{1}(z,\eta,s) & =2(2\eta-1)\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(2z-1-(2\eta-1)\beta-\alpha)h_{0}(\beta,\alpha)H(\beta,0,s)+2D(2z-1,s)\\
+\Phi_{2}(z,\eta,s) & =2(2\eta-1)\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(2z-1-(2\eta-1)\beta-\alpha)h_{0}(\beta,\alpha)E(\beta,0,s)-2D(2z-1,s)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which use the relation between GPD and GDA 
+\begin_inset Formula 
+\begin{align*}
+1-2z & \leftrightarrow\frac{x}{\xi}\\
+1-2\eta & \leftrightarrow\frac{1}{\xi}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However this form will make a pole in convolution formula.
+\begin_inset Formula 
+\[
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2\xi}f(y,\xi,t)\frac{1}{\pi}\frac{\xi}{1-y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{1-y}{\xi}+1}{2},s)}{s-t+i\epsilon}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{gather*}
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2}f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)\\
+\int_{-\xi}^{\xi}d(y)\frac{1}{2}f(y,\xi,t)\frac{1}{y}D(\frac{x}{\xi},t)
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The difference between meson and baryon loop is the value of splitting function.
+\begin_inset Formula 
+\begin{align*}
+f/g(0,\xi,t) & =0\\
+f/g(1,\xi,t) & \neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution of this is set D term to be 0.
+ Because the input GPD is tree level proton which do not has D or D is 0
+ in its second moment.
+ And since the D should be eaqual to the certain value in experiment or
+ other xianxiangxue result so D can be 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "ref/convolution"
+options "plain"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

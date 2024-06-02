@@ -1,0 +1,406 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+计算结果
+\end_layout
+
+\begin_layout Standard
+目前的计算方案下，形状因子曲线和之前类似，在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.9到1.0左右拟合结果都比较好。但是仍然不能得到非常好的奇异形状因子曲线，最好的结果出现在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.9的情况，对应的曲线如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GEs-N-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename GMs-N-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda=0.9$
+\end_inset
+
+的奇异因子GE、GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+可能的问题
+\end_layout
+
+\begin_layout Standard
+如果使用何方成师兄GPD文章中的c1c2参数，那么形状因子曲线的结果还是比较好，在0.9左右能够得到比较好的曲线，而奇异因子方面对比上面进行拟合c1c2的结果，则
+有两个不同的地方。
+\end_layout
+
+\begin_layout Standard
+第一是在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.9左右的时候，曲线会更接近格点数据一些：
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GEs-he-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename GMs-he-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.9的奇异因子曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+以及
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.85时的曲线为：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GEs-he-0.85.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename GMs-he-0.85.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.85的奇异因子曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+第二是在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取1.0和1.1的时候，奇异因子GM的曲线，在进行拟合和直接使用何方成师兄的c1c2值之间有非常明显的差别：（下图左边为使用师兄的结果的图，右边是重新拟合的图）
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GMs-he-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename GMs-N-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.0下GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GMs-he-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename GMs-N-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=1.1下GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+上面的图中使用何方成师兄的拟合值得到的曲线是很好的，而重新拟合c1c2的曲线偏差就很大。
+\end_layout
+
+\begin_layout Standard
+出现这样的差别的原因显然是c1c2的取值问题，尤其是在
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取1.0和1.1的时候，c1c2的拟合值相比于何方成师兄的结果以及其他
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取值下的拟合结果差别非常大，以至于出现上面那样特别奇怪的曲线。而当
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.9、0.85的时候，c1c2的拟合值和何方成师兄的结果相对接近，最后的曲线也相对接近。
+\end_layout
+
+\begin_layout Standard
+现在拟合c1c2的时候采取的逻辑是，对于每一个
+\begin_inset Formula $\Lambda$
+\end_inset
+
+和C的取值，都会按照核子磁矩的值拟合出c1c2，这样对于形状因子曲线，保证了每一条曲线的零点值都能准确的符合实验。但是，何方成师兄的c1c2只有一组，而不是每个
+\begin_inset Formula $\Lambda$
+\end_inset
+
+都不同，而且c1c2是拉氏量的参数本身也应该对
+\begin_inset Formula $\Lambda$
+\end_inset
+
+不变。
+\end_layout
+
+\begin_layout Standard
+所以我觉得是不是应该在这里选取一组
+\begin_inset Formula $\Lambda$
+\end_inset
+
+和C作为标准，拟合得到c1c2并且固定，然后再计算奇异因子的曲线。这样就相当于能够调整计算的时候采用的c1c2。上面的
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取0.9曲线表明奇异因子在0.9左右是相对比较好的，并且GM对于c1c2取值的改变比较敏感，所以调整c1c2的值是有希望得到比较好的曲线结果的。
+\end_layout
+
+\end_body
+\end_document

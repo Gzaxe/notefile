@@ -1,0 +1,72 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-feynman}
+\begin{document}
+
+\begin{tikzpicture}
+	\begin{feynman}
+	%% fig c
+	\vertex(j1) at (0,0);
+	\vertex[right =1cm  of j1] (j2);
+	\vertex[right =2cm  of j1, crossed dot,anchor=center] (j3) {};
+	\vertex[right =3cm  of j1] (j4);
+	\vertex[right =4cm  of j1] (j5);
+	\vertex[above =1.4 cm  of j3] (j6);
+	\node[above =0.5 cm  of j5] {$j$};
+	%% fig d
+	\vertex[above right =0 cm and 5 cm of j1] (d1);
+	\vertex[right =1cm  of d1] (d2);			
+	\vertex[right =2cm  of d1,square dot,anchor=center] (d3) {};
+	\vertex[right =3cm  of d1] (d4);
+	\vertex[right =4cm  of d1] (d5);     
+	\vertex[above =1.4 cm  of d3] (d6);
+	\node[above =0.5 cm  of d5] {$d$};
+	%% fig e
+	\vertex[above right =0 cm and 5 cm of d1] (e1);
+	\vertex[right =1cm  of e1] (e2);
+	\vertex[right =2cm  of e1,dot,anchor=center] (e3) {};
+	\vertex[right =3cm  of e1] (e4);
+	\vertex[right =4cm  of e1] (e5);
+	\vertex[above =1.4 cm  of e3] (e6);
+	\node[above =0.5 cm  of e5] {$e$};
+	%% fig a
+	\vertex[above right =2.5 cm and 0 cm of j1] (a1);
+	\vertex[right =1cm  of a1] (a2);
+	\vertex[right =2cm  of a1] (a3);
+	\vertex[right =3cm  of a1] (a4);
+	\vertex[right =4cm  of a1] (a5);
+	\vertex[above =1.4 cm  of a3,crossed dot,anchor=center] (a6){};
+	\node[above =0.5 cm  of a5] {$a$};
+	%% fig b
+	\vertex[above right = 0 cm and 5 cm of a1] (b1);
+	\vertex[right =1cm  of b1] (b2);
+	\vertex[right =2cm  of b1,square dot,fill=gray,anchor=center] (b3) {};
+	\vertex[right =3cm  of b1] (b4);
+	\vertex[right =4cm  of b1] (b5);
+	\vertex[above =1.4 cm  of b3, crossed dot, anchor=center] (b6){};
+	\node[above =0.5 cm  of b5] {$b$};
+	
+		% 对各个顶点连线
+		\diagram*{
+		{ [edge= fermion]
+				(b1) -- (b3)--(b5),
+			(a1) -- (a3)--(a5),
+			(d1) -- (d3)--(d5), 
+			(e1) -- (e3)--(e5), 
+			(j1) -- (j3)--(j5),
+			},
+		%介子连线
+		{ [edge= charged scalar]
+		 (b3) --[half left](b6)--[half left](b3),
+		(a3) --[half left](a6)--[half left](a3),
+		(e3) --[half left](e6)--[half left](e3),
+		(d3) --[half left](d6)--[half left](d3),
+		(j3) --[half left](j6)--[half left](j3),
+		}
+		};
+	\end{feynman}
+\end{tikzpicture}
+
+
+\end{document}

@@ -1,0 +1,345 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+目前的计算中由于分离δ的算法相当实际，目标就是分离形式为
+\begin_inset Formula $\text{\ensuremath{\frac{1}{D(k)D(k)}}}$
+\end_inset
+
+的δ，因为δ要求留数为0，那就限定基本就是这个形式。而对它的计算则是：
+\end_layout
+
+\begin_layout Standard
+首先把k的四维积分只考虑
+\begin_inset Formula $k^{-}$
+\end_inset
+
+部分，也就是
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+使用费曼参数化，
+\begin_inset Formula 
+\[
+\text{\ensuremath{\frac{1}{A^{a}B^{b}}=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(xA+(1-x)B)^{a+b}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)} & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(xD_{\phi}+(1-x)D_{\Lambda})^{a+b}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Omega=xm_{\phi}^{2}+(1-x)\Lambda^{2}$
+\end_inset
+
+ and notice this ask the 
+\begin_inset Formula $D_{\Lambda}=k^{2}-\Lambda^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+而积分中的这个高阶分数
+\begin_inset Formula $\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b}}$
+\end_inset
+
+ 
+\begin_inset Formula $\text{可\text{以被处理为}}\text{\ensuremath{\Omega}}$
+\end_inset
+
+的函数，通过对
+\begin_inset Formula $\Omega$
+\end_inset
+
+求导来降低分母的幂次
+\begin_inset Formula 
+\[
+\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b}}=\frac{1}{(a+b-1)!}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{1}{(k^{2}-\Omega)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+也就是对传播子的积分变成了这样的形式：
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}\\
+=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{1}{(a+b-1)!}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega)^{2}}\\
+=\frac{1}{(a+b-1)!}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+又有，
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}=\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+不过这个等式的来历就不太清楚了，非常的it just works
+\end_layout
+
+\begin_layout Standard
+so the integral now is 
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}=\\
+\frac{1}{(a+b-1)!}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在十重态计算中，
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+项计算出来的形式并不是严格的上面的形式，分子上会出现
+\begin_inset Formula $k^{-}$
+\end_inset
+
+的多项式，这个的处理是这样，何方成师兄的方式是：
+\end_layout
+
+\begin_layout Standard
+费曼参数化是不考虑分子的，所以还是可以做到这里，
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}=\\
+\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}(k^{-})^{n}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+而这样则可以把
+\begin_inset Formula $(k^{-})^{n}$
+\end_inset
+
+处理为对分母上的
+\begin_inset Formula $k^{+}$
+\end_inset
+
+求导
+\begin_inset Formula 
+\begin{multline*}
+\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}(k^{-})^{n}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}=\\
+\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{(k^{-})^{n}}{(k^{2}-\Omega+i\epsilon)^{a+b}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+而
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{(k^{-})^{n}}{(k^{2}-\Omega+i\epsilon)^{a+b}}\\
+=A*\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b-n}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A是求导之后会出现一个常系数。然后偏导可以提出去到对
+\begin_inset Formula $k^{+}$
+\end_inset
+
+积分那里，所以内部相当于只有幂次变成a+b-n了，还是能做之前的计算。之后需要注意的就是
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{+}dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}=\\
+\int dk^{+}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b-n}}=\\
+\int dk^{+}\frac{\partial^{n}}{\partial k^{+n}}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2-n}}{\partial\Omega^{a+b-2-n}}\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}\\
+=\int dk^{+}\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在最后一行忽略了许多
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ 无关的系数，所以这时会有一个对δ函数求导的问题，这里使用了一个近似，注意这里存在一个负号
+\begin_inset Formula 
+\[
+\frac{d}{dx}\delta(x)=-\frac{\delta(x)}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+原理是对δ函数可以处理为函数极限这样，然后就能近似成这个。而严格定义是泛函的，例如，一阶的时候是
+\begin_inset Formula 
+\[
+\int dxf(x)\delta'(x)=-f'(0)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+回到计算上，那么最后的结果就是会引入一个
+\begin_inset Formula $\frac{\delta(x)}{x}$
+\end_inset
+
+，这里根据最后与协变积分的对比以及理论上确实存在的近似，选择了这样的处理
+\begin_inset Formula 
+\[
+\frac{d}{dx}\delta(x)=-\frac{\delta(x)}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+注意负号，同时这样会让更高阶的k也存在不为0的贡献，具体计算中出现的不多，但是注意高阶矩时候的影响。
+\end_layout
+
+\begin_layout Standard
+实际计算中的时候，只算最低阶情况的话，分母的k不被消去的全是0.
+\end_layout
+
+\end_body
+\end_document

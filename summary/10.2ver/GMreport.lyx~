@@ -1,0 +1,554 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+在
+\begin_inset Formula $\text{\ensuremath{\Lambda}}$
+\end_inset
+
+取1.00，
+\begin_inset Formula $C$
+\end_inset
+
+取1.00的情况下，对于形状因子的贡献，将考虑bubble和tadpole情况下的八重态、十重态的贡献用红色实线、红色虚线表示，bubble图贡献用红色点线表示，
+tadpole图是红色点虚线，而不考虑bubble和tadpole情况下的八重态和十重态分别是蓝色实线和蓝色虚线。对于电磁两个形状因子将所有贡献画在一张图上的结
+果是图1、2：
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffall.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+电形状因子中，将考虑bubble和tadpole情况下的八重态、十重态的贡献用红色实线、红色虚线表示，bubble图贡献用红色点线表示，tadpole图是红色点
+虚线，而不考虑bubble和tadpole情况下的八重态和十重态分别是蓝色实线和蓝色虚线。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FFMALL.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+磁形状因子中，将考虑bubble和tadpole情况下的八重态、十重态的贡献用红色实线、红色虚线表示，bubble图贡献用红色点线表示，tadpole图是红色点
+虚线，而不考虑bubble和tadpole情况下的八重态和十重态分别是蓝色实线和蓝色虚线。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+电形状因子中八重态和十重态贡献在两种情况下存在重合的情况，磁形状因子则区别比较明显。图3、4是没有蓝色曲线，也就是在考虑bubble和tadpole情况下，各个
+图的对电、磁形状因子的贡献。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffallB.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+在考虑bubble和tadpole情况下，八重态、十重态、bubble和tadpole的电形状因子贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FFMALLB.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+在考虑bubble和tadpole情况下，八重态、十重态、bubble和tadpole的磁形状因子贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+图5、6是电形状因子中两种情况下八重态和十重态曲线的对比图，
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffO.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+考虑bubble和tadpole与否两种情况下八重态对电形状因子的贡献的对比，红色为考虑bubble、tadpole的情况，蓝色为不考虑这两种图的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffD.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+考虑bubble和tadpole与否两种情况下十重态对电形状因子的贡献的对比，红色为考虑bubble、tadpole的情况，蓝色为不考虑这两种图的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可以看到点形状因子中两组八重态和十重态的贡献仍然是接近的。
+\end_layout
+
+\begin_layout Standard
+图7，8是bubble和tadpole图对电形状因子的贡献，对比之下，电形状因子的情况中，bubble和tadpole图的贡献对比十重态和八重态的贡献，其数值明
+显小于十重态的贡献，同时在
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+比较小的时候会相互抵消，当
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+接近1的时候四个贡献都接近0，整体上就会呈现出bubble和tadpole的贡献并不明显的结果
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffBUB.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+bubble图的贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffTAD.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+tadpole图的贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+下面是对于磁形状因子的具体讨论
+\end_layout
+
+\begin_layout Standard
+图9、10是电形状因子中两种情况下八重态和十重态曲线的对比图，
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FFMO.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+考虑bubble和tadpole与否两种情况下八重态对磁形状因子的贡献的对比，红色为考虑bubble、tadpole的情况，蓝色为不考虑这两种图的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FFMD.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+考虑bubble和tadpole与否两种情况下十重态对磁形状因子的贡献的对比，红色为考虑bubble、tadpole的情况，蓝色为不考虑这两种图的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可以看到点形状因子中两组八重态和十重态的贡献仍然是接近的。
+\end_layout
+
+\begin_layout Standard
+图7，8是bubble和tadpole图对电形状因子的贡献，对比之下，电形状因子的情况中，bubble和tadpole图的贡献对比十重态和八重态的贡献，其数值明
+显小于十重态的贡献，同时在
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+比较小的时候会相互抵消，当
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+接近1的时候四个贡献都接近0，整体上就会呈现出bubble和tadpole的贡献并不明显的结果
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffBUB.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+bubble图的贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ffTAD.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+tadpole图的贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,136 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+验证tadpole addition图的计算正确
+\end_layout
+
+\begin_layout Standard
+因为计算splitting function的时候，所使用的定义
+\begin_inset Formula $<\bar{u}|\gamma^{+}f+\frac{i\sigma^{+\nu}q^{\nu}}{2M}g|u>$
+\end_inset
+
+与之前形状因子的计算中只有坐标从标准四动量系变成光锥坐标系，而这个坐标变换最后也就对应积分上要多一个Jacobi矩阵，所以如果把splitting
+ function的结果对y积分那么最后肯定是能和之前的形状因子结果对上的。这样也就能用来检验splitting function的计算是否正确。那么现在对ta
+dpole addition图的splitting function对y做积分，
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+term和留数定理计算的正常项都计算在内，选取外腿为质子中间介子为
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+，结果和之前形状因子相差一个系数，这个系数来自形状因子中的光子的regulator。所以目前能够验证对于tadpole图的计算的正确性。
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $g$
+\end_inset
+
+方面的问题
+\end_layout
+
+\begin_layout Standard
+目前对于tadpole addition图的计算，还存在一个问题。对于
+\begin_inset Formula $f$
+\end_inset
+
+正常项和δ项都能给出，尽管正常项的图像相对之前介子的结果比较奇怪。但是
+\begin_inset Formula $g$
+\end_inset
+
+方面，在之前的计算中，不论是形状因子还是
+\begin_inset Formula $\xi$
+\end_inset
+
+取0的情况，
+\begin_inset Formula $g$
+\end_inset
+
+都应该没有贡献。而现在的计算中δ项是严格为0的，正常项部分在程序上计算总会报错而画图呢也不能严格为0。
+\end_layout
+
+\end_body
+\end_document

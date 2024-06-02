@@ -1,0 +1,3376 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/drawpicTex/feynman diagram.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+one loop Feynman diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+diagrams where the external field couples to baryon
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/drawpicTex/baryonloop.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+diagrams where the external field couples to baryon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+splitting function
+\end_layout
+
+\begin_layout Standard
+For these diagram, the splitting function has 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ Take diagram b as a example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\bar{u}(p')\Gamma_{b}^{+} & u(p)=\int\frac{d^{4}k}{(2\pi)^{4}}\bar{u}(p')\cancel{k}\gamma_{5}\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\gamma^{+}\frac{\cancel{p}-\cancel{k}+m_{N}}{D_{B}(p-k)}\cancel{k}\gamma_{5}u(p)\delta(y-\frac{k^{+}}{P^{+}})\\
+ & =\bar{u}(p')[\gamma^{+}f+\frac{\sigma^{+\nu}q_{\nu}}{2M}g]u(p)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $p'=p+q\ P^{+}=\frac{p^{+}+p'^{+}}{2}\ q^{+}=-2\xi P^{+}$
+\end_inset
+
+.
+ We use two trace term to project the splitting function.
+\begin_inset Formula 
+\begin{align*}
+\textrm{A=Tr}[\Gamma^{+}(\cancel{p}+M)\gamma^{+}(\cancel{p'}+M)] & =(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M)\gamma^{+}(\cancel{p'}+M)}]}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M)\gamma^{+}(\cancel{p'}+M)}\frac{P^{+}}{M}]\\
+\textrm{B=Tr}[\Gamma^{+}(\cancel{p}+M)(\cancel{p'}+M)]\frac{P^{+}}{M} & =(f+g)\textrm{Tr[\ensuremath{\gamma^{+}(\cancel{p}+M)(\cancel{p'}+M)}]\frac{P^{+}}{M}}-g\textrm{Tr}[\ensuremath{(\cancel{p}+M)(\cancel{p'}+M)(}\frac{P^{+}}{M})^{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In light-cone frame, 
+\begin_inset Formula $\int d^{4}k->\int dk^{+}\int d^{2}k^{\perp}\int dk^{-}$
+\end_inset
+
+, for 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+, we use residue theorem to calculate the integral.
+ The residue theorem, 
+\begin_inset Formula $\ointop f(z)dz=\int_{a}^{b}f(z)dz+\int_{l}f(z)dz$
+\end_inset
+
+, asks 
+\begin_inset Formula $\int_{l}f(z)dz=0$
+\end_inset
+
+ and for 
+\begin_inset Formula $\Gamma_{b}^{+}$
+\end_inset
+
+which has form like 
+\begin_inset Formula 
+\[
+\frac{c_{1}(k^{-})^{m}+c_{2}(k^{-})^{m-1}+...}{c'_{1}(k^{-})^{n}+c'_{2}(k^{-})^{n-1}+...}
+\]
+
+\end_inset
+
+ more specific requirement is 
+\begin_inset Formula $n-m>2$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $m=2$
+\end_inset
+
+, for diagram b.
+\begin_inset Formula 
+\begin{gather*}
+\tilde{F}(k)=(\frac{\Lambda^{2}-m_{\phi}^{2}}{\Lambda^{2}-k^{2}})^{2}=(\frac{\Lambda^{2}-m_{\phi}^{2}}{\Lambda^{2}-(k^{+}k^{-}-(k^{\perp})^{2})})^{2}\\
+D_{\phi}(k)=k^{2}-m_{\phi}^{2}=k^{+}k^{-}-(k^{\perp})^{2}-m_{\phi}^{2}\\
+D_{B}(p-k)=(p-k)^{2}-M_{B}^{2}=(p^{+}-k^{+})(p^{-}-k^{-})-((p-k)^{\perp})^{2}-M_{B}^{2}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The highest order of 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+in the denominator of 
+\begin_inset Formula $\Gamma_{b}^{+}$
+\end_inset
+
+ is 
+\begin_inset Formula $(k^{+}k^{-})^{5}(p^{+}-k^{+})(p'^{+}-k^{+})(k^{-})^{2}$
+\end_inset
+
+ ,so the 
+\begin_inset Formula $n$
+\end_inset
+
+ is 7 if 
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ is 2 when 
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+ where the integral over 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ is divergent which gives the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta$
+\end_inset
+
+ term is in this form 
+\begin_inset Formula $\delta\ \text{term}\propto\delta(k^{+})$
+\end_inset
+
+ which ask the function is divergent in 
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+ and is 0 when 
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+.
+ So we need to separate 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term from the 
+\begin_inset Formula $A\ B$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+A\ B & =\frac{\text{numerator}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}\\
+D_{\Lambda}(k) & =k^{2}-\Lambda^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+, we use residue theorem and the integral will be 0 if the pole are always
+ on the same side.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+D_{\phi}(k) & =k^{2}-m_{\phi}^{2}+i\epsilon\\
+D_{\Lambda}(k) & =k^{2}-\Lambda^{2}+i\epsilon\\
+D_{B}(p-k) & =(p-k)^{2}-M_{B}^{2}+i\epsilon
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+D_{\phi}(k) & =0->k^{-}=\frac{-i\epsilon}{k^{+}}+\frac{k^{\perp}{}^{2}+m_{\phi}^{2}}{k^{+}}\\
+D_{\Lambda}(k) & =0->k^{-}=\frac{-i\epsilon}{k^{+}}+\frac{k^{\perp}{}^{2}+\Lambda^{2}}{k^{+}}\\
+D_{B}(p-k) & =0->k^{-}=\frac{i\epsilon}{p^{+}-k^{+}}+p^{-}-\frac{(p-k)^{\perp}{}^{2}+M_{B}^{2}}{p^{+}-k^{+}}\\
+D_{B}(p'-k) & =0->k^{-}=\frac{i\epsilon}{p'^{+}-k^{+}}+p'^{-}-\frac{(p'-k)^{\perp}{}^{2}+M_{B}^{2}}{p^{+}-k^{+}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the position of pole is 
+\begin_inset Formula 
+\begin{gather*}
+k^{+}<0\ D_{\phi}(k)D_{\Lambda}(k)>0\\
+k^{+}>0\ D_{\phi}(k)D_{\Lambda}(k)<0\\
+k^{+}<p^{+}\ D_{B}(p-k)>0\\
+k^{+}>p^{+}\ D_{B}(p-k)<0\\
+k^{+}<p'^{+}\ D_{B}(p'-k)>0\\
+k^{+}>p'^{+}\ D_{B}(p'-k)<0
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $p^{+}=(1+\xi)P^{+}\ p'^{+}=(1-\xi)P^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And there are two part where the residue is nonzero.
+\begin_inset Formula 
+\begin{gather*}
+0<k^{+}<(1-\xi)P^{+}\ D_{\phi}(k)D_{\Lambda}(k)<0\ D_{B}(p-k)D_{B}(p'-k)>0\\
+(1-\xi)P^{+}<k^{+}<(1+\xi)P^{+}\ D_{\phi}(k)D_{\Lambda}(k)D_{B}(p'-k)<0\ D_{B}(p-k)>0
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It's clear that the baryon propagators give pole on different side.And when
+ 
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+ it's also the baryon propagators which gives nonzero 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If we cancel the 
+\begin_inset Formula $D_{B}(p-k)$
+\end_inset
+
+ in the denominator, the integral become like 
+\begin_inset Formula $\int dk^{-}\frac{1}{D_{\Lambda}^{4}(k)D_{\phi}(k)}=0$
+\end_inset
+
+ which satisfy the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term requirement.
+\end_layout
+
+\begin_layout Standard
+Since the 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+only exists in the 
+\begin_inset Formula $k^{2}\ k.p$
+\end_inset
+
+, we can do such a replace.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+k^{2} & =D_{\phi}(k)+m_{\phi}^{2}\\
+k.p & =\frac{D_{B}(p-k)-(D_{\phi}(k)+m_{\phi}^{2})}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the 
+\begin_inset Formula $A\ B$
+\end_inset
+
+ will be as 
+\begin_inset Formula 
+\[
+A=\frac{k^{+}P^{+}q^{+}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}+\frac{k^{+}P^{+}q^{+}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p-k)}+\frac{k^{+}P^{+}q^{+}}{D_{\Lambda}^{4}(k)D_{\phi}(k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta$
+\end_inset
+
+ term can be calculated in this way.
+ First, in diagram b case, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term does not have 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ in the numerator.
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using Feynman parameter
+\begin_inset Formula 
+\[
+\text{\ensuremath{\frac{1}{A^{a}B^{b}}=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(xA+(1-x)B)^{a+b}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)} & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(xD_{\phi}+(1-x)D_{\Lambda})^{a+b}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Omega=xm_{\phi}^{2}+(1-x)\Lambda^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b}}=\frac{1}{(a+b-1)!}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{1}{(k^{2}-\Omega)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}\\
+=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}\int_{0}^{1}dx\frac{1}{(a+b-1)!}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega)^{2}}\\
+=\frac{1}{(a+b-1)!}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The last line, we have 
+\begin_inset Formula $\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}=\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{multline*}
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}=\\
+\frac{1}{(a+b-1)!}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram n and o, the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term will be more complicated because they have 
+\begin_inset Formula $k^{-}$
+\end_inset
+
+ in the numerator.
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Still we can follow the same method,
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}=\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{(k^{-})^{n}}{(k^{2}-\Omega+i\epsilon)^{a+b}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{(k^{-})^{n}}{(k^{2}-\Omega+i\epsilon)^{a+b}}->\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{1}{(k^{2}-\Omega+i\epsilon)^{a+b-n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}->\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{\partial^{a+b-n-2}}{\partial\Omega^{a+b-n-2}}\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And we use this approximate equation for the 
+\begin_inset Formula $\frac{\partial^{n}}{\partial k^{+n}}\delta(k^{+})$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{d}{dx}\delta(x)=-\frac{\delta(x)}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For these baryon diagrams, the 
+\begin_inset Formula $y$
+\end_inset
+
+ in splitting function 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ is in this range 
+\begin_inset Formula $[0,1-\xi]\ [1-\xi,1+\xi]$
+\end_inset
+
+.
+ There are two part of range because the position of pole will change which
+ makes the residue change.
+ We can see this range is just same with the range of convolution.
+\end_layout
+
+\begin_layout Section
+convolution and GPD result
+\end_layout
+
+\begin_layout Standard
+The convolution formula for these diagrams is 
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >x>\xi\\
+\int_{\xi}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >\xi>x\\
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2\xi}f(y,\xi,t)\frac{1}{\pi}\frac{\xi}{1-y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{1-y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{1-y,|x|\}\\
+\int_{-x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is similar to the form used in meson loop case.
+ The difference is now the momentum is 
+\begin_inset Formula $(1-y)$
+\end_inset
+
+ which carried by the baryon.
+ And the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ now is 
+\begin_inset Formula 
+\begin{align*}
+1>1-y & >\xi->0<y<1-\xi\\
+-\xi<1-y & <\xi->1-\xi<y<1+\xi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The input is 
+\begin_inset Formula 
+\begin{align*}
+H(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)h(\beta,\alpha,t)\\
+E(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)e(\beta,\alpha,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+h(\beta,\alpha,t) & =h_{0}(\beta,\alpha)H(\beta,0,t)\\
+e(\beta,\alpha,t) & =h_{0}(\beta,\alpha)E(\beta,0,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h_{0}(\beta,\alpha)=\frac{\Gamma(2b+2)}{2^{2b+1}\Gamma^{2}(b+1)}\frac{((1-|\beta|)^{2}-\alpha^{2})^{b}}{(1-|\beta|)^{2b+1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+H(x,0,t) & =q(x)exp(tf_{q}(x))\\
+E(x,0,t) & =e^{q}(x)exp(tg_{q}(x))
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+xq(x) & =A_{0}x^{A_{1}}(1-x)^{A_{2}}e^{A_{3}x}(1+e^{A_{4}}x)^{A_{5}}\\
+f_{q}(x) & =\alpha_{1}(1-x)^{3}log\frac{1}{x}+B_{q}(1-x)^{3}+A_{q}x(1-x)^{2}\\
+e^{q}(x) & =N_{q}\kappa_{q}x^{-a}(1-x)^{b_{q}}\\
+g_{q}(x) & =\alpha_{2}(1-x)^{3}log\frac{1}{x}+D_{q}(1-x)^{3}+C_{q}x(1-x)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The input GDA is 
+\begin_inset Formula 
+\begin{align*}
+\Phi_{1}(z,\eta,s) & =2(2\eta-1)\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(2z-1-(2\eta-1)\beta-\alpha)h_{0}(\beta,\alpha)H(\beta,0,s)\\
+\Phi_{2}(z,\eta,s) & =2(2\eta-1)\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(2z-1-(2\eta-1)\beta-\alpha)h_{0}(\beta,\alpha)E(\beta,0,s)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+, the GPD result from these diagrams are
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/b-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/b-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+u quark contribution from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/b-Hd-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/b-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+d quark contribution from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/c-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/c-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+u quark contribution from diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/c-Hd-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/c-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+d quark contribution from diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/n-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/n-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+u quark contribution from diagram n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/n-Hd-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/n-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+d quark contribution from diagram n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/o-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/o-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+u quark contribution from diagram o
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/o-Hd-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/o-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+d quark contribution from diagram o
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/p-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/p-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+u quark contribution from diagram p
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/p-Hd-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/p-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+d quark contribution from diagram p
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/q-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/q-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+u quark contribution from diagram q
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/q-Hd-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/228test/q-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+d quark contribution from diagram q
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Kroll-Ruderman diagram 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/drawpicTex/allKR.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kroll-Ruderman diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+splitting function
+\end_layout
+
+\begin_layout Standard
+For KR diagram, the method to get the splitting function is same with the
+ baryon loop case while the range of y in splitting function from KR diagram
+ is not same since there is different propagator in KR diagram.
+ 
+\begin_inset Formula 
+\begin{gather*}
+k^{+}<0\ D_{\phi}(k)D_{\Lambda}(k)>0\\
+k^{+}>0\ D_{\phi}(k)D_{\Lambda}(k)<0\\
+k^{+}<p^{+}\ D_{B}(p-k)>0\\
+k^{+}>p^{+}\ D_{B}(p-k)<0\\
+k^{+}<p'^{+}\ D_{B}(p'-k)>0\\
+k^{+}>p'^{+}\ D_{B}(p'-k)<0
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $p^{+}=(1+\xi)P^{+}\ p'^{+}=(1-\xi)P^{+}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Gamma_{(d+e)}^{+}=\int F(k)^{2}\frac{i}{D_{\phi}(k)}(\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}\gamma^{\mu}\gamma_{5}+\gamma^{\mu}\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5})\delta(y-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram d and e, the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[0,1-\xi]$
+\end_inset
+
+ and 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+\Gamma_{(f+g)}^{+} & =\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k)}\tilde{F}(k)[\frac{2k^{+}-q^{+}}{2kq-q^{2}}(\tilde{F}(k)-\tilde{F}(k-q))\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\\
+ & +\frac{2k^{+}+q^{+}}{2kq+q^{2}}(\tilde{F}(k+q)-\tilde{F}(k))(\cancel{k}+\cancel{q})\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5}]\delta(y-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, the 
+\begin_inset Formula $2kq-q^{2}$
+\end_inset
+
+ in the denominator can be canceled by 
+\begin_inset Formula $\tilde{F}(k)-\tilde{F}(k-q)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{F}(k)-\tilde{F}(k-q)=(\frac{\Lambda^{2}-m_{\phi}^{2}}{\Lambda^{2}-k^{2}})^{2}-(\frac{\Lambda^{2}-m_{\phi}^{2}}{\Lambda^{2}-(k-q)^{2}})^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the pole still same with the other diagram only with an extra 
+\begin_inset Formula $D_{\Lambda}(k\pm q)=(k\pm q)^{2}-\Lambda^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+k^{+} & <-q^{+}\ D_{\Lambda}(k+q)>0\\
+k^{+} & >-q^{+}\ D_{\Lambda}(k+q)<0\\
+k^{+} & <q^{+}\ D_{\Lambda}(k-q)>0\\
+k^{+} & >q^{+}\ D_{\Lambda}(k-q)<0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $q^{+}=-2\xi P^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram f, which has 
+\begin_inset Formula $D_{\Lambda}(k-q)\ D_{\Lambda}(k)\ D_{\phi}(k)\ D_{B}(p'-k)$
+\end_inset
+
+, the range of 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+is 
+\begin_inset Formula 
+\begin{gather*}
+-2\xi P^{+}<k^{+}<0\\
+0<k^{+}<(1-\xi)P^{+}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram g, the range of 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+is 
+\begin_inset Formula 
+\begin{gather*}
+0<k^{+}<2\xi P^{+}\\
+2\xi P^{+}<k^{+}<(1+\xi)P^{+}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And with 
+\begin_inset Formula $\delta(y-\frac{k^{+}}{P^{+}})$
+\end_inset
+
+, the splitting function of these eight diagrams is 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/d-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/e-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{res}$
+\end_inset
+
+ from diagram d and e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-g-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-f-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-g-xi1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-f-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-g-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-f-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-g-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-f-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-g-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram t
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-f-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-g-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ from diagram u
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+convolution 
+\end_layout
+
+\begin_layout Standard
+Since the range of the additional KR diagram is out of 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+, it can not be calculated like baryon case.
+ 
+\end_layout
+
+\begin_layout Subsection
+couples to the meson
+\end_layout
+
+\begin_layout Standard
+In this method we take the bilocal operator as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{alignat*}{1}
+\int d\lambda e^{-iyP^{+}\lambda^{-}} & <p'|\pi^{-}(\frac{1}{2}\lambda^{-})\bar{N}(-\frac{1}{2}\lambda^{-})\gamma^{+}\gamma_{5}P(-\frac{1}{2}\lambda^{-})|p>\\
+ & =\int d^{4}k\Gamma(k)\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}e^{\frac{-i}{2}(p'^{+}-k^{+})\lambda^{-}}e^{\frac{i}{2}p^{+}\lambda^{-}}\\
+ & =\int d^{4}k\Gamma(k)\delta(k^{+}+\frac{p^{+}-p'^{+}}{2}-yP^{+})\\
+ & =\int d^{4}k\Gamma(k)\delta(\frac{k^{+}}{P^{+}}-(y-\xi))
+\end{alignat*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{alignat*}{1}
+\int d\lambda e^{-iyP^{+}\lambda^{-}} & <p'|\bar{P}(\frac{1}{2}\lambda^{-})\gamma^{+}\gamma_{5}N(\frac{1}{2}\lambda^{-})\pi^{+}(-\frac{1}{2}\lambda^{-})|p>\\
+ & =\int d^{4}k\Gamma(k)\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{\frac{i}{2}(p'^{+}-p^{+}+k^{+})\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}\\
+ & =\int d^{4}k\Gamma(k)\delta(k^{+}+\frac{p'^{+}-p^{+}}{2}-yP^{+})\\
+ & =\int d^{4}k\Gamma(k)\delta(\frac{k^{+}}{P^{+}}-(y+\xi))
+\end{alignat*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ for these diagrams are all in 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+ which is asked by the convolution formula of meson loop case.
+\end_layout
+
+\begin_layout Standard
+For diagram d and r, 
+\begin_inset Formula $k^{+}\in[0,(1-\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-(y-\xi))$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[\xi,1]\subseteq[-\xi,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For diagram e and s,
+\begin_inset Formula $k^{+}\in[0,(1+\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-(y+\xi))$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[-\xi,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For diagram f and t, 
+\begin_inset Formula $k^{+}\in[-2\xi P^{+},(1-\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-(y-\xi))$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[-\xi,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For diagram g and u,
+\begin_inset Formula $k^{+}\in[0,(1+\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-(y+\xi))$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[-\xi,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The convolution formula is 
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >x>\xi\\
+\int_{\xi}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >\xi>x\\
+\int_{-\xi}^{\xi}dy\frac{1}{2\xi}f(y,\xi,t)\frac{\xi}{\pi y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{y,|x|\}\\
+\int_{-x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the input is same with meson case but without the D term since the input
+ only care the lowest moment which do not contribute to the D term except
+ meson loop case.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/d-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/d-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram d
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/e-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/e-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Eu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Eu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Eu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Eu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram t
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Eu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram t
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Hu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Hu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram u
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Eu-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Eu-0.1-2d.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram u
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+couples to the baryon
+\end_layout
+
+\begin_layout Standard
+For these KR diagram, I also calculate the convolution as the external field
+ couples to the baryon.
+ And we can see there is a problem is that the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is not in 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+.
+ Here the solution is that I simply move the splitting function to the correct
+ range.
+ 
+\end_layout
+
+\begin_layout Standard
+For diagram d and r, 
+\begin_inset Formula $k^{+}\in[0,(1-\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-y)$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[0,1-\xi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For diagram e and s,
+\begin_inset Formula $k^{+}\in[0,(1+\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-y)$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[0,1+\xi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For diagram f and t, 
+\begin_inset Formula $k^{+}\in[-2\xi P^{+},(1-\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-y)$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[-2\xi,1-\xi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For diagram g and u,
+\begin_inset Formula $k^{+}\in[0,(1+\xi)P^{+}]$
+\end_inset
+
+, 
+\begin_inset Formula $y->\delta(\frac{k^{+}}{P^{+}}-y)$
+\end_inset
+
+, 
+\begin_inset Formula $y\in[0,1+\xi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+And only for diagram f and t, where 
+\begin_inset Formula $y\in[-2\xi,1-\xi]$
+\end_inset
+
+, I change the 
+\begin_inset Formula $y->y'=y+2\xi\in[0,1+\xi]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Although we can get the GPD result in this way, there is one problem I want
+ discuss.
+ For the additional KR diagram ,the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ from splitting function is 
+\begin_inset Formula $[0,2\xi]\ [2\xi,1+\xi]$
+\end_inset
+
+ and 
+\begin_inset Formula $[-2\xi,0]\ [0,1-\xi]$
+\end_inset
+
+which will be same after 
+\begin_inset Formula $y->y'=y+2\xi\in[0,1+\xi]$
+\end_inset
+
+.
+ The problem is, in convolution formula like 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >x>\xi\\
+\int_{\xi}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >\xi>x\\
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2\xi}f(y,\xi,t)\frac{1}{\pi}\frac{\xi}{1-y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{1-y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{1-y,|x|\}\\
+\int_{-x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The GPD is separated in two part.
+ The first line is DGLAP part and the second and third line is ERBL part
+ which ask different range of 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ For example, the first line is for 
+\begin_inset Formula $y\in[0,1-\xi]$
+\end_inset
+
+, but for splitting function, there will be two function which does not
+ appear in other convolution method.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/d-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/d-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram d
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/e-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/e-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Eu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/f-Eu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Eu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/g-Eu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram g
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Eu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/r-Eu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Eu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/s-Eu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram t
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Eu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/t-Eu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram t
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Hu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Hu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $H(y,\xi,t)$
+\end_inset
+
+ of diagram u
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Eu-0.1-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/u-Eu-0.1-2d-baryon.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E(y,\xi,t)$
+\end_inset
+
+ of diagram u
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tadpole diagram 
+\end_layout
+
+\begin_layout Standard
+For tadpole diagram, they are treated like KR diagram which means the external
+ fields are now couple to the meson.
+ Due to the bilocal operator which works in this way
+\begin_inset Formula 
+\[
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}<p'|\bar{p}(a)\gamma^{\mu}p(b)\phi(x)\phi^{\dagger}(y)|p>
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $abxy$
+\end_inset
+
+ is 
+\begin_inset Formula $\pm\frac{\lambda^{-}}{2}$
+\end_inset
+
+ and represent the coordinates of fields.
+ When the external field couples to the meson, we can not tell which is
+ better in these two operators
+\begin_inset Formula 
+\begin{align*}
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(\frac{\lambda^{-}}{2})\gamma^{\mu}p(\frac{\lambda^{-}}{2})\phi(-\frac{\lambda^{-}}{2})\phi^{\dagger}(-\frac{\lambda^{-}}{2})|p>\\
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(-\frac{\lambda^{-}}{2})\gamma^{\mu}p(-\frac{\lambda^{-}}{2})\phi(\frac{\lambda^{-}}{2})\phi^{\dagger}(\frac{\lambda^{-}}{2})|p>
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And these two different operator will give two different definition of 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(\frac{\lambda^{-}}{2})\gamma^{\mu}p(\frac{\lambda^{-}}{2})\phi(-\frac{\lambda^{-}}{2})\phi^{\dagger}(-\frac{\lambda^{-}}{2})|p>\\
+-> & \delta(\frac{k^{+}}{P^{+}}-y+1)\\
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(-\frac{\lambda^{-}}{2})\gamma^{\mu}p(-\frac{\lambda^{-}}{2})\phi(\frac{\lambda^{-}}{2})\phi^{\dagger}(\frac{\lambda^{-}}{2})|p>\\
+-> & \delta(\frac{k^{+}}{P^{+}}-y-1)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we separate tadpole diagram into two part.
+ One half of the diagram is first convolution and another half is second
+ one.
+\end_layout
+
+\begin_layout Part
+The final result
+\end_layout
+
+\begin_layout Section
+u and d 
+\end_layout
+
+\begin_layout Standard
+For u and d quark the contribution is almost from the nucleon pion channel
+ which is finished now.
+ The result of diagram b is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Hu-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Gu-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Hd-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Gd-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+final result of diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Hu2-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Eu2-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Hd2-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/pic/Ed2-b.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+final result of diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

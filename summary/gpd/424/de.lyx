@@ -1,0 +1,317 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/23411/fig1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+一圈费曼图
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+现在计算的图是Fig1中的b、c、d、e、f、g，其中b、c、f、g初步认为是能和之前tadpole图一样处理。
+\end_layout
+
+\begin_layout Standard
+计算splitting function所需要计算的两个Trace
+\begin_inset Formula 
+\begin{align*}
+A & =\textrm{Tr}[\Gamma^{+}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\\
+B & =\textrm{Tr}[\Gamma^{+}(\cancel{p}+M_{N})(\cancel{p'}+M_{N})]\frac{P^{+}}{M}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+能够被分解为δ函数和正常积分两部分。以图b、d、f为例，对应的振幅是
+\begin_inset Formula 
+\begin{align*}
+\Gamma_{b}^{+} & =\int\cancel{k}\gamma_{5}\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\gamma^{+}\frac{\cancel{p}-\cancel{k}+m_{N}}{D_{B}(p-k)}\cancel{k}\gamma_{5}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+\Gamma_{d}^{+} & =\int\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\gamma^{+}\gamma_{5}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+\Gamma_{f}^{+} & =\int\widetilde{F}(k)\frac{1}{D_{\phi}(k)}\frac{(2k-q)^{+}}{2kq-q^{2}}[\widetilde{F}(k)-\widetilde{F}(k-q)]\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于图b，以A为例，在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的情况下，分子分母
+\begin_inset Formula $k^{-}$
+\end_inset
+
+都是二次项，于是存在
+\begin_inset Formula $\delta$
+\end_inset
+
+项，类似tadpole的过程，将分子中
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+时存在的
+\begin_inset Formula $k^{-}$
+\end_inset
+
+的二次项用重子传播子
+\begin_inset Formula $D_{B}$
+\end_inset
+
+消去，让
+\begin_inset Formula $b_{1}$
+\end_inset
+
+在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的情况下不含有
+\begin_inset Formula $k^{-}$
+\end_inset
+
+的平方项，而
+\begin_inset Formula $b_{2}$
+\end_inset
+
+中不含有
+\begin_inset Formula $k^{-}$
+\end_inset
+
+，从而积分被分离成
+\begin_inset Formula $b_{1}$
+\end_inset
+
+部分的正常积分和
+\begin_inset Formula $b_{2}$
+\end_inset
+
+部分的
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+函数。图b和c只有顶点的形式差别，对于图c的分离是和图b类似的。
+\begin_inset Formula 
+\begin{align*}
+A_{b} & =\text{\ensuremath{\int(\Lambda^{2}-m_{\phi}^{2})^{4}\frac{\textrm{Tr}[\cancel{k}\gamma_{5}(\cancel{p'}-\cancel{k}+m_{N})\gamma^{+}(\cancel{p}-\cancel{k}+m_{N})\cancel{k}\gamma_{5}]}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}}}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{b_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{B}(p-k)}+\frac{b_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于图f、g，以f的A为例，合并
+\begin_inset Formula $\widetilde{F}(k)-\widetilde{F}(k-q)$
+\end_inset
+
+之后积分变成下面的形式，此时在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的情况下，分子分母
+\begin_inset Formula $k^{-}$
+\end_inset
+
+最高幂次是三次方，分母的3次方来自
+\begin_inset Formula $D_{\Lambda}^{2}(k-q)D_{B}(p'-k)$
+\end_inset
+
+，于是将分子中的三次项用其替换掉，
+\begin_inset Formula $f_{1}$
+\end_inset
+
+中在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+时，
+\begin_inset Formula $k^{-}$
+\end_inset
+
+最高幂次是二次项，比分母的三次小，于是
+\begin_inset Formula $f_{1}$
+\end_inset
+
+部分此时不发散，而
+\begin_inset Formula $f_{2}$
+\end_inset
+
+部分则分子分母都幂次相同是
+\begin_inset Formula $\delta$
+\end_inset
+
+项，也就是分离成了，
+\begin_inset Formula $f_{1}$
+\end_inset
+
+部分的正常积分和
+\begin_inset Formula $f_{2}$
+\end_inset
+
+部分的
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+函数
+\begin_inset Formula 
+\begin{align*}
+A_{f} & =\text{\ensuremath{\int(\Lambda^{2}-m_{\phi}^{2})^{2}\frac{\textrm{Tr}[(2k-q)^{+}\cancel{k}\gamma_{5}(\cancel{p'}-\cancel{k}+m_{N})(\cancel{k}-\cancel{q})\gamma_{5}]}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{\Lambda}^{2}(k-q)D_{B}(p'-k)}}}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{f_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)D_{\Lambda}^{2}(k-q)}+\frac{f_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于图d和e，也按照上面的方式做分解的话，会有这样的问题，主要是此时，在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的情况下，分子分母上的
+\begin_inset Formula $k^{-}$
+\end_inset
+
+幂次只有一次项，做了分离之后的
+\begin_inset Formula $d_{2}$
+\end_inset
+
+部分的积分，在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候相当于
+\begin_inset Formula $\int dx\frac{c}{ax+b}$
+\end_inset
+
+，这个积分不收敛，所以不确定能否使用留数定理作为正常积分计算。
+\begin_inset Formula 
+\begin{align*}
+A_{f} & =\text{\ensuremath{\int(\Lambda^{2}-m_{\phi}^{2})^{4}\frac{\textrm{Tr}[\cancel{k}\gamma_{5}(\cancel{p'}-\cancel{k}+m_{N})\gamma^{+}\gamma_{5}]}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)}}}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{d_{1}}{D_{\Lambda}^{4}(k)D_{\phi}(k)D_{B}(p'-k)}+\frac{d_{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,404 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+对于积分
+\begin_inset Formula 
+\[
+\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+从幂次上来看，
+\begin_inset Formula $\frac{k^{3}}{(k^{2})^{4}k^{2}}=\frac{k^{3}}{k^{10}}$
+\end_inset
+
+，相差7次幂，积分肯定是收敛的。此时也能直接在协变坐标下得到积分结果。但是如果在光锥坐标下计算，不论是留数部分还是
+\begin_inset Formula $\delta$
+\end_inset
+
+项部分都存在发散。对于
+\begin_inset Formula $\delta$
+\end_inset
+
+项，这部分的发散来源是，首先需要将分母上的重子传播子消去，
+\begin_inset Formula 
+\begin{align*}
+\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)} & =\frac{1}{D_{\Lambda}^{4}(k)}*((\frac{\xi}{1+\xi})^{3}(D_{B}^{2}+3D_{B}k^{-}p_{1}^{+})\\
+ & +\frac{3}{2}(\frac{\xi}{1+\xi})^{2}(4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-})+3(\frac{\xi}{1+\xi})(k^{\perp}.q^{\perp})^{2}\\
+ & =(\frac{\xi}{1+\xi})^{3}(\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)}+\frac{3D_{B}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)})+\frac{3}{2}(\frac{\xi}{1+\xi})^{2}\frac{4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-}}{D_{\Lambda}^{4}(k)}\\
+ & +3(\frac{\xi}{1+\xi})\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中各项分别展开为
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)} & =\frac{(D_{\phi}+m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})^{2}}{D_{\Lambda}^{4}(k)}+\frac{(-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & +2\frac{(-2p.k)D_{\phi}}{D_{\Lambda}^{4}(k)}+2\frac{(-2p.k)(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})}{D_{\Lambda}^{4}(k)}+2\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})D_{\phi}}{D_{\Lambda}^{4}(k)}\\
+\frac{D_{B}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)} & =\frac{(k^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{k^{2}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-2\frac{p.kk^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}+(M_{1}^{2}-M_{2}^{2})\frac{k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{k^{+}k^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-\frac{k^{+}p^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-\frac{(k^{-}p^{+})^{2}}{D_{\Lambda}^{4}(k)}+\frac{2p^{\perp}.k^{\perp}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}+(M_{1}^{2}-M_{2}^{2})\frac{k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+\frac{p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}}{D_{\Lambda}^{4}(k)} & =-\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中各项的具体计算为
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)} & \ \text{发\text{散}}\\
+\frac{(p.k)^{2}}{D_{\Lambda}^{4}(k)} & =\frac{(\frac{1}{2}(k^{+}p^{-}+k^{-}p^{+})-p^{\perp}.k^{\perp})^{2}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{(\frac{1}{2}k^{+}p^{-})^{2}}{D_{\Lambda}^{4}(k)}+\frac{(\frac{1}{2}k^{-}p^{+})^{2}}{D_{\Lambda}^{4}(k)}+\frac{(p^{\perp}.k^{\perp})^{2}}{D_{\Lambda}^{4}(k)}-\frac{k^{+}p^{-}p^{\perp}.k^{\perp}}{D_{\Lambda}^{4}(k)}-\frac{k^{-}p^{+}p^{\perp}.k^{\perp}}{D_{\Lambda}^{4}(k)}+\frac{k^{+}p^{-}k^{-}p^{+}}{2D_{\Lambda}^{4}(k)}\\
+\frac{(p.k)D_{\phi}}{D_{\Lambda}^{4}(k)} & =\frac{(p.k)(D_{\Lambda}+\Lambda^{2}-m_{\phi}^{2})}{D_{\Lambda}^{4}(k)}=(\Lambda^{2}-m_{\phi}^{2})\frac{(p.k)}{D_{\Lambda}^{4}(k)}+\frac{(p.k)}{D_{\Lambda}^{3}(k)}\\
+\frac{(p.k)}{D_{\Lambda}^{4}(k)} & =\frac{\frac{1}{2}(k^{+}p^{-}+k^{-}p^{+})-p^{\perp}.k^{\perp}}{D_{\Lambda}^{4}(k)}\\
+\frac{D_{\phi}}{D_{\Lambda}^{4}(k)} & =\frac{(D_{\Lambda}+\Lambda^{2}-m_{\phi}^{2})}{D_{\Lambda}^{4}(k)}=(\Lambda^{2}-m_{\phi}^{2})\frac{1}{D_{\Lambda}^{4}(k)}+\frac{1}{D_{\Lambda}^{3}(k)}\\
+\frac{1}{D_{\Lambda}^{4}(k)} & \ \text{直\text{接计算}}\\
+\frac{k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)} & -\text{>\ensuremath{\frac{\delta(k^{+})}{k^{+}}}}\\
+\frac{k^{+}p^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)} & ->k^{+}\ensuremath{\frac{\delta(k^{+})}{k^{+}}}\\
+\frac{(k^{-}p^{+})^{2}}{D_{\Lambda}^{4}(k)}\ \frac{k^{+}k^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)} & ->\frac{d}{dk^{+}}\ensuremath{\frac{\delta(k^{+})}{k^{+}}}\\
+\frac{p^{\perp}.k^{\perp}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)} & =-\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)}\\
+\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)} & \ \text{直\text{接计算}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+发散项存在于
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)} & =\frac{(D_{\phi}+m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})^{2}}{D_{\Lambda}^{4}(k)}+\frac{(-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & +2\frac{(-2p.k)D_{\phi}}{D_{\Lambda}^{4}(k)}+2\frac{(-2p.k)(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})}{D_{\Lambda}^{4}(k)}+2\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})D_{\phi}}{D_{\Lambda}^{4}(k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+除了第一项之外均可以按照上面列出的方式计算，不发散。发散项仅为第一项也就是
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这样将发散也处理为
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+的形式，并且在图O的整体计算结果中，在对y积分之前这个发散项就会被消去，整体上留数部分和
+\begin_inset Formula $\delta$
+\end_inset
+
+项部分都没有发散。
+\end_layout
+
+\begin_layout Standard
+而对于留数部分，则会在
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+积分中出现发散。留数部分的发散来自于计算留数之后分子上出现
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+高幂次项，将
+\begin_inset Formula $k.q$
+\end_inset
+
+展开从而分析具体哪个部分贡献发散
+\begin_inset Formula 
+\[
+\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}=\frac{(\frac{1}{2}(k^{+}p^{-}+k^{-}p^{+})-p^{\perp}.k^{\perp})^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+从留数计算结果上看，带来
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+高幂次项的形式是
+\begin_inset Formula 
+\[
+\frac{(\frac{1}{2}k^{-}p^{+})^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+实际上，留数计算中，发散是来自于
+\begin_inset Formula 
+\[
+\frac{(k^{-})^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+的形式。
+\end_layout
+
+\begin_layout Standard
+这和
+\begin_inset Formula $\delta$
+\end_inset
+
+项部分的发散是一致的，因为
+\begin_inset Formula $\frac{(\frac{1}{2}k^{-}p^{+})^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}$
+\end_inset
+
+对
+\begin_inset Formula $\delta$
+\end_inset
+
+项的贡献为
+\begin_inset Formula $\frac{1}{D_{\Lambda}^{4}(k)}(\frac{\xi}{1+\xi})^{3}(D_{B}^{2}+3D_{B}k^{-}p_{1}^{+})$
+\end_inset
+
+，其计算为
+\begin_inset Formula 
+\begin{align*}
+\frac{(\frac{1}{2}k^{-}q^{+})^{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)} & =(\frac{-\xi}{1+\xi})^{3}\frac{(k^{-}p_{1}^{+})^{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}\\
+ & =(\frac{\xi}{1+\xi})^{3}\frac{(D_{B}-(D_{B}+k^{-}p_{1}^{+}))^{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}\\
+ & =(\frac{\xi}{1+\xi})^{3}\frac{D_{B}^{3}-3D_{B}^{2}(D_{B}+k^{-}p_{1}^{+})+3D_{B}(D_{B}+k^{-}p_{1}^{+})^{2}-(D_{B}+k^{-}p_{1}^{+})^{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+使用了目前定义中的如下关系
+\begin_inset Formula 
+\begin{align*}
+q^{+} & =-2\xi P^{+}\\
+p_{1}^{+} & =(1+\xi)P^{+}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+由于
+\begin_inset Formula $(D_{B}+k^{-}p_{1}^{+})^{3}=(p_{1}^{2}+k^{2}-2p_{1}.k-M_{2}^{2}+k^{-}p_{1}^{+})^{3}=(M_{1}^{2}+k^{+}k^{-}-k^{\perp2}-k^{+}p_{1}^{-}+2p_{1}^{\perp}.k^{\perp}-M_{2}^{2})^{3}$
+\end_inset
+
+，
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+下不含
+\begin_inset Formula $k^{-}$
+\end_inset
+
+所以对
+\begin_inset Formula $\delta$
+\end_inset
+
+项贡献为0，因此得到上面的结论。
+\end_layout
+
+\begin_layout Standard
+由于这个积分本身不发散，也没有更多的形式来消去发散，所以在四维积分之后必然是留数部分和
+\begin_inset Formula $\delta$
+\end_inset
+
+项之间消去发散。那么按照图O整体上
+\begin_inset Formula $\delta$
+\end_inset
+
+项的发散项
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+会在计算之后自动消去，那么这里的
+\begin_inset Formula $\delta$
+\end_inset
+
+项的发散也应该是
+\begin_inset Formula 
+\begin{align*}
+\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)} & =\frac{1}{D_{\Lambda}^{4}(k)}*((\frac{\xi}{1+\xi})^{3}(D_{B}^{2}+3D_{B}k^{-}p_{1}^{+})\\
+ & +\frac{3}{2}(\frac{\xi}{1+\xi})^{2}(4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-})+3(\frac{\xi}{1+\xi})(k^{\perp}.q^{\perp})^{2}\\
+ & =(\frac{\xi}{1+\xi})^{3}(\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)}+\frac{3D_{B}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)})+\frac{3}{2}(\frac{\xi}{1+\xi})^{2}\frac{4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-}}{D_{\Lambda}^{4}(k)}\\
+ & +3(\frac{\xi}{1+\xi})\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在这之中只消去
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+部分。而留数部分则必须把
+\begin_inset Formula $(\frac{1}{2}k^{-}p^{+})^{3}$
+\end_inset
+
+完全消去，因为只要分子上存在
+\begin_inset Formula $k^{-}$
+\end_inset
+
+三次方，留数计算之后积分就会发散。所以这样看两边的发散消除是不等价的，因为
+\begin_inset Formula $\frac{(\frac{1}{2}k^{-}q^{+})^{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}$
+\end_inset
+
+在
+\begin_inset Formula $\delta$
+\end_inset
+
+项中的贡献不只是
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{(\frac{1}{2}k^{-}q^{+})^{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)} & =(\frac{\xi}{1+\xi})^{3}\frac{D_{B}^{3}-3D_{B}(D_{B}+k^{-}p_{1}^{+})+3(D_{B}+k^{-}p_{1}^{+})^{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\\
+ & =(\frac{\xi}{1+\xi})^{3}\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+现在采用直接将发散部分消去的办法来检验是否能得到和协变积分相一致的四维积分结果，最后，是将整个
+\begin_inset Formula $\frac{(\frac{1}{2}k^{-}q^{+})^{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}$
+\end_inset
+
+部分在留数与
+\begin_inset Formula $\delta$
+\end_inset
+
+项中一起消除才能得到。这样就和图O整体上
+\begin_inset Formula $\delta$
+\end_inset
+
+项的发散项的消除有了区别。
+\end_layout
+
+\end_body
+\end_document

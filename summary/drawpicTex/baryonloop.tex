@@ -1,0 +1,93 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-feynman}
+\begin{document}
+	
+	\begin{tikzpicture}[
+		decuplet/.style={ % 自定义一个重子的双线
+			double distance=1pt,
+			postaction={decorate}, decoration={
+				markings, mark=at position .6 with {
+					\arrow{Triangle[angle=40:2pt 3]}
+				},
+			}
+		}
+		]
+		\begin{feynman}
+			 %% fig p
+			\vertex(p1) at (0,0);
+			\vertex[right =1cm  of p1] (p2);
+			\vertex[right =2cm  of p1,square dot,anchor=center] (p3){};
+			\vertex[right =3cm  of p1] (p4);
+			\vertex[right =4cm  of p1] (p5);
+			\node[above =0.5 of p5] {$p$};
+			%% fig q
+			\vertex[above right =0 cm and 5 cm of p1] (q1);
+			\vertex[right =1cm  of q1] (q2);
+			\vertex[right =2cm  of q1,square dot,anchor=center] (q3){};
+			\vertex[right =3cm  of q1] (q4);
+			\vertex[right =4cm  of q1] (q5);
+			\node[above =0.5 of q5] {$q$};
+				%% fig n
+			\vertex[above right =2.5 cm and 0 cm of p1] (n1);
+			\vertex[right =1cm  of n1] (n2);
+			\vertex[right =2cm  of n1,crossed dot,anchor=center] (n3){};
+			\vertex[right =3cm  of n1] (n4);
+			\vertex[right =4cm  of n1] (n5);
+			\node[above =0.5 of n5] {$n$};
+			%% fig o
+			\vertex[above right =0 cm and 5 cm of n1] (o1);
+			\vertex[right =1cm  of o1] (o2);
+			\vertex[right =2cm  of o1,square dot,anchor=center] (o3){};
+			\vertex[right =3cm  of o1] (o4);
+			\vertex[right =4cm  of o1] (o5);
+			\node[above =0.5 of o5] {$o$};
+				%% fig b
+			\vertex[above right =2.5 cm and 0 cm of n1] (b1);
+			\vertex[right =1cm  of b1] (b2);
+			\vertex[right =2cm  of b1, crossed dot,anchor=center] (b3){};
+			\vertex[right =3cm  of b1] (b4);
+			\vertex[right =4cm  of b1] (b5);
+			\node[above =0.5cm of b5] {$b$};
+			%% fig c
+			\vertex[above right =0 cm and 5 cm of b1] (c1);
+			\vertex[right =1cm  of c1] (c2);
+			\vertex[right =2cm  of c1, square dot,anchor=center] (c3){};
+			\vertex[right =3cm  of c1] (c4);
+			\vertex[right =4cm  of c1] (c5);
+			\node[above =0.5cm of c5] {$c$};
+			
+				% 对各个顶点连线
+			\diagram*{
+				{
+					[edge=plain]
+					(n1)-- (n2) -- (n3)--(n4)--(n5),	
+					(o1)-- (o2) -- (o3)--(o4)--(o5),
+					(p1)-- (p2) -- (p3)--(p4)--(p5),	
+					(q1)-- (q2) -- (q3)--(q4)--(q5),
+					 (b1)--(b2)--(b3)--(b4)--(b5),	
+					(c1)--(c2)--(c3)--(c4)--(c5),	
+				},
+				% 介子连线
+				{
+					[edge= charged scalar]
+			 	(n2) --[half left](n4),
+				(o2) --[half left](o4),
+				(p2) --[half left](p4),
+				(q2) --[half left](q4),
+				(b2) --[half left](b4),
+				(c2) --[half left](c4),
+				}
+			};
+			%% 添加重子双线
+			\draw[decuplet]  (n2) -- (n3);
+			\draw[decuplet]  (n3) -- (n4);
+			\draw[decuplet]  (o2) -- (o3);
+			\draw[decuplet]  (o3) -- (o4);
+			\draw[decuplet]  (p2) -- (p3);
+			\draw[decuplet]  (q3) -- (q4);
+		\end{feynman}
+	\end{tikzpicture}
+
+\end{document}

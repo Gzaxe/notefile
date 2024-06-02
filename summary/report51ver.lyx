@@ -1,0 +1,416 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+核子形状因子
+\end_layout
+
+\begin_layout Standard
+在只考虑核子的情况下，先考虑质子和中子的GM，这两个对于
+\begin_inset Formula $\Lambda$
+\end_inset
+
+在0.7到1.10的范围内（实际上选取的是0.7、0.75、0.8、0.9、0.95、1.0、1.1这几项）都是随着
+\begin_inset Formula $\Lambda$
+\end_inset
+
+变大而变得更贴近实验数据，这里先展示出p的GM曲线，
+\begin_inset Formula $\Lambda$
+\end_inset
+
+取值按照顺序从左至右从上至下分别是0.7、0.75、0.8、0.9、0.95、1.0、1.1：
+\end_layout
+
+\begin_layout Standard
+根据曲线，在确定的
+\begin_inset Formula $\Lambda$
+\end_inset
+
+中，C的取值变化对于整体拟合的影响比较小，对于
+\begin_inset Formula $\Lambda$
+\end_inset
+
+，在1.1处拟合最好，从0.9开始拟合都比较接近，而前面三个确实差的比较远，所以后面的都不在考虑0.7、0.7、0.8三个取值，直接从0.9开始。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-P-GM-0.7.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-P-GM-0.75.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-P-GM-0.8.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-P-GM-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-P-GM-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-P-GM-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-P-GM-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+p的GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+从0.9开始的n的GM曲线为：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-n-GM-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-n-GM-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-n-GM-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-n-GM-1.10.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+n的GM曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+和质子情况一样，还是在1.1处取得最好
+\end_layout
+
+\begin_layout Standard
+下面是GE部分，首先是质子的曲线，仍然取
+\begin_inset Formula $\text{\ensuremath{\Lambda}}$
+\end_inset
+
+=0.9、0.95、1.0、1.1：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-P-GE-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-P-GE-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-P-GE-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-P-GE-1.1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+p的GE曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里的曲线对比之下，最好的是取
+\begin_inset Formula $\Lambda$
+\end_inset
+
+=0.95也就是第二张图，而最后1.1的取值偏离比较明显，前三个取值都还算可以。
+\end_layout
+
+\begin_layout Standard
+而如果考虑中子的GE曲线，偏离就比较大，整体上0.9、0.95、1.0三个取值仍然好于其他的值，具体曲线如下：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-n-GE-0.9.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename picture/Key[N]-n-GE-0.95.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename picture/Key[N]-n-GE-1.0.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+n的GE曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里显然0.9是最好的但是前面几项中0.9都不算最佳，因此可能选取0.95或者1.0会比较好，这和师兄之前的选择也比较接近。
+\end_layout
+
+\begin_layout Standard
+而C的选取，在上面的曲线中也能看出来对于结果影响不算很大，尤其是GE曲线
+\end_layout
+
+\begin_layout Standard
+如果从
+\begin_inset Formula $\text{\ensuremath{\Lambda}=0.9}$
+\end_inset
+
+和1.0的GM曲线中去对比确定一个相对较好的C，那么应该是1.0
+\end_layout
+
+\end_body
+\end_document

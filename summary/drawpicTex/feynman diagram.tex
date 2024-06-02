@@ -1,0 +1,241 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-feynman}
+\begin{document}
+	
+	\begin{tikzpicture}[
+		decuplet/.style={ % 自定义一个重子的双线
+			double distance=1pt,
+			postaction={decorate}, decoration={
+				markings, mark=at position .6 with {
+					\arrow{Triangle[angle=40:2pt 3]}
+				},
+			}
+		}
+		]
+		\begin{feynman}
+	       	%% fig s
+	       \vertex(s1) at (0,0);
+	       \vertex[right =1cm  of s1,crossed dot,anchor=center] (s2){};
+	       \vertex[right =2cm  of s1] (s3);
+	       \vertex[right =3cm  of s1] (s4);
+	       \vertex[right =4cm  of s1] (s5);
+	       \node[above =0.5cm of s5] {$s$};
+	        %% fig t
+	        \vertex [above right =0 cm and 5 cm of s1](t1);
+	        \vertex[right =1cm  of t1] (t2);
+	        \vertex[right =2cm  of t1] (t3);
+	        \vertex[right =3cm  of t1, dot,anchor=center] (t4){};
+	        \vertex[right =4cm  of t1] (t5);
+	        \node[above =0.5 cm  of t5] {$t$};
+			%% fig u
+			\vertex[above right =0 cm and 5 cm of t1](u1);
+			\vertex[right =1cm  of u1, dot,anchor=center] (u2){};
+			\vertex[right =2cm  of u1] (u3);
+			\vertex[right =3cm  of u1] (u4);
+			\vertex[right =4cm  of u1] (u5);
+			\node[above =0.5 cm  of u5] {$u$};
+	        %% fig p
+			\vertex[above right =2.5 cm and 0 cm of s1] (p1);
+			\vertex[right =1cm  of p1] (p2);
+			\vertex[right =2cm  of p1,square dot,anchor=center] (p3){};
+			\vertex[right =3cm  of p1] (p4);
+			\vertex[right =4cm  of p1] (p5);
+			\node[above =0.5 of p5] {$p$};
+			%% fig q
+			\vertex[above right =0 cm and 5 cm of p1] (q1);
+			\vertex[right =1cm  of q1] (q2);
+			\vertex[right =2cm  of q1,square dot,anchor=center] (q3){};
+			\vertex[right =3cm  of q1] (q4);
+			\vertex[right =4cm  of q1] (q5);
+			\node[above =0.5 of q5] {$q$};
+			%% fig r
+			\vertex [above right =0 cm and 5 cm of q1] (r1);
+			\vertex[right =1cm  of r1] (r2);
+			\vertex[right =2cm  of r1] (r3);
+			\vertex[right =3cm  of r1,crossed dot,anchor=center] (r4){};
+			\vertex[right =4cm  of r1] (r5);
+			\node[above =0.5 cm  of r5] {$r$};
+			%% fig m
+			\vertex [above right= 2.5 cm and 0 cm of p1 ](m1);
+			\vertex[right =1cm  of m1] (m2);
+			\vertex[right =2cm  of m1] (m3);
+			\vertex[right =3cm  of m1] (m4);
+			\vertex[right =4cm  of m1] (m5);
+			\vertex[above =1cm of m3,crossed dot] (m6){};
+			\node[above =0.5cm  of m5] {$m$}; 
+			%% fig n
+			\vertex[above right =0 cm and 5 cm of m1] (n1);
+			\vertex[right =1cm  of n1] (n2);
+			\vertex[right =2cm  of n1,crossed dot,anchor=center] (n3){};
+			\vertex[right =3cm  of n1] (n4);
+			\vertex[right =4cm  of n1] (n5);
+			\node[above =0.5 of n5] {$n$};
+			%% fig o
+			\vertex[above right =0 cm and 5 cm of n1] (o1);
+			\vertex[right =1cm  of o1] (o2);
+			\vertex[right =2cm  of o1,square dot,anchor=center] (o3){};
+			\vertex[right =3cm  of o1] (o4);
+			\vertex[right =4cm  of o1] (o5);
+			\node[above =0.5 of o5] {$o$};
+			%% fig j
+			\vertex[above right =2.5 cm and 0 cm of m1] (j1);
+			\vertex[right =1cm  of j1] (j2);			
+			\vertex[right =2cm  of j1,square dot,anchor=center] (j3) {};
+			\vertex[right =3cm  of j1] (j4);
+			\vertex[right =4cm  of j1] (j5);     
+			\vertex[above =1.4 cm  of j3] (j6);
+			\node[above =0.5 cm  of j5] {$j$};
+				%% fig k
+			\vertex[above right =0 cm and 5 cm of j1] (k1);
+			\vertex[right =1cm  of k1] (k2);
+			\vertex[right =2cm  of k1] (k3);
+			\vertex[right =3cm  of k1] (k4);
+			\vertex[right =4cm  of k1] (k5);
+			\vertex[above =1.4 cm  of k3,crossed dot,anchor=center] (k6){};
+			\node[above =0.5 cm  of k5] {$k$};
+				%% fig l
+			\vertex[above right = 0 cm and 5 cm of k1] (l1);
+			\vertex[right =1cm  of l1] (l2);
+			\vertex[right =2cm  of l1, square dot,anchor=center] (l3) {};
+			\vertex[right =3cm  of l1] (l4);
+			\vertex[right =4cm  of l1] (l5);
+			\vertex[above =1.4 cm  of l3, crossed dot, anchor=center] (l6){};
+			\node[above =0.5 cm  of l5] {$l$};
+			%% fig g
+			\vertex[above right =2.5 cm and 0 cm of j1] (g1);
+			\vertex[right =1cm  of g1, dot,anchor=center] (g2){};
+			\vertex[right =2cm  of g1] (g3);
+			\vertex[right =3cm  of g1] (g4);
+			\vertex[right =4cm  of g1] (g5);
+			\node[above =0.5cm of g5] {$g$};
+				%% fig h
+			\vertex[above right =0 cm and 5 cm of g1] (h1);
+			\vertex[right =1cm  of h1] (h2);
+			\vertex[right =2cm  of h1, crossed dot,anchor=center] (h3) {};
+			\vertex[right =3cm  of h1] (h4);
+			\vertex[right =4cm  of h1] (h5);
+			\vertex[above =1.4 cm  of h3] (h6);
+			\node[above =0.5 cm  of h5] {$h$};
+			%% fig i
+			\vertex[above right =0 cm and 5 cm of h1] (i1);
+			\vertex[right =1cm  of i1] (i2);
+			\vertex[right =2cm  of i1,dot,anchor=center] (i3) {};
+			\vertex[right =3cm  of i1] (i4);
+			\vertex[right =4cm  of i1] (i5);
+			\vertex[above =1.4 cm  of i3] (i6);
+			\node[above =0.5 cm  of i5] {$i$};
+			
+			%% fig d
+			\vertex [above right =2.5 cm and 0 cm of g1] (d1);
+			\vertex[right =1cm  of d1] (d2);
+			\vertex[right =2cm  of d1] (d3);
+			\vertex[right =3cm  of d1, crossed dot,anchor=center] (d4){};
+			\vertex[right =4cm  of d1] (d5);
+			\node[above =0.5 cm  of d5] {$d$};
+				%% fig e
+			\vertex[above right =0 cm and 5 cm of d1] (e1);
+			\vertex[right =1cm  of e1, crossed dot,anchor=center] (e2){};
+			\vertex[right =2cm  of e1] (e3);
+			\vertex[right =3cm  of e1] (e4);
+			\vertex[right =4cm  of e1] (e5);
+			\node[above =0.5cm of e5] {$e$};
+				%% fig f
+			\vertex[above right = 0 cm and 5 cm of e1] (f1);
+			\vertex[right =1cm  of f1] (f2);
+			\vertex[right =2cm  of f1] (f3);
+			\vertex[right =3cm  of f1, dot,anchor=center] (f4){};
+			\vertex[right =4cm  of f1] (f5);
+			\node[above =0.5 cm  of f5] {$f$};
+		
+			%% fig a
+			\vertex [above right= 2.5 cm and 0 cm of d1 ](a1);
+			\vertex[right =1cm  of a1] (a2);
+			\vertex[right =2cm  of a1] (a3);
+			\vertex[right =3cm  of a1] (a4);
+			\vertex[right =4cm  of a1] (a5);
+			\vertex[above =1cm of a3,crossed dot] (a6){};
+			\node[above =0.5cm  of a5] {$a$};
+				%% fig b
+			\vertex[above right =0 cm and 5 cm of a1] (b1);
+			\vertex[right =1cm  of b1] (b2);
+			\vertex[right =2cm  of b1, crossed dot,anchor=center] (b3){};
+			\vertex[right =3cm  of b1] (b4);
+			\vertex[right =4cm  of b1] (b5);
+			\node[above =0.5cm of b5] {$b$};
+				%% fig c
+			\vertex[above right =0 cm and 5 cm of b1] (c1);
+			\vertex[right =1cm  of c1] (c2);
+			\vertex[right =2cm  of c1, square dot,anchor=center] (c3){};
+			\vertex[right =3cm  of c1] (c4);
+			\vertex[right =4cm  of c1] (c5);
+			\node[above =0.5cm of c5] {$c$};
+			
+			% 对各个顶点连线
+			\diagram*{
+				{
+					[edge=plain]
+					(r1) --  (r2), (r4)-- (r5),
+					(s1) --  (s2), (s4)-- (s5),
+					(t1) --  (t2), (t4)-- (t5),
+					(u1) --  (u2), (u4)-- (u5),
+	                (m1) --  (m2), (m4)-- (m5),			
+					(l1) -- (l3)--(l5),
+					(k1) -- (k3)--(k5),
+					(j1) -- (j3)--(j5), 
+					(i1) -- (i3)--(i5), 
+					(h1) -- (h3)--(h5),
+					(f1) -- (f2)--(f4)-- (f5),
+				    (g1) -- (g2)--(g4)-- (g5),
+				    (d1) -- (d2)--(d4)-- (d5),
+				    (e1) -- (e2)--(e4)-- (e5),
+			       (n1)-- (n2) -- (n3)--(n4)--(n5),	
+                    (o1)-- (o2) -- (o3)--(o4)--(o5),
+                    (p1)-- (p2) -- (p3)--(p4)--(p5),	
+                    (q1)-- (q2) -- (q3)--(q4)--(q5),
+                    (a1) --(a5), (b1)--(b2)--(b3)--(b4)--(b5),	
+                    (c1)--(c2)--(c3)--(c4)--(c5),	
+			},
+				% 介子连线
+				{
+					[edge= charged scalar]
+					(r2) --[half left](r4),
+					(s2) --[half left](s4),
+					(t2) --[half left](t4),
+					(u2) --[half left](u4),
+	               	(m2) --[quarter left](m6)--[quarter left](m4),
+	                (l3) --[half left](l6)--[half left](l3),
+					(k3) --[half left](k6)--[half left](k3),
+					(i3) --[half left](i6)--[half left](i3),
+					(j3) --[half left](j6)--[half left](j3),
+					(h3) --[half left](h6)--[half left](h3),
+					(f2) --[half left](f4),
+					(g2) --[half left](g4),
+					(d2) --[half left](d4),
+					(e2) --[half left](e4),
+					(n2) --[half left](n4),
+					(o2) --[half left](o4),
+					(p2) --[half left](p4),
+					(q2) --[half left](q4),
+					(a2) --[quarter left](a6)--[quarter left](a4),
+					(b2) --[half left](b4),
+				    (c2) --[half left](c4),
+			}
+			};
+			%% 添加重子双线
+			\draw[decuplet]	 (r2) -- (r4);
+			\draw[decuplet]	 (s2) -- (s4);
+			\draw[decuplet]  (n2) -- (n3);
+			\draw[decuplet]  (n3) -- (n4);
+			\draw[decuplet]  (o2) -- (o3);
+			\draw[decuplet]  (o3) -- (o4);
+			\draw[decuplet]  (p2) -- (p3);
+			\draw[decuplet]  (q3) -- (q4);
+			\draw[decuplet]	 (t2) -- (t4);
+			\draw[decuplet]	 (u2) -- (u4);
+			\draw[decuplet]  (m2) -- (m4);
+		\end{feynman}
+	\end{tikzpicture}
+	
+\end{document}

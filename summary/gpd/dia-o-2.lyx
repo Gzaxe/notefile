@@ -1,0 +1,741 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+For diagram o, B part, the integral still can be expanded to be like 
+\begin_inset Formula $\frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+.
+ The difference here is the order in the numerator is higher.
+ The integral can be classified by the power of baryon propagator.
+ For example,
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}(p'-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)},\frac{D_{\phi}}{D_{\Lambda}^{4}}\quad order0\\
+\frac{D_{B}^{2}(p'-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)},\frac{D_{\phi}D_{B}}{D_{\Lambda}^{4}}\quad order1\\
+\frac{D_{B}^{3}(p'-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)},\frac{D_{B}^{2}(p'-k)}{D_{\phi}D_{\Lambda}^{4}}\quad order2\\
+\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}\quad order3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The order 3 case is simple.
+ All terms in this order looks like 
+\begin_inset Formula $\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+, and do not contain 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+.
+ More importantly, the divergence in order 3 is canceled after add them
+ together.
+ So this term can be calculated in covariant frame which can be done by
+ mathematica and can check the result of 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+ The calculation of these terms are same with before
+\begin_inset Formula 
+\[
+\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}=\frac{(D_{\phi}+m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2}-2p_{1}.k)^{3}}{D_{\phi}D_{\Lambda}^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expand the numerator, 
+\begin_inset Formula $D_{\phi}^{3}+(p_{1}.k)^{3}+(D_{\phi}+mass)(p_{1}.k)^{2}+(D_{\phi}+mass+D_{\phi}^{2})(p_{1}.k)+D_{\phi}^{2}+mass$
+\end_inset
+
+,then these terms we have and how to calculate them are listed below
+\begin_inset Formula 
+\begin{align*}
+\frac{(p_{1}.k)^{3}}{D_{\phi}D_{\Lambda}^{4}} & =0\\
+\frac{D_{\phi}^{3}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}\ divergence\\
+\frac{(p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(p_{1}^{+}k^{-})^{2}+(p_{1}^{-}k^{+}-p_{1}^{\perp}.k^{\perp})p_{1}^{+}k^{-}+(p_{1}^{-}k^{+})^{2}+(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{\phi}(p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(p_{1}^{+}k^{-})^{2}+(p_{1}^{-}k^{+}-p_{1}^{\perp}.k^{\perp})p_{1}^{+}k^{-}+(p_{1}^{-}k^{+})^{2}+(p_{1}^{\perp}.k^{\perp})^{2}}{D_{\Lambda}^{4}}\\
+\frac{(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{\frac{1}{2}(p_{1}^{-}k^{+}+p_{1}^{+}k^{-})-(p_{1}^{\perp}.k^{\perp})}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{\phi}(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{\frac{1}{2}(p_{1}^{-}k^{+}+p_{1}^{+}k^{-})-(p_{1}^{\perp}.k^{\perp})}{D_{\Lambda}^{4}}\\
+\frac{D_{\phi}^{2}(p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}} & =(D_{\Lambda}+\Lambda^{2}-m_{\phi}^{2})\frac{\frac{1}{2}(p_{1}^{-}k^{+}+p_{1}^{+}k^{-})-(p_{1}^{\perp}.k^{\perp})}{D_{\Lambda}^{4}}\\
+ & =\frac{\frac{1}{2}(p_{1}^{-}k^{+}+p_{1}^{+}k^{-})-(p_{1}^{\perp}.k^{\perp})}{D_{\Lambda}^{3}}+(\Lambda^{2}-m_{\phi}^{2})\frac{\frac{1}{2}(p_{1}^{-}k^{+}+p_{1}^{+}k^{-})-(p_{1}^{\perp}.k^{\perp})}{D_{\Lambda}^{4}}\\
+\frac{D_{\phi}^{2}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{D_{\phi}}{D_{\Lambda}^{4}}=\frac{(D_{\Lambda}+\Lambda^{2}-m_{\phi}^{2})}{D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first line 
+\begin_inset Formula $\frac{(p_{1}.k)^{3}}{D_{\phi}D_{\Lambda}^{4}}=0$
+\end_inset
+
+ is because first we can calculate this in covirant frame or we can tell
+ this by the odd of 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ The difference of 
+\begin_inset Formula $\frac{(p_{1}.k)}{D_{\Lambda}^{4}}$
+\end_inset
+
+ which is not 0 here because we need to consider 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\frac{(p_{1}.k)}{D_{\Lambda}^{4}}$
+\end_inset
+
+ is 0 if we only have this term,but if we have 
+\begin_inset Formula $\frac{k^{+}(p_{1}.k)}{D_{\Lambda}^{4}}$
+\end_inset
+
+,then it is not 0.
+ 
+\end_layout
+
+\begin_layout Standard
+I do not calculate the divergent term
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}$
+\end_inset
+
+.
+ It is canceled in the whole 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+\end_layout
+
+\begin_layout Standard
+Other terms are calculated in this way
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{D_{\phi}D_{\Lambda}^{4}}\ \frac{1}{D_{\Lambda}^{4}}\ \frac{1}{D_{\Lambda}^{3}}- & >A(k^{\perp})\delta(k^{+})\\
+\int dk^{-}\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}= & \frac{1}{(a+b-1)!}\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\\
+ & \frac{\partial^{a+b-2}}{\partial\Omega^{a+b-2}}\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})\\
+\frac{k^{-}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{-}}{D_{\Lambda}^{4}} & ->\frac{\partial}{\partial k^{+}}(A(k^{\perp})\delta(k^{+}))->\frac{\delta(k^{+})}{k^{+}}\\
+\frac{p_{1}^{\perp}.k^{\perp}}{(D_{\phi})D_{\Lambda}^{4}} & ->\int d^{2}k^{\perp}A(k^{\perp})\delta(k^{+})\\
+\frac{k^{+}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}}{D_{\Lambda}^{4}} & ->k^{+}A(k^{\perp})\delta(k^{+})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For
+\begin_inset Formula $\frac{k^{+}}{D_{\phi}D_{\Lambda}^{4}}$
+\end_inset
+
+, more specific calculation is 
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)} & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int dk^{-}(k^{-})^{n}\int_{0}^{1}dx\frac{x^{a-1}(1-x)^{b-1}}{(k^{2}-\Omega+i\epsilon)^{a+b}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{(k^{-})^{n}}{(k^{+}k^{-}-k^{\perp2}-\Omega+i\epsilon)^{a+b}}\\
+ & ->\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{\partial^{n}}{\partial k^{+n}}\frac{1}{(k^{+}k^{-}-k^{\perp2}-\Omega+i\epsilon)^{a+b-n}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\frac{\partial^{n}}{\partial k^{+n}}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\int dk^{-}\frac{1}{(k^{+}k^{-}-k^{\perp2}-\Omega+i\epsilon)^{a+b-n}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\frac{\partial^{n}}{\partial k^{+n}}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2-n}}{\partial\Omega^{a+b-2-n}}\int dk^{-}\frac{1}{(k^{2}-\Omega)^{2}}\\
+ & =\frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}\frac{\partial^{n}}{\partial k^{+n}}\int_{0}^{1}dxx^{a-1}(1-x)^{b-1}\frac{\partial^{a+b-2-n}}{\partial\Omega^{a+b-2-n}}\frac{2\pi i}{k^{\perp^{2}}+\Omega}\delta(k^{+})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order 2 case, we have 
+\begin_inset Formula 
+\begin{gather*}
+\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}^{3}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{3}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{(D_{B}(p_{2}-k)+2k.q)^{3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}(D_{B}^{2}(p_{2}-k)+6D_{B}(p_{2}-k)k.q+12(k.q)^{2}+\frac{8(k.q)^{3}}{D_{B}(p_{2}-k)})\\
+\frac{(k.q)^{3}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{(\frac{1}{2}k^{-}q^{+})^{3}+\frac{3}{8}(k^{-}q^{+})^{2}(k^{+}q^{-}-2k^{\perp}.q^{\perp})+\frac{3}{8}(k^{-}q^{+})(k^{+}q^{-}-2k^{\perp}.q^{\perp})^{2}+A}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}(k)}*((\frac{\xi}{1+\xi})^{3}(D_{B}^{2}+3D_{B}k^{-}p_{1}^{+})\\
+ & +\frac{3}{2}(\frac{\xi}{1+\xi})^{2}(4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-})+3(\frac{\xi}{1+\xi})(k^{\perp}.q^{\perp})^{2}\\
+ & =(\frac{\xi}{1+\xi})^{3}(\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)}+\frac{3D_{B}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)})+\frac{3}{2}(\frac{\xi}{1+\xi})^{2}\frac{4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-}}{D_{\Lambda}^{4}(k)}\\
+ & +3(\frac{\xi}{1+\xi})\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)}\\
+\textrm{then}\frac{D_{B}^{2}}{D_{\Lambda}^{4}(k)} & =\frac{(D_{\phi}+m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})^{2}}{D_{\Lambda}^{4}(k)}+\frac{(-2p.k)^{2}}{D_{\Lambda}^{4}(k)}\\
+ & +2\frac{(-2p.k)D_{\phi}}{D_{\Lambda}^{4}(k)}+2\frac{(-2p.k)(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})}{D_{\Lambda}^{4}(k)}+2\frac{(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})D_{\phi}}{D_{\Lambda}^{4}(k)}\\
+\frac{D_{B}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)} & =\frac{(k^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{k^{2}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-2\frac{p.kk^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}+(M_{1}^{2}-M_{2}^{2})\frac{k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+ & =\frac{k^{+}k^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-\frac{k^{+}p^{-}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}-\frac{(k^{-}p^{+})^{2}}{D_{\Lambda}^{4}(k)}+\frac{2p^{\perp}.k^{\perp}k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}+(M_{1}^{2}-M_{2}^{2})\frac{k^{-}p_{1}^{+}}{D_{\Lambda}^{4}(k)}\\
+\frac{p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}}{D_{\Lambda}^{4}(k)} & =-\frac{(k^{\perp}.q^{\perp})^{2}}{D_{\Lambda}^{4}(k)}\textrm{which can be calculated }
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next is 
+\begin_inset Formula $\frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}}$
+\end_inset
+
+part
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)^{2}}{D_{\phi}D_{\Lambda}^{4}}\\
+ & =\frac{D_{\phi}^{2}+(m_{\phi}^{2}-M^{2})^{2}+(2p_{1}.k)^{2}+2D_{\phi}(m_{\phi}^{2}-M^{2})-4D_{\phi}p_{1}.k-4p_{1}.k(m_{\phi}^{2}-M^{2})}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)^{2}}{D_{\Lambda}^{4}}\\
+ & =\frac{D_{\phi}^{2}+(m_{\phi}^{2}-M^{2})^{2}+(2p_{1}.k)^{2}+2D_{\phi}(m_{\phi}^{2}-M^{2})-4D_{\phi}p_{1}.k-4p_{1}.k(m_{\phi}^{2}-M^{2})}{D_{\Lambda}^{4}}\\
+\frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{2}.k)}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{B}(p_{1}-k)D_{B}(p_{2}-k)}{D_{\Lambda}^{4}} & =\frac{(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{2}.k)}{D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order1 part we have these form of propagator
+\begin_inset Formula 
+\begin{gather*}
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}\ \frac{D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{2}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{(D_{B}(p_{2}-k)+2k.q)^{2}}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+ & =\frac{1}{D_{\phi}D_{\Lambda}^{4}}(D_{B}(p_{2}-k)+4(k.q)+\frac{4(k.q)^{2}}{D_{B}(p_{2}-k)})\\
+\frac{(k.q)^{2}}{D_{B}(p_{2}-k)} & =\frac{(\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp})^{2}}{D_{B}(p_{2}-k)}=\frac{(\frac{1}{2}k^{-}q^{+})^{2}}{D_{B}(p_{2}-k)}+\frac{\frac{1}{2}k^{+}q^{-}k^{-}q^{+}-k^{-}q^{+}k^{\perp}.q^{\perp}}{D_{B}(p_{2}-k)}+A\\
+ & =\frac{(\frac{1}{2}k^{-}q^{+})^{2}}{D_{B}(p_{2}-k)}=(\frac{\xi}{1-\xi})^{2}\frac{(k^{-}p_{2}^{+})^{2}}{D_{B}(p_{2}-k)}\\
+ & =(\frac{\xi}{1-\xi})^{2}\frac{(D_{B}(p_{2}-k)-(D_{B}(p_{2}-k)+k^{-}p_{2}^{+}))^{2}}{D_{B}(p_{2}-k)}\\
+ & =(\frac{\xi}{1-\xi})^{2}\frac{D_{B}^{2}(p_{2}-k)+(D_{B}(p_{2}-k)+k^{-}p_{2}^{+})^{2}-2D_{B}(p_{2}-k)(D_{B}(p_{2}-k)+k^{-}p_{2}^{+})}{D_{B}(p_{2}-k)}\\
+ & =-(\frac{\xi}{1-\xi})^{2}(D_{B}(p_{2}-k)+2k^{-}p_{2}^{+})\\
+D_{B}(p_{2}-k)+k^{-}p_{2}^{+} & =(p_{2}^{+}-k^{+})p_{2}^{-}+k^{+}k^{-}-(p_{2}^{\perp}-k^{\perp})^{2}-M^{2}\\
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{(k.q)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp}}{D_{\phi}D_{\Lambda}^{4}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order 0 we have 
+\begin_inset Formula 
+\begin{gather*}
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\ \frac{D_{\phi}^{2}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{1}{D_{\phi}D_{\Lambda}^{4}}\ \frac{1}{D_{\Lambda}^{4}}\ \frac{D_{\phi}}{D_{\Lambda}^{4}}\ \frac{D_{\phi}^{2}}{D_{\Lambda}^{4}}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{D_{B}(p_{2}-k)+2k.q}{D_{\phi}D_{\Lambda}^{4}D_{B}(p_{2}-k)}\\
+\frac{k.q}{D_{B}(p_{2}-k)} & =\frac{\frac{1}{2}(k^{+}q^{-}+k^{-}q^{+})-k^{\perp}.q^{\perp}}{D_{B}(p_{2}-k)}\\
+ & =\frac{\frac{1}{2}k^{-}q^{+}}{D_{B}(p_{2}-k)}=\frac{-\xi}{1-\xi}\frac{k^{-}p_{2}^{+}}{D_{B}(p_{2}-k)}\\
+ & =\frac{\xi}{1-\xi}\frac{D_{B}(p_{2}-k)-((p_{2}^{+}-k^{+})p_{2}^{-}+k^{+}k^{-}-(p_{2}^{\perp}-k^{\perp})^{2}-M^{2})}{D_{B}(p_{2}-k)}\\
+ & =\frac{\xi}{1-\xi}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, the converged term should be correct, which can be checked by compared
+ with the covirant result.
+ For the divergent terms, because the divergence is canceled if we write
+ the divergence in this form 
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+ the divergent term should be equal to the covirant result if we remove
+ the 
+\begin_inset Formula $\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}$
+\end_inset
+
+ in them.
+ For example,
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+\frac{(p_{1}.k)^{3}+(D_{\phi}+mass)(p_{1}.k)^{2}+(D_{\phi}+mass+D_{\phi}^{2})(p_{1}.k)+D_{\phi}^{2}+mass}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{B}^{2}}{D_{\Lambda}^{4}} & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+\frac{2D_{\phi}(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})+(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})^{2}-4D_{\phi}k.p-4(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2})k.p+4(k.p)^{2}}{D_{\Lambda}^{4}}\\
+\frac{D_{\phi}D_{B}}{D_{\Lambda}^{4}} & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+\frac{D_{\phi}(m_{\phi}^{2}+M_{1}^{2}-M_{2}^{2}-2p.k)}{D_{\Lambda}^{4}(k)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But in these case, I can not get same result.
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}^{3}(p_{1}-k)}{D_{B}(p_{2}-k)D_{\Lambda}^{4}} & =\frac{1}{D_{\Lambda}^{4}(k)}*((\frac{\xi}{1+\xi})^{3}(D_{B}^{2}+3D_{B}k^{-}p_{1}^{+})\\
+ & +\frac{3}{2}(\frac{\xi}{1+\xi})^{2}(4p_{1}^{\perp}.k^{\perp}k^{\perp}.q^{\perp}-p_{1}^{+}q^{-}k^{+}k^{-})+3(\frac{\xi}{1+\xi})(k^{\perp}.q^{\perp})^{2}\\
+\frac{D_{\phi}D_{B}^{2}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{D_{\phi}}{D_{\Lambda}^{4}(k)}(D_{B}(p_{2}-k)+4(k.q)+\frac{4(k.q)^{2}}{D_{B}(p_{2}-k)})\\
+\frac{D_{\phi}^{2}D_{B}(p_{1}-k)}{D_{\Lambda}^{4}D_{B}(p_{2}-k)} & =\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}(1+\frac{2k.q}{D_{B}(p_{2}-k)})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The special integral is 
+\begin_inset Formula 
+\[
+\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}}\ \frac{D_{\phi}(k.q)^{2}}{D_{\Lambda}^{4}(k)D_{B}}\ \frac{D_{\phi}^{2}(k.q)}{D_{\Lambda}^{4}(k)D_{B}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is converged in covirant frame but give divergence in light-cone both
+ in residue and 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}}$
+\end_inset
+
+, in residue part, the divergence comes from 
+\begin_inset Formula $k^{-3}$
+\end_inset
+
+ term.
+\begin_inset Formula 
+\[
+\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}}=\frac{(\frac{1}{2}k^{-}q^{+})^{3}}{D_{\Lambda}^{4}(k)D_{B}}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The divergent residue of 
+\begin_inset Formula $\frac{(k^{-})^{3}}{D_{\Lambda}^{4}(k)D_{B}}$
+\end_inset
+
+ have this form
+\begin_inset Formula 
+\[
+\int dk^{\perp}\frac{k^{\perp7}+...}{k^{\perp8}+...}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is logarithmic divergence.
+\end_layout
+
+\begin_layout Standard
+And in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term this term also contribute a divergence.
+\begin_inset Formula 
+\begin{align*}
+\frac{(\frac{1}{2}k^{-}q^{+})^{3}}{D_{\Lambda}^{4}(k)D_{B}} & =(\frac{\xi}{1+\xi})^{3}\frac{D_{B}^{3}-3D_{B}(D_{B}+k^{-}p_{1}^{+})+3(D_{B}+k^{-}p_{1}^{+})^{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\\
+ & =(\frac{\xi}{1+\xi})^{3}\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)}+...\\
+\frac{D_{\phi}^{2}}{D_{\Lambda}^{4}(k)} & =\frac{(D_{\Lambda}+\Lambda^{2}-m_{\phi}^{2})^{2}}{D_{\Lambda}^{4}(k)}=\frac{1}{D_{\Lambda}^{2}(k)}+...\\
+\int dk^{+}dk^{-}\frac{1}{D_{\Lambda}^{2}(k)} & =\frac{2\pi I}{k^{\perp2}+\Lambda^{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The integral 
+\begin_inset Formula $\int d^{4}k\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}}$
+\end_inset
+
+ can be calculated in covirant and light front.
+ 
+\begin_inset Formula 
+\begin{align*}
+\int d^{4}k\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}} & =Residue+\delta\\
+ & =\int d^{2}k^{\perp}(Residue2+\delta_{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the Residue is the result from residue theory calculation.
+ Both residue part and 
+\begin_inset Formula $\delta$
+\end_inset
+
+ part need to be integrated over 
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+, so we can write the second line which represent the result before integral
+ of 
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $Residue2+\delta_{2}$
+\end_inset
+
+ now are function of 
+\begin_inset Formula $k^{\perp}$
+\end_inset
+
+, and as showed above, both of them contain logarithmic divergence.
+ We can add a term 
+\begin_inset Formula $\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}}$
+\end_inset
+
+ which is logarithmic divergent and integrate them respectively.
+ 
+\begin_inset Formula 
+\begin{align*}
+\int d^{2}k^{\perp}(Residue2+\delta_{2}) & =\int d^{2}k^{\perp}(Residue2+\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}}+\delta_{2}-\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}})\\
+ & =\int d^{2}k^{\perp}(Residue2+\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}})+\int d^{2}k^{\perp}(\delta_{2}-\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset Formula $\delta$
+\end_inset
+
+ part, we can make the integral converged easily, because the divergence
+ in 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term have this form
+\begin_inset Formula 
+\[
+\int dk^{+}dk^{-}\frac{1}{D_{\Lambda}^{2}(k)}=\frac{2\pi I}{k^{\perp2}+\Lambda^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With proper 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ and coefficient of 
+\begin_inset Formula $\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}}$
+\end_inset
+
+, 
+\begin_inset Formula $\int d^{2}k^{\perp}(\delta_{2}-\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}})$
+\end_inset
+
+ will be converged.
+ And then we can calculate the residue part with certain
+\begin_inset Formula $\frac{1}{k^{\perp2}+\text{\ensuremath{\Omega}}}$
+\end_inset
+
+.
+ If the result of residue part is still divergent or the whole result of
+ residue part and 
+\begin_inset Formula $\delta$
+\end_inset
+
+ part is not same with covirant result, the calculation is wrong.
+ 
+\end_layout
+
+\begin_layout Standard
+But the result of these three terms 
+\begin_inset Formula $\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}}\ \frac{D_{\phi}(k.q)^{2}}{D_{\Lambda}^{4}(k)D_{B}}\ \frac{D_{\phi}^{2}(k.q)}{D_{\Lambda}^{4}(k)D_{B}}$
+\end_inset
+
+,is same with covirant result.
+ The calculation is correct at least for these 
+\begin_inset Formula $\delta$
+\end_inset
+
+ terms respectively.
+\end_layout
+
+\begin_layout Standard
+In the whole expression of B,
+\begin_inset Formula 
+\[
+\textrm{B=Tr}[\Gamma^{+}(\cancel{p}+M)(\cancel{p'}+M)]\frac{P^{+}}{M}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we can expand the numerator and we will get terms like this 
+\begin_inset Formula 
+\[
+\int d^{4}k\frac{(p_{1}.k)(p_{2}.k)^{3}k^{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)D_{B}(p_{2}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we can check this term's calculation.
+ This integral has same problem like 
+\begin_inset Formula $\frac{(k.q)^{3}}{D_{\Lambda}^{4}(k)D_{B}}$
+\end_inset
+
+, the residue part and the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term are both divergent and the covirant integral should be converged.
+ Using same method to cancel the divergence, we can get a 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independent result of this integral.
+ This prove the calculation of B, at least part of B is correct, because
+ this part of B only contain part forms of 
+\begin_inset Formula $\delta$
+\end_inset
+
+ terms.
+ For example, this term does not have 
+\begin_inset Formula 
+\[
+\frac{D_{B}^{3}}{D_{\phi}D_{\Lambda}^{4}}\ \frac{D_{B}^{3}(p'-k)}{D_{\phi}D_{\Lambda}^{4}D_{B}(p-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So next, we can firstly check a new integral which contain these two form,
+ for example 
+\begin_inset Formula 
+\[
+\int d^{4}k\frac{(p_{1}.k)^{4}(p_{2}.k)}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)D_{B}(p_{2}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which is also checked and we can get a 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independent result.
+ 
+\end_layout
+
+\begin_layout Standard
+And the second problem is 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+, for example
+\begin_inset Formula 
+\[
+\int d^{4}k\frac{k^{+}(p_{1}.k)(p_{2}.k)k^{2}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)D_{B}(p_{2}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The difference of 
+\begin_inset Formula $k^{+}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{align*}
+\frac{D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{D_{\phi}}{D_{\phi}D_{\Lambda}^{4}} & =\frac{1}{D_{\Lambda}^{4}}\\
+\int dk^{-}\frac{1}{D_{\Lambda}^{4}},\ \frac{1}{D_{\phi}D_{\Lambda}^{4}} & =\delta(k^{+})\\
+\frac{p_{1}.k}{D_{\phi}D_{\Lambda}^{4}} & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, 
+\begin_inset Formula 
+\begin{align*}
+\frac{k^{+}D_{B}(p_{1}-k)}{D_{\phi}D_{\Lambda}^{4}} & =\frac{k^{+}(D_{\phi}+m_{\phi}^{2}-M^{2}-2p_{1}.k)}{D_{\phi}D_{\Lambda}^{4}}\\
+\int dk^{-}\frac{k^{+}}{D_{\Lambda}^{4}},\ \frac{k^{+}}{D_{\phi}D_{\Lambda}^{4}} & =k^{+}\delta(k^{+})\\
+\frac{k^{+}p_{1}.k}{D_{\phi}D_{\Lambda}^{4}} & =\frac{k^{+}(\frac{1}{2}(k^{+}p_{1}^{-}+k^{-}p_{1}^{+})-k^{\perp}.p_{1}^{\perp})}{D_{\phi}D_{\Lambda}^{4}}\\
+ & =\frac{k^{+2}p_{1}^{-}}{2D_{\phi}D_{\Lambda}^{4}}+\frac{k^{+}k^{-}p_{1}^{+}}{2D_{\phi}D_{\Lambda}^{4}}-\frac{k^{+}(k^{\perp}.p_{1}^{\perp})}{D_{\phi}D_{\Lambda}^{4}}\\
+\frac{k^{+2}p_{1}^{-}}{2D_{\phi}D_{\Lambda}^{4}}\ \frac{k^{+}(k^{\perp}.p_{1}^{\perp})}{D_{\phi}D_{\Lambda}^{4}} & =0\\
+\frac{k^{+}k^{-}p_{1}^{+}}{2D_{\phi}D_{\Lambda}^{4}} & \neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

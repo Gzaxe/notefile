@@ -1,0 +1,1188 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 23411/feynman diagram-octet.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Feynman diagrams 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this note I show the problems of convolution formula in baryon case and
+ I give a short conclusion in the end.
+\end_layout
+
+\begin_layout Standard
+The convolution formula in meson loop condition is 
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >x>\xi\\
+\int_{\xi}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >\xi>x\\
+\int_{-\xi}^{\xi}dy\frac{1}{2\xi}f(y,\xi,t)\frac{\xi}{\pi y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{y,|x|\}\\
+\int_{-x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where the 
+\begin_inset Formula $y=\frac{k^{+}}{P^{+}}-\xi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The relationship of y and x in the formula is
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/convolution.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In meson loop the y and x in convolution formula
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now with new definition of 
+\begin_inset Formula $y=\frac{k^{+}}{P^{+}}$
+\end_inset
+
+, the intermediate particle is octet baryon and their momentum is 
+\begin_inset Formula $1-y\pm\xi$
+\end_inset
+
+.
+ Then we have same relation as the picture in Fig2 only replace the 
+\begin_inset Formula $y$
+\end_inset
+
+ to be 
+\begin_inset Formula $1-y$
+\end_inset
+
+.
+ So if we replace the y in convolution formula of meson loop with 
+\begin_inset Formula $1-y$
+\end_inset
+
+, we can still use the same convolution formula upside.
+ The equation becomes
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >x>\xi\\
+\int_{\xi}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >\xi>x\\
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2\xi}f(y,\xi,t)\frac{1}{\pi}\frac{\xi}{1-y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{1-y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{1-y,|x|\}\\
+\int_{-x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Noticed that in the splitting function I still use 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ This is because the splitting function here describe the meson with momentum
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ so 
+\begin_inset Formula $f(1-y)$
+\end_inset
+
+ is still a meson with momentum 
+\begin_inset Formula $1-y$
+\end_inset
+
+ while now the momentum of baryon is 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+ describe baryon with momentum 
+\begin_inset Formula $x$
+\end_inset
+
+ should satisfy 
+\begin_inset Formula $f'(1-y)=f(y)$
+\end_inset
+
+ because the baryon with momentum 
+\begin_inset Formula $1-y$
+\end_inset
+
+ and the meson with momentum 
+\begin_inset Formula $y$
+\end_inset
+
+ are corresponding.
+\end_layout
+
+\begin_layout Standard
+In meson loop condition the range of 
+\begin_inset Formula $y=\frac{k^{+}}{P^{+}}-\xi$
+\end_inset
+
+ is 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+, so in baryon case the range of 
+\begin_inset Formula $1-y$
+\end_inset
+
+, where the 
+\begin_inset Formula $y=\frac{k^{+}}{P^{+}}$
+\end_inset
+
+, should also be in 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+ and the range of 
+\begin_inset Formula $y=\frac{k^{+}}{P^{+}}$
+\end_inset
+
+ is 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+.
+ For most diagrams in Fig1, the range of 
+\begin_inset Formula $y=\frac{k^{+}}{P^{+}}$
+\end_inset
+
+ is in 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+.
+ However in additional KR diagram with left vertex which is diagram g and
+ diagram u, the range of 
+\begin_inset Formula $y=\frac{k^{+}}{P^{+}}$
+\end_inset
+
+ is 
+\begin_inset Formula $[-2\xi,1-\xi]$
+\end_inset
+
+ and the range of 
+\begin_inset Formula $1-y$
+\end_inset
+
+ is 
+\begin_inset Formula $[\xi,1+2\xi]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Since the difference is the range of 
+\begin_inset Formula $1-y$
+\end_inset
+
+, one can still use the formula just change the range of integral which
+ is 
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1+2\xi}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >x>\xi\\
+\int_{\xi}^{1+2\xi}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >\xi>x\\
+\int_{-x}^{1+2\xi}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now I'll show the problem in this simple method.
+ 
+\end_layout
+
+\begin_layout Standard
+We can check the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independence of electromagnetic form factor from GPD.
+ For other diagrams, the form factor is, where I replace 
+\begin_inset Formula $1-y$
+\end_inset
+
+ with y to make it easier to write.
+\begin_inset Formula 
+\begin{align*}
+\int_{-1}^{1}dxH(x,\xi,t) & =\int_{\xi}^{1}dx\int_{x}^{1}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & +\int_{-\xi}^{\xi}dx\int_{\xi}^{1}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & +\int_{-\xi}^{\xi}dx\int_{-\xi}^{\xi}d(y)\frac{1}{2\xi}f(1-y,\xi,t)\frac{\xi}{\pi y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{y}{\xi}+1}{2},s)}{s-t+i\epsilon}\\
+ & +\int_{-1}^{-\xi}dx\int_{-x}^{1}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is almost the same as meson loop condition.
+ The first term 
+\begin_inset Formula $\int_{\xi}^{1}dx\int_{x}^{1}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)$
+\end_inset
+
+ will be transformed like this when we prove the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independence.
+\begin_inset Formula 
+\begin{align*}
+\int_{\xi}^{1}dx\int_{x}^{1}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t) & =\int_{\xi}^{1}dy\int_{\xi}^{y}dx\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & =\int_{\xi}^{1}dyf(1-y,\xi,t)\int_{\frac{\xi}{y}}^{1}d(\frac{x}{y})H_{q}(\frac{x}{y},\frac{\xi}{y},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For diagram g and u, where the range of y in splitting function 
+\begin_inset Formula $f(y,\xi,t)$
+\end_inset
+
+ is 
+\begin_inset Formula $[-2\xi,1-\xi]$
+\end_inset
+
+, the integral is
+\begin_inset Formula 
+\[
+\int_{-1}^{1}dxH(x,\xi,t)=\int_{\xi}^{1}dx\int_{x}^{1+2\xi}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)+\int_{-\xi}^{\xi}dx\int_{\xi}^{1+2\xi}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And 
+\begin_inset Formula 
+\begin{align*}
+\int_{\xi}^{1}dx\int_{x}^{1+2\xi}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t) & =\int_{\xi}^{1}dy\int_{\xi}^{y}dx\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & +\int_{1}^{1+2\xi}dy\int_{\xi}^{1}dx\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & =\int_{\xi}^{1}dyf(1-y,\xi,t)\int_{\frac{\xi}{y}}^{1}d(\frac{x}{y})H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & +\int_{1}^{1+2\xi}dyf(1-y,\xi,t)\int_{\frac{\xi}{u}}^{\frac{1}{y}}d(\frac{x}{y})H_{q}(\frac{x}{y},\frac{\xi}{y},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{\xi}dx\int_{\xi}^{1+2\xi}dy\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t) & =\int_{\xi}^{1}dy\int_{-\xi}^{\xi}dx\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & +\int_{1}^{1+2\xi}dy\int_{-\xi}^{\xi}dx\frac{1}{y}f(1-y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & =\int_{\xi}^{1}dyf(1-y,\xi,t)\int_{-\frac{\xi}{y}}^{\frac{\xi}{y}}d(\frac{x}{y})H_{q}(\frac{x}{y},\frac{\xi}{y},t)\\
+ & +\int_{1}^{1+2\xi}dyf(1-y,\xi,t)\int_{-\frac{\xi}{y}}^{\frac{\xi}{y}}d(\frac{x}{y})H_{q}(\frac{x}{y},\frac{\xi}{y},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we can not get 
+\begin_inset Formula $\int_{-1}^{1}d(\frac{x}{y})H_{q}(\frac{x}{y},\frac{\xi}{y},t)=F(t)$
+\end_inset
+
+, instead we will have this term 
+\begin_inset Formula 
+\[
+\int_{1}^{1+2\xi}dyf(1-y,\xi,t)\int_{-\frac{1}{y}}^{\frac{1}{y}}d(\frac{x}{y})H_{q}(\frac{x}{y},\frac{\xi}{y},t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Still we can try to prove this.
+ But even we prove the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independence, the range of 
+\begin_inset Formula $\bar{y}=1-y$
+\end_inset
+
+ in 
+\begin_inset Formula $[1,1+\xi]$
+\end_inset
+
+ need physical explain.
+\end_layout
+
+\begin_layout Standard
+We can do a simple change in the KR additional diagram calculation to change
+ the range of 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ The contribution of the additional KR diagram is 
+\begin_inset Formula 
+\begin{align}
+\Gamma_{(f+g)}^{+} & =\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k)}\tilde{F}(k)[\frac{2k^{+}-q^{+}}{2kq-q^{2}}(\tilde{F}(k)-\tilde{F}(k-q))\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\nonumber \\
+ & +\frac{2k^{+}+q^{+}}{2kq+q^{2}}(\tilde{F}(k+q)-\tilde{F}(k))(\cancel{k}+\cancel{q})\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5}]\delta(y-\frac{k^{+}}{P^{+}})
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The different range of 
+\begin_inset Formula $\bar{y}=1-y$
+\end_inset
+
+ is from the first line of eq.1.
+ So we can change 
+\begin_inset Formula $k->k+q$
+\end_inset
+
+ , because the 
+\begin_inset Formula $k$
+\end_inset
+
+ is variable of integration
+\begin_inset Formula 
+\begin{align*}
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k)}\tilde{F}(k)\frac{2k^{+}-q^{+}}{2kq-q^{2}}(\tilde{F}(k)-\tilde{F}(k-q))\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\delta(y-\frac{k^{+}}{P^{+}})\\
+=\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k+q)}\tilde{F}(k+q)\frac{2k^{+}+q^{+}}{2kq+q^{2}}(\tilde{F}(k+q)-\tilde{F}(k))(\cancel{k}+\cancel{q})\gamma_{5}\frac{\cancel{p}-\cancel{k}+M_{B}}{D_{B}(p-k)}\cancel{k}\gamma_{5}\delta(y-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The new definition is almost same as the old one, only 
+\begin_inset Formula $y$
+\end_inset
+
+ turns to be 
+\begin_inset Formula $y+2\xi$
+\end_inset
+
+ and now the range of new 
+\begin_inset Formula $y'$
+\end_inset
+
+ is 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+ which satisfy the convolution formula.
+\end_layout
+
+\begin_layout Standard
+For KR diagram, this change can also be done in another way due to the definitio
+n of operator can be changed and we will have different 
+\begin_inset Formula $\delta(y)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k)}\tilde{F}(k)\frac{2k^{+}-q^{+}}{2kq-q^{2}}(\tilde{F}(k)-\tilde{F}(k-q))\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\delta(y-\frac{k^{+}}{P^{+}})\\
+=\int\frac{d^{4}k}{(2\pi)^{4}}\frac{i}{D_{\phi}(k)}\tilde{F}(k)\frac{2k^{+}-q^{+}}{2kq-q^{2}}(\tilde{F}(k)-\tilde{F}(k-q))\cancel{k}\gamma_{5}\frac{\cancel{p'}-\cancel{k}+M_{B}}{D_{B}(p'-k)}(\cancel{k}-\cancel{q})\gamma_{5}\delta(y'-\frac{k^{+}}{P^{+}}-2\xi)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then in new definition, 
+\begin_inset Formula $y'=y+2\xi\in[0,1+\xi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+But the first moment of splitting function changes in this different definition
+ of 
+\begin_inset Formula $y$
+\end_inset
+
+ which should be like asked by the polynomiality of GPD,
+\begin_inset Formula 
+\[
+\int_{-1}^{1}dyyf(y,\xi,t)=A(t)+(2\xi)^{2}D(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the old definition satisfy this.
+ The new definition will contain a 
+\begin_inset Formula $\xi$
+\end_inset
+
+ term which looks like
+\begin_inset Formula 
+\[
+\int_{-1}^{1}dy'y'f(y',\xi,t)=A(t)+(2\xi)^{2}D(t)+(\xi)C(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we do this change in both KR normal and additional diagram, for the
+ vertex in right we change 
+\begin_inset Formula $y->y'+\xi$
+\end_inset
+
+ where the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+, so the new range of 
+\begin_inset Formula $y'$
+\end_inset
+
+ is 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+.
+ For vertex in left hand, we change 
+\begin_inset Formula $y->y'-\xi$
+\end_inset
+
+ where the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ for KR normal is 
+\begin_inset Formula $[0,1-\xi]$
+\end_inset
+
+ so the range of 
+\begin_inset Formula $y'$
+\end_inset
+
+ is 
+\begin_inset Formula $[\xi,1]$
+\end_inset
+
+, for KR additional diagram the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[-2\xi,1-\xi]$
+\end_inset
+
+ so the range of 
+\begin_inset Formula $y'$
+\end_inset
+
+ is 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+.
+ Hence all of the range are inside 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+ which is the range in meson loop condition.
+ Then we need to fix the first moment.
+ The idea is the extra 
+\begin_inset Formula $C(t)$
+\end_inset
+
+ term can be canceled after add the two diagram.
+ In octet case it's checked.
+\end_layout
+
+\begin_layout Standard
+For diagram
+\end_layout
+
+\begin_layout Standard
+Besides, the result of gravitational form factor from Yusupujiang is close
+ to this definition of the first moment of splitting function from KR diagram
+ 
+\begin_inset Formula 
+\[
+\int dyyf(y,\xi,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+while the same equation in rainbow diagram is 
+\begin_inset Formula 
+\[
+\int dy(1-y)f(y,\xi,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means the particle couple to photon in KR vertex is meson instead of
+ baryon and maybe the convolution formula need to be changed.
+ However, in this condition, the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[-2\xi,1-\xi]$
+\end_inset
+
+ in KR additional diagram, and 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+ in normal KR diagram which do not satisfy the convolution formula in meson
+ loop.
+ 
+\end_layout
+
+\begin_layout Standard
+In conclusion, the problems are,
+\end_layout
+
+\begin_layout Enumerate
+The range of the variable of integration in convolution formula,
+\begin_inset Formula $y$
+\end_inset
+
+ in meson loop and 
+\begin_inset Formula $1-y$
+\end_inset
+
+ in baryon loop, should be in 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+.
+ If bigger than 1, we can not get the polynomiality of GPD, if smaller than
+ 
+\begin_inset Formula $-\xi$
+\end_inset
+
+, it's hard to find the input.
+ And now in the KR additional diagram with vertex in the left part which
+ is diagram g and diagram u the range of 
+\begin_inset Formula $1-y$
+\end_inset
+
+ is 
+\begin_inset Formula $[\xi,1+2\xi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If we simply change the 
+\begin_inset Formula $y$
+\end_inset
+
+ in KR addition diagram to be 
+\begin_inset Formula $y'=y+2\xi$
+\end_inset
+
+ , the first moment of splitting function does not satisfy the polynomiality
+ which asks
+\begin_inset Formula $\int_{-1}^{1}dyyf(y,\xi,t)=A(t)+(2\xi)^{2}D(t)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For KR diagram, the first moment should be 
+\begin_inset Formula $\int dyyf(y,\xi,t)$
+\end_inset
+
+ in compare with gravitational form factor result.
+ Then convolution formula will be 
+\begin_inset Formula $\int_{-1}^{1}dy\frac{1}{y}f(y,\xi,t)H(\frac{x}{y},\frac{\xi}{y},t)$
+\end_inset
+
+.
+ But now the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[-2\xi,1-\xi]$
+\end_inset
+
+ in KR additional diagram, and 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+ in normal KR diagram which is not allowed in this form.
+\end_layout
+
+\begin_layout Standard
+As Fangcheng's note, the KR diagram in operator level can be treated as
+ a pseudoscalar meson couple to a pion which makes the KR diagram more like
+ a meson loop diagram.
+ And in this way, the definition of y in KR diagram changes which is equal
+ to a transition of our original frame.
+ In baryon loop, the definition of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta(\frac{k^{+}}{P^{+}}-y)$
+\end_inset
+
+.
+ And now the new definition in KR diagram is 
+\begin_inset Formula $\delta(\frac{k^{+}}{P^{+}}-y\pm\xi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hence we do the 
+\begin_inset Formula $y$
+\end_inset
+
+ change in both KR normal and additional diagram, for the vertex in right
+ we change 
+\begin_inset Formula $y->y'+\xi$
+\end_inset
+
+ where the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[0,1+\xi]$
+\end_inset
+
+, so the new range of 
+\begin_inset Formula $y'$
+\end_inset
+
+ is 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+.
+ For vertex in left hand, we change 
+\begin_inset Formula $y->y'-\xi$
+\end_inset
+
+ where the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ for KR normal is 
+\begin_inset Formula $[0,1-\xi]$
+\end_inset
+
+ so the range of 
+\begin_inset Formula $y'$
+\end_inset
+
+ is 
+\begin_inset Formula $[\xi,1]$
+\end_inset
+
+, for KR additional diagram the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[-2\xi,1-\xi]$
+\end_inset
+
+ so the range of 
+\begin_inset Formula $y'$
+\end_inset
+
+ is 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+.
+ Then all of the range are inside 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+ which is the range in meson loop condition.
+\end_layout
+
+\begin_layout Standard
+In the three problems above, the one still need to be fixed is the first
+ moment.
+ The first and third problem are solved because now in KR diagram the input
+ is GPDs in meson which asks the range of 
+\begin_inset Formula $y$
+\end_inset
+
+ is 
+\begin_inset Formula $[-\xi,1]$
+\end_inset
+
+ which is satisfied.
+ The idea for the first moment problem is the extra 
+\begin_inset Formula $C(t)$
+\end_inset
+
+ term can be canceled after add the two diagram together.
+ In form we can take the original splitting function as which 
+\begin_inset Formula $y$
+\end_inset
+
+ is defined as 
+\begin_inset Formula $\delta(\frac{k^{+}}{P^{+}}-y)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(y,\xi,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The new splitting function can be write in this form 
+\begin_inset Formula 
+\begin{align*}
+f'_{1}(y'_{1},\xi,t)\ y'_{1} & =y_{1}+\xi\\
+f'_{2}(y'_{2},\xi,t)\ y'_{2} & =y_{2}-\xi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And 
+\begin_inset Formula 
+\begin{align*}
+f'_{1}(y'_{1},\xi,t) & =f_{1}(y_{1},\xi,t)=f_{1}(y'_{1}-\xi,\xi,t)\\
+f'_{2}(y'_{2},\xi,t) & =f_{2}(y_{2},\xi,t)=f_{2}(y'_{2}+\xi,\xi,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the subscript 1 and 2 remarks the diagram with different position of vertex.
+ Then we have 
+\begin_inset Formula 
+\begin{align*}
+\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t) & =\int dy_{1}(y_{1}+\xi)f_{1}(y_{1},\xi,t)\\
+ & =\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{1}\xi f_{1}(y_{1},\xi,t)\\
+\int dy'_{2}y'_{2}f'_{2}(y'_{2},\xi,t) & =\int dy_{2}(y_{2}-\xi)f_{2}(y_{2},\xi,t)\\
+ & =\int dy_{2}y_{2}f_{2}(y_{2},\xi,t)-\int dy_{2}\xi f_{2}(y_{2},\xi,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And 
+\begin_inset Formula 
+\begin{multline*}
+\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)+\int dy'_{2}y'_{2}f'_{2}(y'_{2},\xi,t)\\
+=\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}y_{2}f_{2}(y_{2},\xi,t)+\xi(\int dy_{1}f_{1}(y_{1},\xi,t)-\int dy_{2}\xi f(y_{2},\xi,t))
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Due to 
+\begin_inset Formula $\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)=A(t)+(2\xi)^{2}D(t)$
+\end_inset
+
+, and 
+\begin_inset Formula $\int dy_{1}f_{1}(y_{1},\xi,t)=F(t)$
+\end_inset
+
+, the linear term should exactly be the form factor and can be canceled.
+ Then we have 
+\begin_inset Formula 
+\[
+\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)+\int dy'_{2}y'_{2}f'_{2}(y'_{2},\xi,t)=\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}y_{2}f_{2}(y_{2},\xi,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But in calculation we have some problems.
+\end_layout
+
+\begin_layout Standard
+For diagram d and e, the normal KR diagram in octet case.
+ 
+\begin_inset Formula 
+\[
+\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)\neq A(t)+(2\xi)^{2}D(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Only the combine of two diagram satisfy the polynomiality which is 
+\begin_inset Formula 
+\[
+\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}y_{2}f_{2}(y_{2},\xi,t)=A(t)+(2\xi)^{2}D(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the linear term in one diagram is not equal to the form factor.
+ But they do cancel to each other since we can calculate the linear term
+ of 
+\begin_inset Formula $\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)$
+\end_inset
+
+, and this equation 
+\begin_inset Formula 
+\[
+\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)+\int dy'_{2}y'_{2}f'_{2}(y'_{2},\xi,t)=\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}y_{2}f_{2}(y_{2},\xi,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+can be checked.
+\end_layout
+
+\begin_layout Standard
+For diagram f and g the additional KR diagram.
+ First, like diagram d and e, only the whole result of two diagrams satisfy
+ 
+\begin_inset Formula 
+\[
+\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}y_{2}f_{2}(y_{2},\xi,t)=A(t)+(2\xi)^{2}D(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Second, the form factor in one diagram is 
+\begin_inset Formula $\xi$
+\end_inset
+
+ dependent.
+ The result from two diagram together 
+\begin_inset Formula $\int dy_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}\xi f(y_{2},\xi,t)$
+\end_inset
+
+ is 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independent.
+ So in one diagram 
+\begin_inset Formula $\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)=\int dy_{1}(y_{1}+\xi)f_{1}(y_{1},\xi,t)=\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{1}\xi f_{1}(y_{1},\xi,t)$
+\end_inset
+
+, we can not tell the linear term because 
+\begin_inset Formula $\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)$
+\end_inset
+
+ also has 
+\begin_inset Formula $\xi$
+\end_inset
+
+ linear term and 
+\begin_inset Formula $\int dy_{1}f_{1}(y_{1},\xi,t)-\int dy_{2}\xi f(y_{2},\xi,t)\neq0$
+\end_inset
+
+.
+ But still 
+\begin_inset Formula $\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)$
+\end_inset
+
+ can be calculated and the linear term can be canceled.
+ However, now we do not have 
+\begin_inset Formula 
+\[
+\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)+\int dy'_{2}y'_{2}f'_{2}(y'_{2},\xi,t)=\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}y_{2}f_{2}(y_{2},\xi,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because the 
+\begin_inset Formula $\int dy_{1}f_{1}(y_{1},\xi,t)\neq\int dy_{2}\xi f(y_{2},\xi,t)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In fact the result is 
+\begin_inset Formula 
+\begin{align*}
+\int dy'_{1}y'_{1}f'_{1}(y'_{1},\xi,t)+\int dy'_{2}y'_{2}f'_{2}(y'_{2},\xi,t) & =A(t)+(2\xi)^{2}D'(t)\\
+\int dy_{1}y_{1}f_{1}(y_{1},\xi,t)+\int dy_{2}y_{2}f_{2}(y_{2},\xi,t) & =A(t)+(2\xi)^{2}D(t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\xi$
+\end_inset
+
+ independent term 
+\begin_inset Formula $A(t)$
+\end_inset
+
+ is same but the 
+\begin_inset Formula $D$
+\end_inset
+
+ term is different.
+\end_layout
+
+\begin_layout Standard
+The reason for the KR diagrams have 
+\begin_inset Formula $\xi$
+\end_inset
+
+-dependent lowest moment is for single diagram it does not satisfy the conservat
+ion, which means it has three form factor
+\begin_inset Formula 
+\[
+\Gamma^{\mu}=\gamma^{\mu}(F_{1}+F_{2})-(p'+p)^{\mu}F_{2}+(p'-p)^{\mu}F_{3}
+\]
+
+\end_inset
+
+ It can be checked that in diagram fg, rs, tu, there is nonzero 
+\begin_inset Formula $F_{3}$
+\end_inset
+
+ and can be canceled after add the two diagram together.
+ But in diagram de, the 
+\begin_inset Formula $F_{3}=0$
+\end_inset
+
+ and can not explain the problem in first moment
+\end_layout
+
+\end_body
+\end_document

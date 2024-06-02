@@ -1,0 +1,375 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Abstract
+这篇笔记是整理卷积计算，以介子圈贡献为代表。
+\end_layout
+
+\begin_layout Section
+卷积公式与基础理论
+\end_layout
+
+\begin_layout Standard
+首先，我们的计算逻辑是，认为一个真实强子内部的海夸克和价夸克会重新组合成强子的形式来进行强相互作用，那么其中一个内部强子中的夸克就会对整体真实强子的夸克分布函数
+产生贡献，也就能用某种方式算出来。具体而言，这里用的方法就是卷积模型，意思是，真实强子
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+内部强子组分的过程是一个散射，而特定的内部组分中的夸克分布函数在真实粒子夸克分布中所占据的贡献则可以用组分粒子的夸克分布和真实强子
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+内部强子组分散射的分裂函数的卷积来计算。在我们现在的计算中，额外的假设是，内部组分强子是没有海夸克的只考虑其中价夸克的贡献，因而可以使用一些理论上的GPD模型。
+\end_layout
+
+\begin_layout Standard
+需要注意的是不论是GPD，还是夸克密度q，只要是含x的分布函数都有一个共同的特征，就是
+\begin_inset Formula $x>0$
+\end_inset
+
+为夸克贡献，
+\begin_inset Formula $x<0$
+\end_inset
+
+为对应的反夸克贡献，一般而言有对称性：
+\begin_inset Formula $q(x)=-\bar{q}(-x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在介子圈费曼图中，计算卷积的方式如下
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/convolution.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+介子圈中计算卷积所对应的动量占比关系
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如图1所示，四个图分别是DGLAP、ERBL、GDA贡献和负数部分的DGLAP贡献。对应的计算公式是
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >x>\xi\\
+\int_{\xi}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >\xi>x>-\xi\\
+\int_{-\xi}^{\xi}dy\frac{1}{2\xi}f(y,\xi,t)\frac{\xi}{\pi y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{y,|x|\}\\
+\int_{-x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中需要计算的只有前三行，最后一行由于我们认为组分强子不含有海夸克并且采用的模型只能给出
+\begin_inset Formula $x>-\xi$
+\end_inset
+
+的部分所以不能直接计算。可以注意到GDA和ERBL过程的x是重叠的，这是因为GDA部分是介子的动量y发生变化从而让介子本身的状态改变，而介子内部组分的动量x并没
+有变化，所以反应到整体上就还是在ERBL段的贡献，最后算的时候也要加起来。
+\end_layout
+
+\begin_layout Standard
+对于公式的解释：DGLAP、ERBL的意义和GPD的定义中是类似的，都代表这分裂出去的组分的动量不同导致的正反粒子和吸收发射关系不同。具体就有些区别，但总之要分
+清楚一些，主要区别在于这里有两个动量两个组分的过程。在这里DGLAP和ERBL也就是前两行，共同的特点是图1中蓝色-红色的和y有关的动量中，都是正的，也就是产生
+一个介子再回收一个介子，这代表中间介子的状态是一个介子本身，从而中间介子的组分函数是GPD，而不同点在于红色的上方，x动量，也就是中间介子的组分夸克的分布函数的
+动量区间不同，这个就和GPD定义的分段意义完全一致了。而第三行则是y动量关系改变了，变成产生一个正介子但是回来一个反介子，从而中间介子的状态变成了GDA描述的正
+反粒子系统，因而和GDA耦合，x部分则满足GDA的要求。最后一行则是，当y部分进一步变负，中间介子完全变成反粒子的时候就回到GPD状态，不过这里就不计算了。
+\end_layout
+
+\begin_layout Section
+输入GPD、GDA
+\end_layout
+
+\begin_layout Standard
+GPD部分：
+\end_layout
+
+\begin_layout Standard
+根据目前的理解，理论上对于GPD，在一个叫double distribution represent 的框架下，对GPD能给出一个比较general的理论模型，
+其形式为
+\begin_inset Formula 
+\[
+H(x,\xi,t)=\int_{0}^{1}dy\int_{z-1}^{1-z}dz\delta(x-y-\xi z)f(y,z,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+于是需要注意的就是函数
+\begin_inset Formula $f$
+\end_inset
+
+，一般而言会把
+\begin_inset Formula $f$
+\end_inset
+
+再次参数化为
+\begin_inset Formula $f=h(y,z)H(y,0,t)$
+\end_inset
+
+，后一个
+\begin_inset Formula $H$
+\end_inset
+
+就是
+\begin_inset Formula $\xi=0$
+\end_inset
+
+下的GPD，这个有丰富的理论模型，前一个则是一个确定的函数，其参数需要额外约束，但形式上大致是确定的。
+\end_layout
+
+\begin_layout Standard
+这里主要目前有个问题就是函数
+\begin_inset Formula $f$
+\end_inset
+
+的形式还是不太懂。此外，还有一个D的问题。从引力形状因子上看，会给出一个Dterm，但是只用上面这个形式计算是得不到Dterm的，所以现在会手动加一个上去。
+\end_layout
+
+\begin_layout Standard
+而GDA则完全是师兄根据目前的需求和理论上的要求直接写出来的最简化形式了。
+\end_layout
+
+\begin_layout Section
+最后结果，注意正反夸克问题
+\end_layout
+
+\begin_layout Standard
+思路上是这样的。首先，举例而言，我们现在要求四个介子圈图对外腿的质子的u夸克的GPD贡献
+\begin_inset Formula $H_{u}$
+\end_inset
+
+。那么，计算上的顺序是：
+\end_layout
+
+\begin_layout Standard
+1、对不同费曼图分别计算，那么这里就只看图a
+\end_layout
+
+\begin_layout Standard
+2、对于图a，中间粒子有这样几种，
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+和
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+3、对于
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+，其夸克组分为
+\begin_inset Formula $u\bar{d}$
+\end_inset
+
+，于是这个介子圈对于外腿质子的
+\begin_inset Formula $H_{u}$
+\end_inset
+
+的贡献就严格的只有它本身的u夸克（因为对于中间粒子的输入GPD，只考虑其中的价夸克贡献）
+\end_layout
+
+\begin_layout Standard
+4、而
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+，夸克组分是
+\begin_inset Formula $(u\bar{u}-d\bar{d})/\sqrt{2}$
+\end_inset
+
+，处理是，只考虑
+\begin_inset Formula $u\bar{u}$
+\end_inset
+
+部分，反正实际上就是只有两种之一，然后把输入GPD的式子上相比
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+要多一个
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+，因为确实只有一半的几率。而对于
+\begin_inset Formula $u\bar{u}$
+\end_inset
+
+，u本身当然和之前一样计算，问题在于反夸克部分。
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+在这里是介子圈中介子的价夸克，又是外腿质子中的海夸克，所以需要考虑对于
+\begin_inset Formula $H_{u}$
+\end_inset
+
+在
+\begin_inset Formula $x<0$
+\end_inset
+
+部分的贡献。而由于计算中使用的夸克分布函数模型只适用与
+\begin_inset Formula $x\geq0$
+\end_inset
+
+的夸克部分，所以实际上是不能直接计算反夸克的。这里计算使用的是对称性，对于
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+，
+\begin_inset Formula $u\bar{u}$
+\end_inset
+
+的贡献满足
+\begin_inset Formula $u(x)=-\bar{u}(-x)$
+\end_inset
+
+，因而只需要翻转一下就能得到反夸克的贡献。
+\end_layout
+
+\begin_layout Standard
+5、对于图m，会有
+\begin_inset Formula $\pi^{-}$
+\end_inset
+
+的情况，这里的计算也是利用对称性，
+\begin_inset Formula $\pi^{-}$
+\end_inset
+
+的反夸克
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+和
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+的夸克部分是对称的，具体关系也是
+\begin_inset Formula $u(x)=-\bar{u}(-x)$
+\end_inset
+
+，所以也就是翻转就好了
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,430 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+目前在处理
+\begin_inset Formula $\delta$
+\end_inset
+
+项问题中，要进行两个主要的判断，一是
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候积分是否发散，这个通过
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候比较积分的分子分母中
+\begin_inset Formula $k^{-}$
+\end_inset
+
+幂次来判断，二是
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+的时候通过留数定理计算的过程中，是否能使用留数定理和计算结果是否恒为0。
+\end_layout
+
+\begin_layout Standard
+以tadpole 额外顶点图为例，计算中实际要计算的积分是
+\begin_inset Formula 
+\[
+A=\frac{C_{\phi\phi}}{f^{2}}\int\frac{d^{4}k}{(2\pi)^{4}}\textrm{Tr}[2\cancel{k}\frac{(2k+q)^{+}}{2kq+q^{2}}(\cancel{p}+M_{N})\gamma^{+}(\cancel{p'}+M_{N})]\tilde{F}(k)\frac{i}{D_{\phi}(k)}[\tilde{F}(k+q)-\tilde{F}(k)]\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+那么对于这个积分，将分子和分母做化简并变形到这样的形式：
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}\frac{a_{1}(k^{-})^{2}+a_{2}k^{-}+a_{3}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这个积分，由于在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候发散，而
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+的时候不恒为0，因此认为是
+\begin_inset Formula $\text{\ensuremath{\delta}}\text{项和正常项的和}$
+\end_inset
+
+，所以需要把两者分开，而分离
+\begin_inset Formula $\delta$
+\end_inset
+
+的过程中存在消去分母中一个传播子的选择问题，这里我还是认为是只能选择消去
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+，下面是我的理由。
+\end_layout
+
+\begin_layout Standard
+首先不论怎样，分开的积分总是两部分，暂时写为
+\begin_inset Formula 
+\[
+A=\delta+\text{留\text{数}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里留数部分不需要考虑约化，约化只存在于得到
+\begin_inset Formula $\delta$
+\end_inset
+
+的过程，那么对于
+\begin_inset Formula $\delta$
+\end_inset
+
+项，目前所讨论的约化方式不同就是
+\begin_inset Formula $\delta$
+\end_inset
+
+的具体形式中分母上是保存
+\begin_inset Formula $D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+中的哪一项，例如下面1、2两式
+\begin_inset Formula 
+\begin{align}
+\delta & =\int\frac{d^{4}k}{(2\pi)^{4}}\frac{\delta a}{D_{\phi}(k)D_{\Lambda}^{4}(k)}\delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+ & =\int\frac{d^{4}k}{(2\pi)^{4}}\frac{\delta a'}{D_{\Lambda}^{2}(k+q)}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里将分子简写为
+\begin_inset Formula $\delta a$
+\end_inset
+
+。需要注意的是，作为
+\begin_inset Formula $\delta$
+\end_inset
+
+项必须满足在
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+的时候积分恒为0，也就是奇点必须在复数域上x轴的同一侧，这对于
+\begin_inset Formula $\delta$
+\end_inset
+
+项在约化之后的形式是有要求的，因为
+\begin_inset Formula $D_{\phi}(k)D_{\Lambda}^{4}(k)$
+\end_inset
+
+和
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+的奇点在
+\begin_inset Formula $0<k^{+}<-q^{+}$
+\end_inset
+
+是在x轴两边的，所以如果保留
+\begin_inset Formula $D_{\Lambda}^{2}(k+q)$
+\end_inset
+
+，那分母上就不能存在
+\begin_inset Formula $D_{\phi}(k)D_{\Lambda}^{4}(k)$
+\end_inset
+
+，这样就对约化方案给出了第一个限制。
+\end_layout
+
+\begin_layout Standard
+对于消去
+\begin_inset Formula $D_{\phi}(k)D_{\Lambda}^{4}(k)$
+\end_inset
+
+的方式，经过上面的要求，最后的积分肯定可以写成这样的形式
+\begin_inset Formula 
+\[
+A=\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{a_{\delta}}{D_{\Lambda}^{2}(k+q)}+\frac{a_{res}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{\Lambda}^{2}(k+q)})\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+那么这时由于我们要求这两项积分分别是
+\begin_inset Formula $\delta$
+\end_inset
+
+项和正常项，而正常项就要求
+\begin_inset Formula $a_{res}$
+\end_inset
+
+在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候不含有
+\begin_inset Formula $k^{-}$
+\end_inset
+
+平方项，这里选择把所有
+\begin_inset Formula $k^{-}$
+\end_inset
+
+平方项放进，也就是说
+\begin_inset Formula $a_{\delta}\text{和}a_{res}$
+\end_inset
+
+满足：
+\begin_inset Formula 
+\begin{align*}
+a_{\delta}*D_{\phi}(k)D_{\Lambda}^{4}(k) & =a_{1}(k^{-})^{2}+a'\\
+a_{res} & =a_{2}k^{-}+a_{3}-a'
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+将传播子展开：
+\begin_inset Formula 
+\[
+D_{\phi}(k)D_{\Lambda}^{4}(k)=d_{5}k^{-5}+...+d_{1}k^{-}+d_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+注意系数
+\begin_inset Formula $d_{1}\text{到}d_{5}$
+\end_inset
+
+都在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+取0.
+\end_layout
+
+\begin_layout Standard
+这里就有一个不同的选取，指的是
+\begin_inset Formula $a_{\delta}$
+\end_inset
+
+可以和任一个
+\begin_inset Formula $d_{i}$
+\end_inset
+
+组合得到
+\begin_inset Formula $a_{1}(k^{-})^{2}$
+\end_inset
+
+，例如
+\begin_inset Formula $a_{\delta}=\frac{a_{1}}{k^{-3}d_{5}}\text{和}a_{\delta}=\frac{a_{1}}{d_{2}}$
+\end_inset
+
+都能满足上面的公式，区别在于
+\begin_inset Formula $a'$
+\end_inset
+
+的形式。但是如果仔细考量每一种可能的
+\begin_inset Formula $a_{\delta}$
+\end_inset
+
+，就会发现全部都不能满足分离成
+\begin_inset Formula $\delta$
+\end_inset
+
+项和正常项的要求。例如，
+\begin_inset Formula $a_{\delta}=\frac{a_{1}}{k^{-3}d_{5}}$
+\end_inset
+
+的时候，
+\begin_inset Formula $a'=\frac{a_{1}}{k^{-3}d_{5}}(d_{4}k^{-4}+...+d_{1}k^{-}+d_{0})$
+\end_inset
+
+，应该是
+\begin_inset Formula $\delta$
+\end_inset
+
+项的
+\begin_inset Formula $\frac{a_{\delta}}{D_{\Lambda}^{2}(k+q)}=\frac{a_{1}}{k^{-3}d_{5}D_{\Lambda}^{2}(k+q)}$
+\end_inset
+
+，不仅引入了新的奇点
+\begin_inset Formula $k^{-3}=0$
+\end_inset
+
+，还让积分变成
+\begin_inset Formula 
+\[
+\int\frac{d^{4}k}{(2\pi)^{4}}(\frac{a_{\delta}}{D_{\Lambda}^{2}(k+q)})\delta(y+\xi-\frac{k^{+}}{P^{+}})=\int\frac{d^{2}k^{\perp}}{(2\pi)^{4}}\int dk^{+}\int dk^{-}(\frac{a_{\delta}}{D_{\Lambda}^{2}(k+q)})\delta(y+\xi-\frac{k^{+}}{P^{+}})=\int\frac{d^{2}k^{\perp}}{(2\pi)^{4}}\int dk^{+}\frac{\delta(k^{+})}{k^{+}}\delta(y+\xi-\frac{k^{+}}{P^{+}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+出现了要计算
+\begin_inset Formula $\frac{1}{k^{+}}|_{k^{+}=0}$
+\end_inset
+
+的情况，这样就没有办法计算出
+\begin_inset Formula $\delta$
+\end_inset
+
+前面的系数了。而
+\begin_inset Formula $a_{\delta}=\frac{a_{1}}{d_{2}}$
+\end_inset
+
+的时候，
+\begin_inset Formula 
+\begin{align*}
+a_{res} & =a_{2}k^{-}+a_{3}-a'\\
+a' & =\frac{a_{1}}{d_{2}}(d_{5}k^{-5}+...+d_{3}k^{-3}+d_{1}k^{-}+d_{0})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+那么在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+的时候，
+\begin_inset Formula $a'$
+\end_inset
+
+中的系数，例如
+\begin_inset Formula $\frac{a_{1}}{d_{2}}d_{5}$
+\end_inset
+
+，其中
+\begin_inset Formula $d_{1},d_{5}$
+\end_inset
+
+都取0，出现
+\begin_inset Formula $\text{\ensuremath{\frac{0}{0}}}$
+\end_inset
+
+的情况，并且正常项要求这里不能出现
+\begin_inset Formula $k^{-5}$
+\end_inset
+
+，这样也无法计算这个系数。
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,328 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+在
+\begin_inset Formula $\text{\ensuremath{\Lambda}}$
+\end_inset
+
+取1.00，
+\begin_inset Formula $C$
+\end_inset
+
+取1.00的情况下，对于奇异因子的贡献，将考虑bubble和tadpole情况下的八重态、十重态的贡献用红色实线、红色虚线表示，bubble图贡献用红色点线表示，
+tadpole图是红色点虚线，而不考虑bubble和tadpole情况下的八重态和十重态分别是蓝色实线和蓝色虚线。将所有贡献画在一张图上的结果是图1：
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/output/summary/10.2ver/ALL.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+将考虑bubble和tadpole情况下的八重态、十重态的贡献用红色实线、红色虚线表示，bubble图贡献用红色点线表示，tadpole图是红色点虚线，而不考虑
+bubble和tadpole情况下的八重态和十重态分别是蓝色实线和蓝色虚线。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里比较明显的上下两条红色线分别是tadpole图（x轴上方的点虚线）和bubble图（x轴下方的虚线），两条蓝色曲线是不考虑bubble和tadpole情况下
+的八重态十重态贡献，而对应的考虑bubble和tadpole部分的八重态十重态贡献的曲线则是和蓝色的八重态十重态曲线重合而被盖住了。图2是没有蓝色曲线，也就是在
+考虑bubble和tadpole情况下，各个图的贡献。对比图1，可以看到图1中红色曲线应该有的状态。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ALLBUB.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+在考虑bubble和tadpole情况下，八重态、十重态、bubble和tadpole的贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+图3，4是两种情况下八重态和十重态曲线的对比图，
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename OC.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+考虑bubble和tadpole与否两种情况下八重态贡献的对比，红色为考虑bubble、tadpole的情况，蓝色为不考虑这两种图的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename DC.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+考虑bubble和tadpole与否两种情况下十重态贡献的对比，红色为考虑bubble、tadpole的情况，蓝色为不考虑这两种图的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+两组曲线都比较接近，同时绝对值相比上面的bubble和tadpole图的范围要小很多，所以在图1中会基本重叠在一起。
+\end_layout
+
+\begin_layout Standard
+图5，6是bubble和tadpole图的贡献，对比之下，在奇异因子的贡献中，bubble和tadpole图的占比非常大。在
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+接近0的时候两者正负抵消，但是由于bubble图的衰减更快，所以整体结果会在
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+稍大的时候被tadpole图主导而变得比不考虑这两个图的情况大很多。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename BUB.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+bubble图的贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename TAD.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+tadpole图的贡献
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
