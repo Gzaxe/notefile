@@ -228,7 +228,7 @@ There is a new problem.
 \end_inset
 
 .
- No this is not a problem, I mistake in the form of 
+ Now this is not a problem, I mistake in the form of 
 \begin_inset Formula $\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}$
 \end_inset
 
@@ -368,6 +368,21 @@ The solution of this is set D term to be 0.
  in its second moment.
  And since the D should be eaqual to the certain value in experiment or
  other xianxiangxue result so D can be 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\tilde{H}(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)\tilde{h}(\beta,\alpha,t)\\
+\tilde{h}(\beta,\alpha,t) & =h_{0}(\beta,\alpha)\tilde{H}(\beta,0,t)\\
+\tilde{H}(x,0,t) & =\Delta q(x)exp(tf_{q}(x))\\
+x\Delta q(x) & =\eta Ax^{a}(1-x)^{b}(1+rx)\\
+A^{-1} & =(1+r\frac{a}{a+b+1})\frac{\Gamma(a)\Gamma(b+1)}{\Gamma(a+b+1)}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

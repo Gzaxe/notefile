@@ -1,0 +1,218 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+目前计算中采用的投影是这样的形式
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
+B & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\frac{\gamma_{5}q^{+}}{2M}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $AB$
+\end_inset
+
+ 中可以改变的是插入的
+\begin_inset Formula $\gamma$
+\end_inset
+
+矩阵形式。这样的定义下无论怎样选取插入的
+\begin_inset Formula $\gamma$
+\end_inset
+
+矩阵，是必然会导致
+\begin_inset Formula $AB$
+\end_inset
+
+简并，无法解出
+\begin_inset Formula $fg$
+\end_inset
+
+的。因为：
+\end_layout
+
+\begin_layout Standard
+采用一个任意形式的
+\begin_inset Formula $\gamma$
+\end_inset
+
+矩阵来定义
+\begin_inset Formula $AB$
+\end_inset
+
+ ，
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+B & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+反解
+\begin_inset Formula $fg$
+\end_inset
+
+的时候，
+\begin_inset Formula $fg$
+\end_inset
+
+的分母是
+\begin_inset Formula 
+\begin{multline*}
+\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})*\bar{u}(p_{2})\gamma^{+}\gamma_{5}u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+-\bar{u}(p_{2})\gamma^{+}\gamma_{5}u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})*\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+以
+\begin_inset Formula $\bar{u}(p_{1})C_{A}u(p_{2})$
+\end_inset
+
+这样的结构来看，上下两行是一一对应的，由于旋量和
+\begin_inset Formula $\gamma$
+\end_inset
+
+矩阵一定会收缩变成一个数，所以这样的上下两行是肯定相等的，也就是
+\begin_inset Formula $fg$
+\end_inset
+
+必定无解。
+\end_layout
+
+\begin_layout Standard
+于是采用新的trace定义，只对入射粒子的自旋
+\begin_inset Formula $s_{1}$
+\end_inset
+
+自旋求和
+\begin_inset Formula 
+\begin{align*}
+A & =\underset{s_{1}}{\sum}\bar{u}^{s_{2}}(p_{2})\Gamma^{+}u^{s_{1}}(p_{1})\bar{u}^{s_{1}}(p_{1})\gamma^{+}\gamma_{5}u^{s_{2}}(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
+B & =\underset{s_{1}}{\sum}\bar{u}^{s_{2}}(p_{2})\Gamma^{+}u^{s_{1}}(p_{1})\bar{u}^{s_{1}}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u^{s_{2}}(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{\gamma_{5}q^{+}}{2M}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这样能够避免出现
+\begin_inset Formula $fg$
+\end_inset
+
+无解的情况，最后得到的分裂函数也可以给出对
+\begin_inset Formula $\xi$
+\end_inset
+
+无关的形状因子。
+\end_layout
+
+\end_body
+\end_document

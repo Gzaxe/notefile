@@ -16,8 +16,9 @@
   doi    = {10.1140/epjc/s2004-02063-4},
 }
 
-@Article{,
-  title = {Gravitational form factors of the proton from lattice QCD},
+@Article{Daniel,
+  author = {Daniel C.Hackett, Dimitra A. Pefkou, and Phiala E. Shanahan},
+  title  = {Gravitational form factors of the proton from lattice QCD},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

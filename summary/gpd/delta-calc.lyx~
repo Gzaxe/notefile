@@ -83,6 +83,178 @@
 
 \begin_body
 
+\begin_layout Section
+\begin_inset Formula $\delta$
+\end_inset
+
+项的理论和分析
+\end_layout
+
+\begin_layout Standard
+首先存在
+\begin_inset Formula $\delta$
+\end_inset
+
+项的原因是，改变坐标空间之后积分的结果应该是不变的，对于协变坐标的计算就是一般的圈积分，当然可能有一些情况不那么通常和简单，而在光锥坐标下通常就是先对
+\begin_inset Formula $k^{-}$
+\end_inset
+
+使用留数定理然后对垂直分量和正分量分别做积分。但是根据种种实际计算，会发现这样的计算，光锥结果和协变结果并不能完全对应，例如chueng的文章。一般认为这样的差
+异来自于对
+\begin_inset Formula $k^{-}$
+\end_inset
+
+使用留数定理过程中，
+\begin_inset Formula $k^{+}$
+\end_inset
+
+作为参数在某些特定取值下会带来发散，例如
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{k^{-}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+时，积分变为
+\begin_inset Formula 
+\begin{align*}
+\int dk^{-}\frac{k^{-}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}\\
+\stackrel{k^{+}=0}{\rightarrow} & \int dk^{-}\frac{k^{-}}{(-(k^{\perp})^{2}-m_{\phi}^{2})(-(k^{\perp})^{2}-\Lambda{}^{2})^{4}(p_{1}^{+}(p_{1}^{-}-k^{-})-(p_{1}^{\perp}-k^{\perp})^{2}-M_{N}^{2})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+那么分子分母上都只有一个
+\begin_inset Formula $k^{-}$
+\end_inset
+
+，这个积分显然是发散的了，如果忽略这个发散，积分结果就和协变的不一致。
+\end_layout
+
+\begin_layout Standard
+对于这样的发散情况，我们选择使用一个
+\begin_inset Formula $\delta$
+\end_inset
+
+函数来替换并计算它，主要原因是上面的积分，能够分解成
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{k^{-}}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}=\int dk^{-}\frac{1}{D_{\phi}(k)D_{\Lambda}^{4}(k)}+\int dk^{-}\frac{1}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中后者不发散，而前者只在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+时发散，在
+\begin_inset Formula $k^{+}\neq0$
+\end_inset
+
+时恒为0，所以认为可以用
+\begin_inset Formula $\delta$
+\end_inset
+
+函数表示。
+\end_layout
+
+\begin_layout Standard
+这里有一个细节问题之前有一定的误解，就是之前认为判断一个积分有没有
+\begin_inset Formula $\delta$
+\end_inset
+
+项是通过比较分子分母在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+时
+\begin_inset Formula $k^{-}$
+\end_inset
+
+的幂次来确定，但是对于
+\begin_inset Formula $\xi=0$
+\end_inset
+
+的介子彩虹图，图a，这里分子在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+不含
+\begin_inset Formula $k^{-}$
+\end_inset
+
+，分母有一个，理论上没有
+\begin_inset Formula $\delta$
+\end_inset
+
+，但是计算上又不能对上协变结果，其原因在于分子上存在这样的形式
+\begin_inset Formula 
+\[
+\int dk^{-}\frac{k^{+}*p_{2}.k*p_{1}.k}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p_{1}-k)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+显然分子
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+不含
+\begin_inset Formula $k^{-}$
+\end_inset
+
+，但是考虑
+\begin_inset Formula $p_{1}.k$
+\end_inset
+
+与分母消去，分子上的
+\begin_inset Formula $p_{2}.k$
+\end_inset
+
+相当于和
+\begin_inset Formula $k^{+}$
+\end_inset
+
+组合变成
+\begin_inset Formula $\int dk^{-}\frac{k^{+}k^{-}}{D_{\phi}(k)D_{\Lambda}^{4}(k)}$
+\end_inset
+
+，这个显然是下面的计算结果，所以在判断
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+项的时候不能那么直接了，还是要使用消去的方式来看并且注意核心一定是和协变结果的比较。
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\delta$
+\end_inset
+
+项计算的技巧
+\end_layout
+
 \begin_layout Standard
 目前的计算中由于分离δ的算法相当实际，目标就是分离形式为
 \begin_inset Formula $\text{\ensuremath{\frac{1}{D(k)D(k)}}}$
@@ -338,7 +510,232 @@ A是求导之后会出现一个常系数。然后偏导可以提出去到对
 \end_layout
 
 \begin_layout Standard
-实际计算中的
+实际计算中的时候，只算最低阶情况的话，分母的k不被消去的全是0.
+\end_layout
+
+\begin_layout Section
+对
+\begin_inset Formula $\delta$
+\end_inset
+
+项计算的验证
+\end_layout
+
+\begin_layout Standard
+对于上面的计算，对那些分子上只有1不存在裸露的指标的项，可以在协变指标下进行计算来验证结果。毕竟出现
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+项的本质原因就是光锥坐标下的计算和协变结果有差别。但是协变积分的计算并不能直接使用mma的积分程序计算，因为要做重整化的啊。所以实际上要使用圈积分的方式计算，目
+前就直接用px包的loopintegrate计算就好了，当然计算之后的两个结果不是直接相等，相差一个系数
+\begin_inset Formula $2\pi^{2}$
+\end_inset
+
+，因为loopintegrate的结果相比实际的圈积分少一个
+\begin_inset Formula $\text{\ensuremath{\frac{1}{16\pi^{2}}}}$
+\end_inset
+
+，而留数-delta的计算中相比实际圈积分少了
+\begin_inset Formula $\frac{1}{2}*\frac{1}{(2\pi)^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+计算中出现的其他形式
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果需要计算zero skewness的结果，（一般用在计算pdf从而和实验对比），则会出现一些更复杂的
+\begin_inset Formula $\delta$
+\end_inset
+
+项计算，主要是三项乃至四项的费曼参数化，所以在这里记录一下计算的过程和结果。
+\end_layout
+
+\begin_layout Subsection
+三项情况
+\end_layout
+
+\begin_layout Subsubsection
+费曼参数化
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{A^{a}B^{b}C^{c}}=\int_{0}^{1}dx_{1}dx_{2}dx_{3}\delta(x_{1}+x_{2}+x_{3}-1)\frac{\Gamma(a+b+c)}{\Gamma(a)\Gamma(b)\Gamma(c)}\frac{x_{1}^{a-1}x_{2}^{b-1}x_{3}^{c-1}}{(x_{1}A+x_{2}B+x_{3}C)^{a+b+c}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中，对x的积分处理为
+\begin_inset Formula 
+\[
+\int_{0}^{1}dx_{1}dx_{2}dx_{3}\delta(x_{1}+x_{2}+x_{3})=\int_{0}^{1}dx_{1}\int_{0}^{1-x_{1}}dx_{2}|(\text{同时将}x_{3}\text{替\text{换为}1-x_{1}+x_{2}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+也就是将
+\begin_inset Formula $x_{3}$
+\end_inset
+
+积分等价位
+\begin_inset Formula $\delta$
+\end_inset
+
+函数替换之后，对
+\begin_inset Formula $x_{1}x_{2}$
+\end_inset
+
+正常积分但是要额外注意满足替换
+\begin_inset Formula $x_{3}$
+\end_inset
+
+之后的约束，也就是
+\begin_inset Formula $1>1-x_{1}+x_{2}>0$
+\end_inset
+
+，从而改变了
+\begin_inset Formula $x_{2}$
+\end_inset
+
+的积分范围。
+\end_layout
+
+\begin_layout Subsubsection
+一个例子
+\end_layout
+
+\begin_layout Standard
+实际计算中只在
+\begin_inset Formula $\xi=0$
+\end_inset
+
+的时候出现三项以上的
+\begin_inset Formula $\delta$
+\end_inset
+
+，所以这里的
+\begin_inset Formula $k+q$
+\end_inset
+
+都不能提供额外的
+\begin_inset Formula $k^{-}$
+\end_inset
+
+，相当于一个
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{multline*}
+\int\frac{1}{D_{\phi}(k+q)D_{\Lambda}^{2}(k)D_{\Lambda}^{2}(k+q)}dk^{-}\\
+=\int_{0}^{1}dxdydz\delta(x+y+z-1)\frac{\Gamma(5)}{\Gamma(1)\Gamma(2)\Gamma(2)}\frac{x^{0}yz}{(xD_{\phi}(k+q)+yD_{\Lambda}(k)+zD_{\Lambda}(k+q))^{5}}\\
+=\int_{0}^{1}dxdydz\delta(x+y+z-1)\frac{\Gamma(5)}{\Gamma(1)\Gamma(2)\Gamma(2)}\frac{yz}{(k^{2}-\Omega+i\epsilon)^{5}}
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Omega=x(q^{\perp2}+2k^{\perp}.q^{\perp}+m_{\phi}^{2})+y\Lambda^{2}+z(q^{\perp2}+2k^{\perp}.q^{\perp}+\Lambda^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+四项情况
+\end_layout
+
+\begin_layout Subsubsection
+费曼参数化
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{A^{a}B^{b}C^{c}D^{d}}=\int_{0}^{1}dx_{1}dx_{2}dx_{3}dx_{4}\delta(x_{1}+x_{2}+x_{3}+x_{4}-1)\frac{\Gamma(a+b+c+d)}{\Gamma(a)\Gamma(b)\Gamma(c)\Gamma(d)}\frac{x_{1}^{a-1}x_{2}^{b-1}x_{3}^{c-1}x_{4}^{d-1}}{(x_{1}A+x_{2}B+x_{3}C+x_{4}D)^{a+b+c+d}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4个x的积分：和三个的类似，区别是替换
+\begin_inset Formula $x_{4}$
+\end_inset
+
+之后，从
+\begin_inset Formula $x_{3}$
+\end_inset
+
+开始就要改变积分上下限了。
+\begin_inset Formula 
+\[
+\int_{0}^{1}dx_{1}dx_{2}dx_{3}dx_{4}\delta(x_{1}+x_{2}+x_{3}+x_{4}-1)=\int_{0}^{1}dx_{1}\int_{0}^{1-x_{1}}dx_{2}\int_{0}^{1-x_{1}-x_{2}}dx_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+例子
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int\frac{1}{D_{\phi}(k)D_{\phi}(k+q)D_{\Lambda}^{2}(k)D_{\Lambda}^{2}(k+q)}dk^{-}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+普适形式的费曼参数化
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{A_{1}^{m_{1}}...A_{n}^{m_{n}}}=\int_{0}^{1}dx_{1}...dx_{n}\delta(\Sigma x_{i}-1)\frac{\Gamma(m_{1}+...+m_{n})}{\Gamma(m_{1})*...*\Gamma(m_{n})}\frac{\Pi x_{i}^{m_{i}-1}}{(\Sigma x_{i}A_{i})^{\Sigma m_{i}}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body

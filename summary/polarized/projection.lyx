@@ -330,10 +330,10 @@ The
 
  will be 
 \begin_inset Formula 
-\begin{multline*}
+\begin{gather*}
 \textrm{Tr}[\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
 \frac{1}{8m}\tilde{g}\textrm{Tr}[\gamma_{5}q^{+}(\cancel{p_{1}}+m)(1+\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)(1+\gamma_{5}\cancel{s_{2}})
-\end{multline*}
+\end{gather*}
 
 \end_inset
 
@@ -516,7 +516,8 @@ So the denominator
 \begin_inset Formula $a_{2}b_{1}-a_{1}b_{2}=0$
 \end_inset
 
-
+.
+ 
 \end_layout
 
 \end_body

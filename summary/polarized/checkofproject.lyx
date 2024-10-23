@@ -147,5 +147,203 @@ u(p) & =\left(\begin{array}{c}
 
 \end_layout
 
+\begin_layout Standard
+Another definition of spinor is as the wiki definition
+\begin_inset Formula 
+\[
+u(p)=\sqrt{\frac{E+m}{2m}}\left(\begin{array}{c}
+\phi\\
+\frac{\overrightarrow{\sigma}.\overrightarrow{p}}{E+m}\phi
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is just the 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ One easy frame of this spinor will be 
+\begin_inset Formula 
+\begin{align*}
+\phi^{1} & =\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)\\
+\phi^{2} & =\left(\begin{array}{c}
+0\\
+1
+\end{array}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the Pauli matrix is the 4 dimsion form.
+ We have two spinor with different spin 
+\begin_inset Formula 
+\begin{align*}
+u^{1}(p) & =\sqrt{\frac{E+m}{2m}}\left(\begin{array}{c}
+\phi^{1}\\
+\frac{\overrightarrow{\sigma}.\overrightarrow{p}}{E+m}\phi^{1}
+\end{array}\right)\\
+u^{2}(p) & =\sqrt{\frac{E+m}{2m}}\left(\begin{array}{c}
+\phi^{2}\\
+\frac{\overrightarrow{\sigma}.\overrightarrow{p}}{E+m}\phi^{2}
+\end{array}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we can calculate the spinor in AB.
+ 
+\end_layout
+
+\begin_layout Standard
+And the trace term 
+\begin_inset Formula $AB$
+\end_inset
+
+ is, for example
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
+B & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\frac{\gamma_{5}q^{+}}{2M}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now with a specific spinor we can calculate these terms
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+B & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p_{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally it can be checked that this equation of 
+\begin_inset Formula $f\ g$
+\end_inset
+
+ has no solution.
+ If we give a general definition of 
+\begin_inset Formula $AB$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+B & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $C_{A}\ C_{B}$
+\end_inset
+
+ are some combine of Dirac 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ matrix.
+ 
+\end_layout
+
+\begin_layout Standard
+The equation of 
+\begin_inset Formula $A\ B$
+\end_inset
+
+ and 
+\begin_inset Formula $f\ g$
+\end_inset
+
+ can be expressed in this way 
+\begin_inset Formula 
+\begin{align*}
+A & =a_{1}*f+a_{2}*g\\
+B & =b_{1}*f+b_{2}*g
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula 
+\begin{align*}
+f & =\frac{a_{2}B-b_{2}A}{a_{2}b_{1}-a_{1}b_{2}}\\
+g & =\frac{b_{1}A-a_{1}B}{a_{2}b_{1}-a_{1}b_{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficient 
+\begin_inset Formula $a_{i}\ b_{i}$
+\end_inset
+
+ is, with the spinor 
+\begin_inset Formula 
+\begin{align*}
+a_{2}b_{1}-a_{1}b_{2} & =\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})*\bar{u}(p_{2})\gamma^{+}\gamma_{5}u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & -\bar{u}(p_{2})\gamma^{+}\gamma_{5}u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})*\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

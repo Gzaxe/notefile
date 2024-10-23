@@ -1,0 +1,756 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+The smooth curve in baryon loop diagram like 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/gpdH-b-noD.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/gpdE-b-noD.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+H and E from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+exists because in baryon loop we do not include the D term in convolution
+ calculation like the meson loop.
+\end_layout
+
+\begin_layout Standard
+The convolution formula for baryon loop 
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >x>\xi\\
+\int_{\xi}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad1-y & >\xi>x\\
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2\xi}f(y,\xi,t)\frac{1}{\pi}\frac{\xi}{1-y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{1-y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{1-y,|x|\}\\
+\int_{-x}^{1}d(1-y)\frac{1}{1-y}f(y,\xi,t)H_{q}(\frac{x}{1-y},\frac{\xi}{1-y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for meson loop
+\begin_inset Formula 
+\begin{align*}
+\int_{x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >x>\xi\\
+\int_{\xi}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >\xi>x\\
+\int_{-\xi}^{\xi}dy\frac{1}{2\xi}f(y,\xi,t)\frac{\xi}{\pi y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{y,|x|\}\\
+\int_{-x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The input GPD 
+\begin_inset Formula $H_{q}$
+\end_inset
+
+ and GDA 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ are both in so called double distribution representation and they have
+ this form 
+\begin_inset Formula 
+\begin{align*}
+H(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)h(\beta,\alpha,t)\\
+E(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)e(\beta,\alpha,t)\\
+\Phi_{1}(z,\eta,s) & =2(2\eta-1)\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(2z-1-(2\eta-1)\beta-\alpha)h_{0}(\beta,\alpha)H(\beta,0,s)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In double distribution representation, the first moment of GPD do not have
+ D term which is observed by experiment, and a easy way to solve this is
+ add a extra term in formula above which is
+\begin_inset Formula 
+\begin{align*}
+H(x,\xi,t) & =\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(x-\beta-\alpha\xi)h(\beta,\alpha,t)+D(\frac{x}{\xi},t)\theta(\xi-|x|)\\
+\Phi_{1}(z,\eta,s) & =2(2\eta-1)\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\delta(2z-1-(2\eta-1)\beta-\alpha)h_{0}(\beta,\alpha)H(\beta,0,s)\\
+ & +D(1-2z,t)\theta(1-|1-2z|)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The problem is in GDA case
+\begin_inset Formula 
+\[
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2\xi}f(y,\xi,t)\frac{1}{\pi}\frac{\xi}{1-y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{1-y}{\xi}+1}{2},s)}{s-t+i\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+when we consider the D-term part 
+\begin_inset Formula 
+\begin{gather*}
+\int_{-\xi}^{\xi}d(1-y)\frac{1}{2}f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)\\
+\int_{-\xi}^{\xi}dy\frac{1}{2}f(y,\xi,t)\frac{1}{y}D(\frac{x}{\xi},t)
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obviously we have a pole in 
+\begin_inset Formula $y=0\textrm{and}\bar{y}=1-y=0$
+\end_inset
+
+.
+ In meson case, 
+\begin_inset Formula $\int_{-\xi}^{\xi}dy\frac{1}{2}f(y,\xi,t)\frac{1}{y}D(\frac{x}{\xi},t)$
+\end_inset
+
+, the splitting function is always 0 at 
+\begin_inset Formula $y=0$
+\end_inset
+
+ which cancel the pole.
+ In baryon loop case, we can not cancel the divergence.
+\end_layout
+
+\begin_layout Standard
+In early calculation, I do not consider the D-term in baryon loop, and this
+ will make the result of GPD has a smooth curve.
+ It can be checked by the result of diagram a.
+ The different lines in Fig.2 and Fig.3 represent the different input in convoluti
+on calculation.
+ For orange line, the input is GPD, for black line, the input is GDA and
+ the blue line is the combine of GPD and GDA.
+ The red line is result with GPD input in DGLAP region.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/h-a-2d-D.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+original result of 
+\begin_inset Formula $H_{u}(x,\xi,t)$
+\end_inset
+
+ from diagram a, where 
+\begin_inset Formula $\xi=0.1\ t=-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/h-a-2d-noD.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+same result as Fig.2 only without D term in ERBL region
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The D-term in baryon loop may act like 
+\begin_inset Formula $\int_{-\xi}^{\xi}dy\frac{1}{y}=0$
+\end_inset
+
+, where the divergence around 
+\begin_inset Formula $1-y=0$
+\end_inset
+
+ cancel with each other and we can get a converged result.
+ The integral which contain divergence is 
+\begin_inset Formula 
+\[
+\int_{-\xi}^{\xi}d(1-y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The function 
+\begin_inset Formula 
+\[
+F(y,x,\xi,t)=f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+gives a curve like where we chose 
+\begin_inset Formula $D(x,t)=\frac{15x(1-x^{2})D(t)}{4},\ D(t)=\frac{\alpha}{(1-\frac{t}{\Lambda^{2}})^{2}}$
+\end_inset
+
+ from lattice result.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/hd-b-2d.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $F(y,-0.01,0.1,-1)$
+\end_inset
+
+from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Based on this thought, for integral like
+\begin_inset Formula 
+\[
+\int_{b_{2}}^{b_{1}}dx\frac{A(x)}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we can expand the numerator 
+\begin_inset Formula $A(x)$
+\end_inset
+
+ around 
+\begin_inset Formula $x=0$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\int_{b_{2}}^{b_{1}}dx\frac{A(x)}{x} & =\int_{b_{2}}^{b_{1}}dx\frac{1}{x}(a_{0}+a_{1}x+a_{2}x^{2}+...)\\
+ & =\int_{b_{2}}^{b_{1}}dx\frac{1}{x}a_{0}+\int_{b_{2}}^{b_{1}}dxa_{1}+\int_{b_{2}}^{b_{1}}dxa_{2}x+...\\
+ & +\int_{b_{2}}^{b_{1}}dxa_{n}x^{n-1}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\xi}^{\xi}dx\frac{1}{x}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Change the integral in this way
+\begin_inset Formula 
+\begin{gather*}
+\int_{-\xi}^{\xi}d(1-y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)\\
+=\int_{1-\xi}^{1+\xi}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)\\
+=\int_{1-\xi}^{1-a}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)+\int_{1-a}^{1+a}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)+\int_{1+a}^{1+\xi}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We only calculate the first and second integral to avoid the pole 
+\begin_inset Formula 
+\begin{gather*}
+\underset{a\rightarrow0}{\textrm{Lim}}\int_{1-\xi}^{1-a}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)+\int_{1+a}^{1+\xi}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)\\
+=\int_{1-\xi}^{1+\xi}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And if the divergence around 
+\begin_inset Formula $1-y=0$
+\end_inset
+
+ cancel we have 
+\begin_inset Formula $\int_{1-a}^{1+a}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)=0$
+\end_inset
+
+ when 
+\begin_inset Formula $a$
+\end_inset
+
+ is small enough which is equal to the integral above is same with different
+ 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+I(a)=\int_{1-\xi}^{1-a}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)+\int_{1+a}^{1+\xi}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+I(0.01) & =0.00002284065045\\
+I(10^{-4}) & =0.00001941004441\\
+I(10^{-6}) & =0.0000193752819\\
+I(10^{-8}) & =0.0000193749343\\
+I(10^{-10}) & =0.0000193749308
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This integral 
+\begin_inset Formula $\int_{1-\xi}^{1-a}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)$
+\end_inset
+
+ is relatively small compared to the normal 
+\begin_inset Formula $\frac{1}{x}$
+\end_inset
+
+ integral, like 
+\begin_inset Formula $\int_{-0.1}^{-a}dx\frac{1}{x}$
+\end_inset
+
+.
+ For example 
+\begin_inset Formula 
+\[
+I_{1}(a)=\int_{1-\xi}^{1-a}d(y)f(y,\xi,t)\frac{1}{1-y}D(\frac{x}{\xi},t)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+I_{1}(0.01) & =0.00001580367639\\
+I_{1}(10^{-4}) & =-0.00002524554336\\
+I_{1}(10^{-6}) & =-0.00006466894493\\
+I_{1}(10^{-8}) & =-0.0001040750182\\
+I_{1}(10^{-10}) & =-0.0001434809205
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the 
+\begin_inset Formula $\int_{-0.1}^{-a}dx\frac{1}{x}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{align*}
+\int_{-0.1}^{-a}dx\frac{1}{x}|_{a=0.01} & =-2.30259\\
+\int_{-0.1}^{-a}dx\frac{1}{x}|_{a=10^{-4}} & =-6.90776\\
+\int_{-0.1}^{-a}dx\frac{1}{x}|_{a=10^{-6}} & =-11.5129\\
+\int_{-0.1}^{-a}dx\frac{1}{x}|_{a=10^{-8}} & =-16.1181\\
+\int_{-0.1}^{-a}dx\frac{1}{x}|_{a=10^{-10}} & =-20.7233
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The reason is the numerator in 
+\begin_inset Formula $I_{1}(a)$
+\end_inset
+
+ which is 
+\begin_inset Formula $f(y,\xi,t)D(\frac{x}{\xi},t)$
+\end_inset
+
+ is very small, the curve of 
+\begin_inset Formula $f(y,0.1,-1)$
+\end_inset
+
+ is while 
+\begin_inset Formula $D(\frac{-0.01}{0.1},-1)=0.0326303$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/f-b-2d-full.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(y,0.1,-1)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and this makes 
+\begin_inset Formula $I_{1}(a)$
+\end_inset
+
+ is more like 
+\begin_inset Formula $\int_{-0.1}^{-a}dx\frac{0.00001}{x}$
+\end_inset
+
+ .
+ And the numerical integral in mathematica can not give a divergent result
+ even for 
+\begin_inset Formula $\int_{-0.1}^{-a}dx\frac{1}{x}$
+\end_inset
+
+, which will lost precision when 
+\begin_inset Formula $a<10^{-60}$
+\end_inset
+
+ and for 
+\begin_inset Formula $a>10^{-60}$
+\end_inset
+
+, the result of 
+\begin_inset Formula $\int_{-0.1}^{-a}dx\frac{1}{x}>-135.853$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result of GPD from diagram b if we add D-term is 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/gpdH-b-D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/gpdE-b-D.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+H and E from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/gpdH-b-noD.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/gpdE-b-noD.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+H and E from diagram b
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

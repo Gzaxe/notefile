@@ -330,10 +330,10 @@ The
 
  will be 
 \begin_inset Formula 
-\begin{multline*}
+\begin{gather*}
 \textrm{Tr}[\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
 \frac{1}{8m}\tilde{g}\textrm{Tr}[\gamma_{5}q^{+}(\cancel{p_{1}}+m)(1+\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)(1+\gamma_{5}\cancel{s_{2}})
-\end{multline*}
+\end{gather*}
 
 \end_inset
 
@@ -362,10 +362,9 @@ with
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{multline*}
-\textrm{Tr}[\gamma_{5}(p_{2}-p_{1})^{+}(\cancel{p_{1}}+m)(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)]\\
-=4\textrm{I}(p_{2}-p_{1})^{+}ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda}
-\end{multline*}
+\[
+\textrm{Tr}[\gamma_{5}(p_{2}-p_{1})^{+}(\cancel{p_{1}}+m)(\gamma_{5}\cancel{s_{1}})\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)]=4\textrm{I}(p_{2}-p_{1})^{+}ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda}
+\]
 
 \end_inset
 
@@ -383,7 +382,8 @@ The
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda} & =\frac{1}{2}ε_{+-12}p_{1}^{+}p_{2}^{1}s_{1}^{2}+\frac{1}{2}ε_{+-21}p_{1}^{+}p_{2}^{2}s_{1}^{1}+\frac{1}{2}ε_{+1-2}p_{1}^{1}p_{2}^{+}s_{1}^{2}+\frac{1}{2}ε_{+2-1}p_{1}^{2}p_{2}^{+}s_{1}^{1}+\frac{1}{2}ε_{+12-}p_{1}^{1}p_{2}^{2}s_{1}^{+}+\frac{1}{2}ε_{+21-}p_{1}^{2}p_{2}^{1}s_{1}^{+}\\
+ε_{+\nu\rho\lambda}p_{1}^{\nu}p_{2}^{\rho}s_{1}^{\lambda} & =\frac{1}{2}ε_{+-12}p_{1}^{+}p_{2}^{1}s_{1}^{2}+\frac{1}{2}ε_{+-21}p_{1}^{+}p_{2}^{2}s_{1}^{1}+\frac{1}{2}ε_{+1-2}p_{1}^{1}p_{2}^{+}s_{1}^{2}+\frac{1}{2}ε_{+2-1}p_{1}^{2}p_{2}^{+}s_{1}^{1}\\
+ & +\frac{1}{2}ε_{+12-}p_{1}^{1}p_{2}^{2}s_{1}^{+}+\frac{1}{2}ε_{+21-}p_{1}^{2}p_{2}^{1}s_{1}^{+}\\
  & =-p_{1}^{+}p_{2}^{1}s_{1}^{2}+p_{1}^{+}p_{2}^{2}s_{1}^{1}+p_{1}^{1}p_{2}^{+}s_{1}^{2}-p_{1}^{2}p_{2}^{+}s_{1}^{1}-p_{1}^{1}p_{2}^{2}s_{1}^{+}+p_{1}^{2}p_{2}^{1}s_{1}^{+}\\
  & =p_{1}^{+}(p_{2}^{2}s_{1}^{1}-p_{2}^{1}s_{1}^{2})+p_{2}^{+}(p_{1}^{1}s_{1}^{2}-p_{1}^{2}s_{1}^{1})+s_{1}^{+}(p_{1}^{2}p_{2}^{1}-p_{1}^{1}p_{2}^{2})\\
  & =p_{1}^{+}(|\overrightarrow{s_{1}^{\perp}}\times\overrightarrow{p_{2}^{\perp}}|)+p_{2}^{+}(|\overrightarrow{p_{1}^{\perp}}\times\overrightarrow{s_{1}^{\perp}}|)+s_{1}^{+}(|\overrightarrow{p_{2}^{\perp}}\times\overrightarrow{p_{1}^{\perp}}|)
@@ -514,6 +514,23 @@ b_{2} & =\frac{4\xi^{4}P^{+2}(4M_{B}^{3}+8M_{B}^{2}P^{+}+2P^{+}Q^{2}+M_{B}(4P^{+
 \begin_layout Standard
 So the denominator 
 \begin_inset Formula $a_{2}b_{1}-a_{1}b_{2}=0$
+\end_inset
+
+.
+ If we do not replace 
+\begin_inset Formula $s^{\mu}$
+\end_inset
+
+with 
+\begin_inset Formula $P^{+}\xi$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{2}b_{1}-a_{1}b_{2}=
+\]
+
 \end_inset
 
 

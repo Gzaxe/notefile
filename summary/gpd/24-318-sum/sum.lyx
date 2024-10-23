@@ -770,7 +770,7 @@ With
 \begin_inset Formula $\xi=0$
 \end_inset
 
-, the GPD result from these diagrams are
+.1, the GPD result from these diagrams are
 \begin_inset Float figure
 wide false
 sideways false
@@ -3194,8 +3194,8 @@ The
  better in these two operators
 \begin_inset Formula 
 \begin{align*}
-\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(\frac{\lambda^{-}}{2})\gamma^{\mu}p(\frac{\lambda^{-}}{2})\phi(-\frac{\lambda^{-}}{2})\phi^{\dagger}(-\frac{\lambda^{-}}{2})|p>\\
-\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(-\frac{\lambda^{-}}{2})\gamma^{\mu}p(-\frac{\lambda^{-}}{2})\phi(\frac{\lambda^{-}}{2})\phi^{\dagger}(\frac{\lambda^{-}}{2})|p>
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(\frac{\lambda^{-}}{2})\gamma^{\mu}p(\frac{\lambda^{-}}{2})\phi(-\frac{\lambda^{-}}{2})\phi^{\dagger}(\frac{\lambda^{-}}{2})|p>\\
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(-\frac{\lambda^{-}}{2})\gamma^{\mu}p(-\frac{\lambda^{-}}{2})\phi(-\frac{\lambda^{-}}{2})\phi^{\dagger}(\frac{\lambda^{-}}{2})|p>
 \end{align*}
 
 \end_inset
@@ -3211,10 +3211,12 @@ And these two different operator will give two different definition of
 .
 \begin_inset Formula 
 \begin{align*}
-\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(\frac{\lambda^{-}}{2})\gamma^{\mu}p(\frac{\lambda^{-}}{2})\phi(-\frac{\lambda^{-}}{2})\phi^{\dagger}(-\frac{\lambda^{-}}{2})|p>\\
--> & \delta(\frac{k^{+}}{P^{+}}-y+1)\\
-\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p'|\bar{p}(-\frac{\lambda^{-}}{2})\gamma^{\mu}p(-\frac{\lambda^{-}}{2})\phi(\frac{\lambda^{-}}{2})\phi^{\dagger}(\frac{\lambda^{-}}{2})|p>\\
--> & \delta(\frac{k^{+}}{P^{+}}-y-1)
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(\frac{\lambda^{-}}{2})\gamma^{\mu}P(\frac{\lambda^{-}}{2})\pi^{+}(-\frac{\lambda^{-}}{2})\pi^{-}(\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{-\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y+\xi-\frac{k^{+}}{P^{+}})\\
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(-\frac{\lambda^{-}}{2})\gamma^{\mu}P(-\frac{\lambda^{-}}{2})\pi^{+}(-\frac{\lambda^{-}}{2})\pi^{-}(\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{-\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y-\xi-\frac{k^{+}}{P^{+}})
 \end{align*}
 
 \end_inset
@@ -3230,11 +3232,11 @@ So we separate tadpole diagram into two part.
 \end_inset
 
 , one half is 
-\begin_inset Formula $\delta(\frac{k^{+}}{P^{+}}-y+1)$
+\begin_inset Formula $\delta(\frac{k^{+}}{P^{+}}-y+\xi)$
 \end_inset
 
  and another half is 
-\begin_inset Formula $\delta(\frac{k^{+}}{P^{+}}-y-1)$
+\begin_inset Formula $\delta(\frac{k^{+}}{P^{+}}-y-\xi)$
 \end_inset
 
 
@@ -3244,6 +3246,52 @@ So we separate tadpole diagram into two part.
 \int_{\xi}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >\xi>x\\
 \int_{-\xi}^{\xi}dy\frac{1}{2\xi}f(y,\xi,t)\frac{\xi}{\pi y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{y,|x|\}\\
 \int_{-x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Other possible operator is 
+\begin_inset Formula 
+\begin{align*}
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(\frac{\lambda^{-}}{2})\gamma^{\mu}P(-\frac{\lambda^{-}}{2})\pi^{+}(-\frac{\lambda^{-}}{2})\pi^{-}(\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y-1-\frac{k^{+}}{P^{+}})\\
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(-\frac{\lambda^{-}}{2})\gamma^{\mu}P(\frac{\lambda^{-}}{2})\pi^{+}(\frac{\lambda^{-}}{2})\pi^{-}(-\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{-\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{-\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y+1+\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(\frac{\lambda^{-}}{2})\gamma^{\mu}P(-\frac{\lambda^{-}}{2})\pi^{+}(\frac{\lambda^{-}}{2})\pi^{-}(-\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y-1+\frac{k^{+}}{P^{+}})\\
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(-\frac{\lambda^{-}}{2})\gamma^{\mu}P(\frac{\lambda^{-}}{2})\pi^{+}(-\frac{\lambda^{-}}{2})\pi^{-}(\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{-\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{-\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}e^{\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y+1-\frac{k^{+}}{P^{+}})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(\frac{\lambda^{-}}{2})\gamma^{\mu}P(\frac{\lambda^{-}}{2})\pi^{+}(\frac{\lambda^{-}}{2})\pi^{-}(-\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{-\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y+\xi+\frac{k^{+}}{P^{+}})\\
+\int d\lambda^{-}e^{-iyP^{+}\lambda^{-}} & <p_{2}|\bar{P}(-\frac{\lambda^{-}}{2})\gamma^{\mu}P(-\frac{\lambda^{-}}{2})\pi^{+}(\frac{\lambda^{-}}{2})\pi^{-}(-\frac{\lambda^{-}}{2})|p_{1}>\\
+=\int d^{4}k\Gamma(k) & \int d\lambda^{-}e^{-iyP^{+}\lambda^{-}}e^{-\frac{i}{2}p_{2}^{+}\lambda^{-}}e^{\frac{i}{2}p_{1}^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}e^{-\frac{i}{2}k^{+}\lambda^{-}}\\
+=\int d^{4}k\Gamma(k) & \delta(y-\xi+\frac{k^{+}}{P^{+}})
 \end{align*}
 
 \end_inset

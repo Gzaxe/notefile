@@ -1,0 +1,60 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-feynman}
+\begin{document}
+	
+	\begin{tikzpicture}[
+		decuplet/.style={ % 自定义一个重子的双线
+			double distance=1pt,
+			postaction={decorate}, decoration={
+				markings, mark=at position .6 with {
+					\arrow{Triangle[angle=40:2pt 3]}
+				},
+			}
+		}
+		]
+		\begin{feynman}
+				%% fig b
+			\vertex(b1) at (0,0);
+			\vertex[right =1cm  of b1] (b2);
+			\vertex[right =2cm  of b1, crossed dot,anchor=center] (b3){};
+			\vertex[right =3cm  of b1] (b4);
+			\vertex[right =4cm  of b1] (b5);
+			\node[above =0.5cm of b5] {$b$};
+			%% fig left
+			\vertex[above right =1.5 cm and 0 cm of b1] (l1);
+			\vertex[right =0.5cm  of l1, crossed dot,anchor=center] (l2){};
+			\vertex[right =1cm  of l1] (l3);
+			\vertex[right =3cm  of l1] (l4);
+			\vertex[right =4cm  of l1] (l5);
+			\node[above =0.5cm of l5] {$1$};
+            %%fig right
+            \vertex[above right =0 cm and 5 cm of l1] (r1);
+            \vertex[right =1cm  of r1] (r2);
+            \vertex[right =3cm  of r1] (r3);
+            \vertex[right =3.5cm  of r1, crossed dot,anchor=center] (r4){};
+            \vertex[right =4cm  of r1] (r5);
+            \node[above =0.5cm of r5] {$2$};			
+				% 对各个顶点连线
+			\diagram*{
+				{
+					[edge=plain]
+				 (b1)--(b2)--(b3)--(b4)--(b5),	
+				(l1)--(l2)--(l3)--(l4)--(l5),
+				(r1)--(r2)--(r3)--(r4)--(r5),	
+				},
+				% 介子连线
+				{
+					[edge= charged scalar]
+				(b2) --[half left](b4),
+				(l3) --[half left](l4),
+                (r2) --[half left](r3),
+				}
+			};
+			%% 添加重子双线
+			
+		\end{feynman}
+	\end{tikzpicture}
+
+\end{document}

@@ -4,12 +4,18 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass article
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
 \use_default_options true
 \maintain_unincluded_children false
-\language english
-\language_package default
-\inputencoding auto
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
 \fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -22,13 +28,14 @@
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
-\use_dash_ligatures true
+\use_dash_ligatures false
 \graphics default
-\default_output_format default
+\default_output_format pdf4
 \output_sync 0
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +51,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -76,11 +84,11 @@
 \begin_body
 
 \begin_layout Standard
-the projection is 
+目前计算中采用的投影是这样的形式
 \begin_inset Formula 
 \begin{align*}
-A & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\gamma^{-}\gamma_{5}u(p_{2})\\
- & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{-}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
+A & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\\
 B & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p_{2})\\
  & =\textrm{Tr}[\Gamma^{+}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\frac{\gamma_{5}q^{+}}{2M}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]
 \end{align*}
@@ -90,19 +98,56 @@ B & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\frac{\gamma_{5}q^{+}}{2M}u(p
 
 \end_layout
 
-\begin_layout Section
-rainbow diagram 
+\begin_layout Standard
+\begin_inset Formula $AB$
+\end_inset
+
+ 中可以改变的是插入的
+\begin_inset Formula $\gamma$
+\end_inset
+
+矩阵形式。这样的定义下无论怎样选取插入的
+\begin_inset Formula $\gamma$
+\end_inset
+
+矩阵，是必然会导致
+\begin_inset Formula $AB$
+\end_inset
+
+简并，无法解出
+\begin_inset Formula $fg$
+\end_inset
+
+的。因为：
 \end_layout
 
 \begin_layout Standard
+采用一个任意形式的
+\begin_inset Formula $\gamma$
+\end_inset
+
+矩阵来定义
+\begin_inset Formula $AB$
+\end_inset
+
+ ，
 \begin_inset Formula 
-\[
-\Gamma^{+}=\int\cancel{k}\gamma_{5}\widetilde{F}^{2}(k)\frac{1}{D_{\phi}(k)}\frac{\cancel{p'}-\cancel{k}+m_{N}}{D_{B}(p'-k)}\gamma^{+}\gamma_{5}\frac{\cancel{p}-\cancel{k}+m_{N}}{D_{B}(p-k)}\cancel{k}\gamma_{5}\delta(y-\frac{k^{+}}{P^{+}})
-\]
+\begin{align*}
+A & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})C_{A}u(p_{2})\\
+B & =\bar{u}(p_{2})\left(\gamma^{+}\gamma_{5}\tilde{f}(y,t)+\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)\right)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})\\
+ & +\bar{u}(p_{2})\frac{\gamma_{5}q^{+}}{2m}\tilde{g}(y,t)u(p_{1})\bar{u}(p_{1})C_{B}u(p_{2})
+\end{align*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+反解
 \end_layout
 
 \end_body
