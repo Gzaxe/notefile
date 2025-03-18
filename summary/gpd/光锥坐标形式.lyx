@@ -80,8 +80,19 @@
 \begin{align*}
 k^{2} & =k^{+}k^{-}-k^{\perp2}\\
 k.p & =\frac{1}{2}(k^{+}p^{-}+k^{-}p^{+})-k^{\perp}.p^{\perp}\\
-g^{\mu\nu} & =\\
-g_{\mu\nu} & =
+g^{\mu\nu} & ==\left(\begin{array}{cccc}
+0 & 2 & 0 & 0\\
+2 & 0 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{array}\right)\\
+g_{\mu\nu} & =\left(\begin{array}{cccc}
+0 & \frac{1}{2} & 0 & 0\\
+\frac{1}{2} & 0 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{array}\right)\\
+k.p & =g_{\mu\nu}k^{\mu}p^{\nu}
 \end{align*}
 
 \end_inset

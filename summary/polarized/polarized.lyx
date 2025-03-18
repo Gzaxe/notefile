@@ -142,7 +142,18 @@ and we chose
 \begin_inset Formula $\overrightarrow{\lambda}=(0,0,1)$
 \end_inset
 
- in rest frame.
+ in rest frame thus the spin operatpor in light-cone is 
+\begin_inset Formula 
+\begin{align*}
+s & =(s^{+},s^{-},s_{3}*\overrightarrow{p}^{\perp})\\
+s^{+} & =\\
+s^{-} & =\\
+s_{3} & =
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -454,6 +465,25 @@ sum
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1-\xi}dy\tilde{f}_{kr}^{left}(y,\xi,t)+\tilde{f}_{\delta} & =2.365247935\\
+\int_{0}^{1+\xi}dy\tilde{f}_{kr}^{right}(y,\xi,t)+\tilde{f}_{\delta} & =2.365248111
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
 \end_inset
 
 

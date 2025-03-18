@@ -2219,7 +2219,7 @@ The normal integral is different from other cases.
 \begin_inset Formula $\xi=0.1\ Q^{2}=1GeV^{2}$
 \end_inset
 
- ignoring some coefficient
+ ignoring some coefficient(*下面的结果是没有考虑delta的留数部分积分结果*)
 \begin_inset Formula 
 \begin{align*}
 \int dyf_{f} & =3.614491865\;\xi=0.1\\
@@ -2319,7 +2319,8 @@ In the other diagram like diagram d and e, the normal KR diagrams, the equation
 \begin_inset Formula $\xi=0.1\ Q^{2}=1GeV^{2}$
 \end_inset
 
-, the form factor should be
+, the form factor should be(*这里的结果反倒是正确的并且乘上了对应的coe但是没有乘上该有的F，是之前杨明炀师兄程序里的没有带上F*
+)
 \begin_inset Formula 
 \begin{align*}
 \tilde{F}(q)\int dyf & =0.00695274\\
@@ -4103,6 +4104,202 @@ GPD from diagram b
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/228test/delta/c-Hu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/228test/delta/c-Eu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GPD from 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term in diagram c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/228test/delta/n-Hu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/228test/delta/n-Eu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GPD from 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term in diagram n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/228test/delta/o-Hu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/228test/delta/o-Eu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GPD from 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term in diagram o
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/228test/delta/p-Hu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/228test/delta/p-Eu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GPD from 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term in diagram p
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/228test/delta/q-Hu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pic/228test/delta/q-Eu-2d-0.1.pdf
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GPD from 
+\begin_inset Formula $\delta$
+\end_inset
+
+ term in diagram q
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintAll"
@@ -4913,6 +5110,50 @@ status open
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{\xi}xH^{u}(x,\xi,t)dx & =\int_{-\xi}^{\xi}xdx\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\frac{1}{2}\Phi(\eta,z,t)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\int_{-\xi}^{\xi}x\frac{1}{2}\Phi(\eta,z,t)dx\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\xi^{2}\int_{0}^{1}d\eta(2\eta-1)\Phi(\eta,z,t)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}d\eta(2\eta-1)^{n-1}\Phi(\eta,z,t) & =\stackrel[i=0,even]{n-1}{\Sigma}2^{i}(2z-1)^{2-i}A_{i}^{n}+2^{n}C^{n}\\
+ & =\stackrel[i=0,even]{n-1}{\Sigma}2^{i}(\frac{\bar{y}}{\xi})^{2-i}A_{i}^{n}+2^{n}C^{n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{\xi}xH^{u}(x,\xi,t)dx & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\xi^{2}*((\frac{\bar{y}}{\xi})^{2}A_{0}^{2}+2^{2}C^{2})\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\bar{y}f(\bar{y},\xi,t)(\frac{\xi}{\bar{y}})^{2}*((\frac{\bar{y}}{\xi})^{2}A_{0}^{2}+2^{2}C^{2})\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\bar{y}f(\bar{y},\xi,t)(A_{0}^{2}+(\frac{2\xi}{\bar{y}})^{2}C^{2})\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\bar{y}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{1}dzH_{in}^{u}(z,\frac{\xi}{\bar{y}},t)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{1}xH^{u}(x,\xi,t)dx & =\int_{\xi}^{1}xH^{u}(x,\xi,t)dx+\int_{-\xi}^{\xi}xH_{gpd}^{u}(x,\xi,t)dx+\int_{-\xi}^{\xi}xH_{gda}^{u}(x,\xi,t)dx\\
+ & =\int_{\xi}^{1}d\bar{y}\bar{y}f(\bar{y},\xi,t)\int_{\frac{\xi}{\bar{y}}}^{1}dzH_{in}^{u}(z,\frac{\xi}{\bar{y}},t)+\int_{\xi}^{1}d\bar{y}\bar{y}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{\frac{\xi}{\bar{y}}}dzH_{in}^{u}(z,\frac{\xi}{\bar{y}},t)\\
+ & +\int_{-\xi}^{\xi}d\bar{y}\bar{y}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{1}dzH_{in}^{u}(z,\frac{\xi}{\bar{y}},t)\\
+ & =\int_{-\xi}^{1}d\bar{y}\bar{y}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{1}dzH_{in}^{u}(z,\frac{\xi}{\bar{y}},t)
+\end{align*}
 
 \end_inset
 

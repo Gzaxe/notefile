@@ -1,0 +1,594 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+对于广义部分子分布的高阶梅林矩，从算符层面上可以给出其分解为洛伦兹标量的形式，即为GPD的多项式展开，例如非极化的广义部分子分布的定义是：
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{2}\int\frac{dz^{-}}{2\pi}e^{ixP^{+}z^{-}} & <p'|\bar{q}(-\frac{1}{2}z)\gamma^{+}q(\frac{1}{2}z)|p>\\
+=\frac{1}{2P^{+}} & [H\bar{u}(p')\gamma^{\mu}u(p)+E\bar{u}(p')\frac{i\sigma^{\mu\alpha}q_{\alpha}}{2m}u(p)]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+算符形式的n阶梅林矩为：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather*}
+(P^{+})^{n+1}\int dxx^{n}\int\frac{dz^{-}}{2\pi}e^{ixP^{+}z^{-}}[\bar{q}(-\frac{1}{2}z)\gamma^{+}q(\frac{1}{2}z)]_{z^{+}=0,z=0}\\
+=\bar{q}(0)\gamma^{+}(i\overleftrightarrow{\partial}^{+})^{n}q(0)
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+第二行的算符能够分解为如下的形式，其中省略了一些结构仅展示形式
+\begin_inset Formula 
+\begin{align}
+<p'|\bar{q}(0)\gamma^{+}(i\overleftrightarrow{\partial}^{+})^{n}q(0)|p> & =\bar{u}(p')\gamma^{+}u(p)\underset{i}{\Sigma}A_{i}(t)\nonumber \\
+ & +\bar{u}(p')\frac{i\sigma^{+\alpha}q_{\alpha}}{2m}u(p)\underset{i}{\Sigma}B_{i}(t)\nonumber \\
+ & +\frac{q^{+}}{m}\bar{u}(p')u(p)\text{mod}(n,2)C_{n+1}(t)\label{eq:norder}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对应到GPD函数即
+\begin_inset Formula $H,E$
+\end_inset
+
+中，就会得到常用的多项式展开
+\begin_inset Formula 
+\begin{align*}
+\int dxx^{n}H & =\underset{i,even}{\Sigma}(2\xi)^{i}A_{i}(t)+\text{mod}(n,2)(2\xi)^{n+1}C_{n+1}(t)\\
+\int dxx^{n}E & =\underset{i,even}{\Sigma}(2\xi)^{i}B_{i}(t)-\text{mod}(n,2)(2\xi)^{n+1}C_{n+1}(t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+因此我们计算中出现的广义部分子分布必须能够给出
+\begin_inset Formula $C$
+\end_inset
+
+项。而作为输入的GPD，是在double distribution representation下构造的，double distribution
+ representation是光锥算符的矩阵元的一种参数化表象，对于算符
+\begin_inset Formula $<p'|\bar{q}(-\frac{1}{2}z)z\!\!\!\slash q(\frac{1}{2}z)|p>$
+\end_inset
+
+double distribution representation下，以
+\begin_inset Formula $Pz,qz$
+\end_inset
+
+，即平均动量与动量迁移在
+\begin_inset Formula $z$
+\end_inset
+
+方向的投影为自由变量，其参数化结果为：
+\begin_inset Formula 
+\begin{align}
+<p'|\bar{q}(-\frac{1}{2}z)z\!\!\!\slash q(\frac{1}{2}z)|p>_{z^{2}=0}= & \bar{u}(p')z\!\!\!\slash u(p)\int d\beta d\alpha e^{-i\beta(Pz)+i\alpha\frac{qz}{2}}f(\beta,\alpha,t)\nonumber \\
+ & +\bar{u}(p')\frac{i\sigma^{\mu\alpha}z_{\mu}q_{\alpha}}{2m}u(p)\int d\beta d\alpha e^{-i\beta(Pz)+i\alpha\frac{qz}{2}}k(\beta,\alpha,t)\nonumber \\
+ & -\bar{u}(p')\frac{qz}{2m}u(p)\int d\alpha e^{i\alpha\frac{qz}{2}}D(\alpha,t)\label{eq:ddr}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+将上式算符形式变为GPD定义式可以将GPD和double distribution representation的参数化关联起来：
+\begin_inset Formula 
+\[
+H(x,\xi,t)=\int d\beta d\alpha\,\delta(x-\beta-\xi\alpha)\,f(\beta,\alpha,t)+sgn(\xi)D\Big(\frac{x}{\xi},t\Big)\,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在double distribution representation下的可以计算等式
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:norder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+所定义的n阶矩，
+\begin_inset Formula 
+\begin{align}
+\int dxx^{n}<p'|\bar{q}(-\frac{1}{2}z)\gamma^{+}q(\frac{1}{2}z)|p>= & \bar{u}(p')\gamma^{+}u(p)\int dxx^{n}\int d\beta d\alpha\,\delta(x-\beta-\xi\alpha)\,f(\beta,\alpha,t)\nonumber \\
+ & +\bar{u}(p')\frac{i\sigma^{+\alpha}q_{\alpha}}{2m}u(p)\int dxx^{n}\int d\beta d\alpha\,\delta(x-\beta-\xi\alpha)k(\beta,\alpha,t)\nonumber \\
+ & -\bar{u}(p')\frac{q^{+}}{2m}u(p)\int dxx^{n}D\Big(\frac{x}{\xi},t\Big)\,\label{eq:ddr-1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+从等式
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ddr-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+中可以看到
+\begin_inset Formula $f(\beta,\alpha,t)$
+\end_inset
+
+与Dterm的n阶矩分别对应
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:norder"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+中的
+\begin_inset Formula $\underset{i}{\Sigma}A_{i}(t)$
+\end_inset
+
+与
+\begin_inset Formula $C_{n+1}(t)$
+\end_inset
+
+项，如果只考虑
+\begin_inset Formula $f(\beta,\alpha,t)$
+\end_inset
+
+构造的GPD，高阶矩计算中是无法得到
+\begin_inset Formula $C_{n+1}(t)$
+\end_inset
+
+项的，证明如下
+\begin_inset Formula 
+\begin{align*}
+\int dxx^{n}\int d\beta d\alpha\,\delta(x-\beta-\xi\alpha)\,f(\beta,\alpha,t) & =\int d\beta d\alpha f(\beta,\alpha,t)\,\int dxx^{n}\delta(x-\beta-\xi\alpha)\\
+ & =\int d\beta d\alpha\ (\beta+\xi\alpha)^{n}f(\beta,\alpha,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+显然其中
+\begin_inset Formula $\xi$
+\end_inset
+
+的幂次最高只有n次，而
+\begin_inset Formula $C_{n+1}(t)$
+\end_inset
+
+项是n+1次幂，因此我们必须引入Dterm来满足GPD的多项式展开性质
+\end_layout
+
+\begin_layout Standard
+对于上式中的
+\begin_inset Formula $f(\beta,\alpha,t)$
+\end_inset
+
+，对应于粒子的PDF，可以利用PDF来构造，以介子为例：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{\pi}^{q}(x,\xi,t)=\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\,\delta(x-\beta-\xi\alpha)\,h_{b}(\beta,\alpha)\,H_{q/\pi}(\beta,0,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在考虑了Dterm之后，输入的GDP的形式变为：
+\begin_inset Formula 
+\[
+H_{\pi}^{q}(x,\xi,t)=\int_{-1}^{1}d\beta\int_{-1+|\beta|}^{1-|\beta|}d\alpha\,\delta(x-\beta-\xi\alpha)\,h_{b}(\beta,\alpha)\,H_{q/\pi}(\beta,0,t)+\frac{\xi}{|\xi|}D_{\pi}^{q}\Big(\frac{x}{\xi},t\Big)\,\theta(\xi-|x|)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中，Dterm具体的形式为，例如
+\begin_inset Formula $\pi$
+\end_inset
+
+介子GPD输入中：
+\begin_inset Formula 
+\[
+D_{\pi}^{q}(z,t)=\frac{15}{4}z(1-z^{2})\,D_{\pi}^{q}(t),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这样选取的原因是Dterm满足：
+\end_layout
+
+\begin_layout Standard
+1、对于
+\begin_inset Formula $t$
+\end_inset
+
+，Dterm对应于引力形状因子，选取格点上的计算结果
+\begin_inset Formula $D_{\pi}^{q}(t)$
+\end_inset
+
+作为输入
+\end_layout
+
+\begin_layout Standard
+2、对于
+\begin_inset Formula $x$
+\end_inset
+
+，Dterm应该是一个奇函数，并且应该在
+\begin_inset Formula $x=\pm\xi$
+\end_inset
+
+的端点处为0，因此选择了一个此条件下最简单的函数描述
+\begin_inset Formula $x$
+\end_inset
+
+依赖
+\end_layout
+
+\begin_layout Standard
+3、系数是归一化而产生的。
+\end_layout
+
+\begin_layout Standard
+而极化的情况下，算符的展开不会给出非极化中的
+\begin_inset Formula $C$
+\end_inset
+
+项，因此
+\begin_inset Formula $\tilde{H,\tilde{E}}$
+\end_inset
+
+的多项式展开没有D-term，也就是满足
+\begin_inset Formula 
+\begin{align*}
+\int dxx^{n}\tilde{H} & =\underset{i,even}{\Sigma}(2\xi)^{i}\tilde{A}_{i}(t)\\
+\int dxx^{n}\tilde{E} & =\underset{i,even}{\Sigma}(2\xi)^{i}\tilde{B}_{i}(t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在极化的计算中，以第一阶的梅林矩为例，极化的GPD满足
+\begin_inset Formula 
+\[
+\int dx\tilde{H}=\tilde{A}_{i}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+而非极化的为
+\begin_inset Formula 
+\[
+\int dxH=A_{i}(t)+(2\xi)^{2}C_{2}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+卷积公式计算极化GPD，
+\begin_inset Formula $\tilde{H}$
+\end_inset
+
+，如果使用非极化作为输入，记为
+\begin_inset Formula $H_{in}$
+\end_inset
+
+，那么一阶矩根据卷积公式可以分解为输入与分裂函数：
+\begin_inset Formula 
+\begin{align*}
+\begin{align*}\int_{-\xi}^{1}x\tilde{H}(x,\xi,t)dx\end{align*}
+ & =\int_{-\xi}^{1}d\bar{y}\bar{y}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{1}dzzH_{in}(z,\frac{\xi}{\bar{y}},t)\\
+ & =\int_{-\xi}^{1}d\bar{y}\bar{y}f(\bar{y},\xi,t)(A_{i}(t)+(2\frac{\xi}{\bar{y}})^{2}C_{2}(t))
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+需要证明的是卷积计算得到的极化GPD一阶矩中没有
+\begin_inset Formula $\xi$
+\end_inset
+
+依赖项，但是现在没有办法消去由于
+\begin_inset Formula $(2\frac{\xi}{\bar{y}})^{2}C_{2}(t)$
+\end_inset
+
+引入的
+\begin_inset Formula $\xi$
+\end_inset
+
+依赖。
+\end_layout
+
+\begin_layout Standard
+对于非极化情况下的n阶矩计算，根据卷积公式，积分可以写为：
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{\xi}x^{n}H^{u}(x,\xi,t)dx & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\xi^{n+1}\int_{0}^{1}d\eta(2\eta-1)^{n}\Phi(\eta,z,t)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\xi^{n+1}\left(\underset{i=0,even}{\overset{n}{\Sigma}}2^{i}(\frac{\bar{y}}{\xi})^{n-i}A_{i}^{n+1}(t)+2^{n+1}C^{n+1}(t)\right)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\left(\underset{i=0,even}{\overset{n}{\Sigma}}(2\frac{\xi}{\bar{y}})^{i}A_{i}^{n+1}(t)+(2\frac{\xi}{\bar{y}})^{n+1}C^{n+1}(t)\right)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{\frac{-\xi}{\bar{y}}}^{\frac{\xi}{\bar{y}}}d\frac{x}{\bar{y}}(\frac{x}{\bar{y}})^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+由于我们不考虑海夸克输入，因此卷积计算中实际上范围只有
+\begin_inset Formula $-\xi\sim1$
+\end_inset
+
+。其中第二行各项的证明如下：
+\end_layout
+
+\begin_layout Standard
+1、GPD输入的DGLAP区间：
+\begin_inset Formula 
+\begin{align*}
+\int_{\xi}^{1}x^{n}H^{u}(x,\xi,t)dx & =\int_{\xi}^{1}x^{n}dx\int_{x}^{1}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)\\
+ & =\int_{\xi}^{1}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\int_{\xi}^{\bar{y}}dxx^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)\\
+ & =\int_{\xi}^{1}d\bar{y}f(\bar{y},\xi,t)\int_{\frac{\xi}{\bar{y}}}^{1}d\frac{x}{\bar{y}}x^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)\\
+ & =\int_{\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{\frac{\xi}{\bar{y}}}^{1}d\frac{x}{\bar{y}}(\frac{x}{\bar{y}})^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2、GPD输入的ERBL区间：
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{\xi}x^{n}H^{u}(x,\xi,t)dx & =\int_{-\xi}^{\xi}x^{n}dx\int_{\xi}^{1}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)\\
+ & =\int_{\xi}^{1}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\int_{-\xi}^{\xi}dxx^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)\\
+ & =\int_{\xi}^{1}d\bar{y}f(\bar{y},\xi,t)\int_{\frac{-\xi}{\bar{y}}}^{\frac{\xi}{\bar{y}}}d\frac{x}{\bar{y}}x^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)\\
+ & =\int_{\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{\frac{-\xi}{\bar{y}}}^{\frac{\xi}{\bar{y}}}d\frac{x}{\bar{y}}(\frac{x}{\bar{y}})^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3、GDA输入部分：
+\end_layout
+
+\begin_layout Standard
+首先变换积分顺序：
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{\xi}x^{n}H^{u}(x,\xi,t)dx & =\int_{-\xi}^{\xi}x^{n}dx\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\frac{1}{2}\Phi(\eta,z,t)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\int_{-\xi}^{\xi}x^{n}\frac{1}{2}\Phi(\eta,z,t)dx\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\xi^{n+1}\int_{0}^{1}d\eta(2\eta-1)^{n}\Phi(\eta,z,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于GDA本身，其n阶矩也有自己的多项式展开：
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}d\eta(2\eta-1)^{n}\Phi(\eta,z,t) & =\underset{i=0,even}{\overset{n}{\Sigma}}2^{i}(2z-1)^{n-i}A_{i}^{n+1}(t)+2^{n+1}C^{n+1}(t)\\
+ & =\underset{i=0,even}{\overset{n}{\Sigma}}2^{i}(\frac{\bar{y}}{\xi})^{n-i}A_{i}^{n+1}(t)+2^{n+1}C^{n+1}(t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中，由于我们所使用的输入的GDA实际上就是GPD改变了变量形式，因此展开中的系数
+\begin_inset Formula $A_{i}^{n+1}(t),C^{n+1}(t)$
+\end_inset
+
+相同。因此GDA的卷积对应可以变换为：
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{\xi}x^{n}H^{u}(x,\xi,t)dx & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\xi^{n+1}\int_{0}^{1}d\eta(2\eta-1)^{n}\Phi(\eta,z,t)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\frac{1}{\bar{y}}f(\bar{y},\xi,t)\xi^{n+1}\left(\underset{i=0,even}{\overset{n}{\Sigma}}2^{i}(\frac{\bar{y}}{\xi})^{n-i}A_{i}^{n+1}(t)+2^{n+1}C^{n+1}(t)\right)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\left(\underset{i=0,even}{\overset{n}{\Sigma}}(2\frac{\xi}{\bar{y}})^{i}A_{i}^{n+1}(t)+(2\frac{\xi}{\bar{y}})^{n+1}C^{n+1}(t)\right)\\
+ & =\int_{-\xi}^{\xi}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{\frac{-\xi}{\bar{y}}}^{\frac{\xi}{\bar{y}}}d\frac{x}{\bar{y}}(\frac{x}{\bar{y}})^{n}H_{in}^{u}(\frac{x}{\bar{y}},\frac{\xi}{\bar{y}},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+所以卷积之后的n阶矩的形式为：
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{1}x^{n}H^{u}(x,\xi,t)dx & =\int_{\xi}^{1}x^{n}H^{u}(x,\xi,t)dx+\int_{-\xi}^{\xi}x^{n}H_{gpd}^{u}(x,\xi,t)dx+\int_{-\xi}^{\xi}x^{n}H_{gda}^{u}(x,\xi,t)dx\\
+ & =\int_{\xi}^{1}d\bar{y}^{n}\bar{y}f(\bar{y},\xi,t)\int_{\frac{\xi}{\bar{y}}}^{1}dzz^{n}H_{in}^{u}(z,\frac{\xi}{\bar{y}},t)+\int_{\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{\frac{\xi}{\bar{y}}}dzz^{n}H_{in}^{u}(z,\frac{\xi}{\bar{y}},t)\\
+ & +\int_{-\xi}^{\xi}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{1}dzz^{n}H_{in}^{u}(z,\frac{\xi}{\bar{y}},t)\\
+ & =\int_{-\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{1}dzz^{n}H_{in}^{u}(z,\frac{\xi}{\bar{y}},t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+将作为输入的价夸克GPD展开，有
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{1}x^{n}H^{u}(x,\xi,t)dx & =\int_{-\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\int_{-\frac{\xi}{\bar{y}}}^{1}dzz^{n}H_{in}^{u}(z,\frac{\xi}{\bar{y}},t)\\
+ & =\int_{-\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)\left(\underset{i=0,even}{\overset{n}{\Sigma}}(2\frac{\xi}{\bar{y}})^{i}A_{i}^{n+1}(t)+(2\frac{\xi}{\bar{y}})^{n+1}C^{n+1}(t)\right)\\
+ & =\underset{i=0,even}{\overset{n}{\Sigma}}\int_{-\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)(2\frac{\xi}{\bar{y}})^{i}A_{i}^{n+1}(t)+\int_{-\xi}^{1}d\bar{y}\bar{y}^{n}f(\bar{y},\xi,t)(2\frac{\xi}{\bar{y}})^{n+1}C^{n+1}(t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+因此分裂函数在n阶矩计算中需要满足
+\begin_inset Formula 
+\begin{align*}
+\int_{-\xi}^{1}d\bar{y}\bar{y}^{n}\,f(y,\xi,t) & =\sum_{j=0,{\rm even}}^{n}(2\xi)^{j}{\cal A}_{j}^{n+1}(t)+\left(2\xi\right)^{n+1}{\cal C}^{(n+1)}(t)|_{n+1\,{\rm even}},\\
+\int_{-\xi}^{1}d\bar{y}\bar{y}^{-1}\,f(y,\xi,t) & ={\cal C}'(t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中第一行可以利用分裂函数的算符定义来证明，第二行可以从计算中检验。
+\end_layout
+
+\end_body
+\end_document

@@ -142,7 +142,18 @@ and we chose
 \begin_inset Formula $\overrightarrow{\lambda}=(0,0,1)$
 \end_inset
 
- in rest frame.
+ in rest frame thus the spin operatpor in light-cone is 
+\begin_inset Formula 
+\begin{align*}
+s & =(s^{+},s^{-},s_{3}*\overrightarrow{p}^{\perp})\\
+s^{+} & =\\
+s^{-} & =\\
+s_{3} & =
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -324,8 +335,35 @@ In
 \begin_inset Formula $q^{+}=0$
 \end_inset
 
- case, we can check the two definition of projection.
- Firstly, the integral of 
+ case, we can check the two definition of projection which is 
+\begin_inset Formula 
+\begin{align*}
+A & =\bar{u}(p_{2})\Gamma^{+}u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\bar{u}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u(p_{1})\bar{u}(p_{1})\gamma^{+}\gamma_{5}u(p_{2})\\
+ & =\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}}+m)\frac{1+\gamma_{5}\cancel{s_{1}}}{2}\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\tilde{f}(y,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\begin{align*}
+A' & =\underset{s_{1}}{\Sigma}\bar{u}^{s_{2}}(p_{2})\Gamma^{+}u^{s_{1}}(p_{1})\bar{u}^{s_{1}}(p_{1})\gamma^{+}\gamma_{5}u^{s_{2}}(p_{2})\\
+ & =\underset{s_{1}}{\Sigma}\bar{u}^{s_{2}}(p_{2})\gamma^{+}\gamma_{5}\tilde{f}(y,t)u^{s_{1}}(p_{1})\bar{u}^{s_{1}}(p_{1})\gamma^{+}\gamma_{5}u^{s_{2}}(p_{2})\\
+ & =\textrm{Tr}[\gamma^{+}\gamma_{5}(\cancel{p_{1}}+m)\gamma^{+}\gamma_{5}(\cancel{p_{2}}+m)\frac{1+\gamma_{5}\cancel{s_{2}}}{2}]\tilde{f}(y,t)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Firstly, the integral of 
 \begin_inset Formula $\tilde{f}$
 \end_inset
 
@@ -345,7 +383,16 @@ Second, this is the figure of
 \begin_inset Formula $\tilde{f}(y,t)$
 \end_inset
 
+ from two different method is Fig.1and Fig.2.
+ It can be checked that these two function 
+\begin_inset Formula $\tilde{f}(y,t)$
+\end_inset
 
+ is exactly same in analytical form.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -417,6 +464,18 @@ sum
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1-\xi}dy\tilde{f}_{kr}^{left}(y,\xi,t)+\tilde{f}_{\delta} & =2.365247935\\
+\int_{0}^{1+\xi}dy\tilde{f}_{kr}^{right}(y,\xi,t)+\tilde{f}_{\delta} & =2.365248111
+\end{align*}
 
 \end_inset
 

@@ -76,6 +76,26 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+k^{2} & =k^{+}k^{-}-k^{\perp2}\\
+k.p & =\frac{1}{2}(k^{+}p^{-}+k^{-}p^{+})-k^{\perp}.p^{\perp}\\
+g^{\mu\nu} & ==\left(\begin{array}{cccc}
+0 & 2 & 0 & 0\\
+2 & 0 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{array}\right)\\
+g_{\mu\nu} & =\left(\begin{array}{cccc}
+0 & \frac{1}{2} & 0 & 0\\
+\frac{1}{2} & 0 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{array}\right)
+\end{align*}
+
+\end_inset
+
 
 \end_layout
 

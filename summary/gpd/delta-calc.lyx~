@@ -245,7 +245,20 @@
 \begin_inset Formula $\text{\ensuremath{\delta}}$
 \end_inset
 
-项的时候不能那么直接了，还是要使用消去的方式来看并且注意核心一定是和协变结果的比较。
+项的时候不能那么直接了，还是要使用消去的方式来看并且注意核心一定是和协变结果的比较。其次是端点奇异性的发散是高阶发散，例如线性发散，而一般的圈积分计算中可能会出
+现对数发散，我们忽略对数发散，只看线性发散以上的发散项从而可以不考虑分离之后的
+\begin_inset Formula $\int\frac{1}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p-k)}$
+\end_inset
+
+在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+为
+\begin_inset Formula $\text{\ensuremath{\int\frac{1}{k^{-}}}}$
+\end_inset
+
+的对数发散。
 \end_layout
 
 \begin_layout Section
@@ -367,7 +380,8 @@ where
 \end_layout
 
 \begin_layout Standard
-不过这个等式的来历就不太清楚了，非常的it just works
+这个公式的来历详细可以参见杨明炀师兄光锥坐标gpdnote中第三章3.6节对k+积分结果的内容。大体上的意思是，利用其他的那些计算发散项的方式，例如chueng文
+章中的内容，结合一点对delta函数的合理猜测来给出这个公式
 \end_layout
 
 \begin_layout Standard
@@ -540,6 +554,99 @@ A是求导之后会出现一个常系数。然后偏导可以提出去到对
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+分离
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+实际计算中最重要的其实是从整个积分中把需要作为
+\begin_inset Formula $\delta$
+\end_inset
+
+项的贡献分离出来。首先，
+\begin_inset Formula $\text{\ensuremath{\delta}}$
+\end_inset
+
+项有两个方面的要求让它的形式基本固定为
+\begin_inset Formula $\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+，也就是分母上只会有动量为
+\begin_inset Formula $k$
+\end_inset
+
+的传播子，两个约束是：1、
+\begin_inset Formula $\delta$
+\end_inset
+
+项必须要留数为0，也就是分母上的pole在一个半平面，而由于分子上的
+\begin_inset Formula $k^{-}$
+\end_inset
+
+幂次问题，是不能完全把
+\begin_inset Formula $D_{\Lambda}(k)$
+\end_inset
+
+消去的，所以只能考虑消去
+\begin_inset Formula $D_{B}(p-k)$
+\end_inset
+
+，2、
+\begin_inset Formula $\delta$
+\end_inset
+
+项要在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+发散所以分母上也是不能有
+\begin_inset Formula $k^{+}k^{-}$
+\end_inset
+
+之外的
+\begin_inset Formula $k^{-}$
+\end_inset
+
+于是只能是
+\begin_inset Formula $\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+。之后就是如何把这个分离出来，之前我的思路是简单的消去分子分母上的
+\begin_inset Formula $k^{+}k^{-}$
+\end_inset
+
+之外的
+\begin_inset Formula $k^{-}$
+\end_inset
+
+，这个计算太过粗糙和笼统，并且无法正确处理
+\begin_inset Formula $\frac{(k^{-})^{n}}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+。现在还是使用了和之前师兄类似的办法。首先将积分中分子也变成传播子的形式然后做分子分母的消去之后对具体而简单的形式做进一步的分离。具体的参见程序，其中需要注意的
+有：1、分离时会手动的直接删去一些对
+\begin_inset Formula $\delta$
+\end_inset
+
+没有贡献的项，比如不含
+\begin_inset Formula $k^{-}$
+\end_inset
+
+无法和分母相消的，2、对于垂直分量，在
+\begin_inset Formula $\frac{1}{D_{\phi}^{a}(k)D_{\Lambda}^{b}(k)}$
+\end_inset
+
+中会因为分母上的垂直分量一定是偶数幂次从而把分子上的奇数幂次全部消去（奇函数积分=0），但是要注意这个原理，因为
+\begin_inset Formula $\frac{1}{D_{\phi}(k+q)D_{\Lambda}^{2}(k)D_{\Lambda}^{2}(k+q)}$
+\end_inset
+
+中分母上就不再能保持一定是偶数幂次了
 \end_layout
 
 \begin_layout Section
@@ -732,6 +839,55 @@ A是求导之后会出现一个常系数。然后偏导可以提出去到对
 \[
 \frac{1}{A_{1}^{m_{1}}...A_{n}^{m_{n}}}=\int_{0}^{1}dx_{1}...dx_{n}\delta(\Sigma x_{i}-1)\frac{\Gamma(m_{1}+...+m_{n})}{\Gamma(m_{1})*...*\Gamma(m_{n})}\frac{\Pi x_{i}^{m_{i}-1}}{(\Sigma x_{i}A_{i})^{\Sigma m_{i}}}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+约化
+\end_layout
+
+\begin_layout Standard
+order1和order2的如图
+\end_layout
+
+\begin_layout Standard
+找时间把order3的也补上，就是图o的计算。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/未命名2-1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

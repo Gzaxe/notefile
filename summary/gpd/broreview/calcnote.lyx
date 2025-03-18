@@ -1,0 +1,959 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+这里我简单介绍一下我们目前计算GPD的方式。具体计算中有很多额外的细节，这里只给了最简单的介绍。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename G:/output/summary/gpd/23411/fig1.pdf
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+需要计算的单圈费曼图
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+计算原理
+\end_layout
+
+\begin_layout Standard
+GPD的定义是，参见GPD的综述
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multline} 
+\backslash
+frac{1}{2}
+\backslash
+int
+\backslash
+frac{d
+\backslash
+lambda}{2
+\backslash
+pi}e^{ixP
+\backslash
+lambda n_{-}}<p_{2}|
+\backslash
+bar{q}(-
+\backslash
+frac{1}{2}
+\backslash
+lambda n_{-})
+\backslash
+cancel{n}_{-}q(
+\backslash
+frac{1}{2}
+\backslash
+lambda n_{-})|p>
+\backslash
+
+\backslash
+ =
+\backslash
+frac{1}{2(Pn_{-})}[H^{q}(x,
+\backslash
+xi,t)
+\backslash
+bar{u}(p_{2})
+\backslash
+cancel{n}_{-}u(p_{1})+E^{q}(x,
+\backslash
+xi,t)
+\backslash
+bar{u}(p_{2})
+\backslash
+frac{i
+\backslash
+sigma^{
+\backslash
+alpha
+\backslash
+beta}
+\backslash
+cancel{n}_{-
+\backslash
+alpha}q_{
+\backslash
+beta}}{2M}u(p_{1})] 
+\backslash
+end{multline}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+我们计算中所使用的是卷积公式(convolution formula)，可以参考附件里的第一篇文章。计算上而言就是，粒子的GPD等于粒子内部一个组分粒子的GPD
+和粒子-组分粒子的分裂函数(splitting function)的卷积，组分粒子的GPD是输入，分裂函数则是由图1中的费曼图得到，具体卷积关系如下（对于图a）
+，
+\begin_inset Formula $f(y,\xi,t)$
+\end_inset
+
+是从图1中得到的splitting function，
+\begin_inset Formula $H_{q}(\frac{x}{y},\frac{\xi}{y},t)$
+\end_inset
+
+是输入的中间粒子GPD。
+\begin_inset Formula 
+\begin{align*}
+H(x,\xi,t)=\int_{x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >x>\xi\\
+H(x,\xi,t)=\int_{\xi}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad y & >\xi>x\\
+H(x,\xi,t)=\int_{-\xi}^{\xi}dy\frac{1}{2\xi}f(y,\xi,t)\frac{\xi}{\pi y}\int_{s_{0}}^{\infty}ds\frac{Im\Phi(\frac{\frac{x}{\xi}+1}{2},\frac{\frac{y}{\xi}+1}{2},s)}{s-t+i\epsilon}\quad\xi & >\{y,|x|\}\\
+H(x,\xi,t)=\int_{-x}^{1}dy\frac{1}{y}f(y,\xi,t)H_{q}(\frac{x}{y},\frac{\xi}{y},t),\quad- & \xi>x>-1
+\end{align*}
+
+\end_inset
+
+对于图1中的费曼图a，外场耦合到介子上，这说明这个图做贡献的中间粒子是介子，对图b则是重子作为中间粒子。
+\end_layout
+
+\begin_layout Section
+光锥坐标
+\end_layout
+
+\begin_layout Standard
+光锥坐标的变换就是把协变坐标的03分量加起来，12坐标不变，例如
+\begin_inset Formula 
+\begin{align*}
+k & =(k^{0},k^{1},k^{2},k^{3})\\
+k & =(k^{+},k^{-},\overrightarrow{k}^{\perp})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula 
+\begin{align*}
+k^{+} & =k^{0}+k^{3}\\
+k^{-} & =k^{0}-k^{3}\\
+\overrightarrow{k}^{\perp} & =(k^{1},k^{2})\\
+d^{4}k & =\frac{1}{2}dk^{+}dk^{-}d^{2}k^{\perp}\\
+k.p & =\frac{1}{2}(k^{+}p^{-}+k^{-}p^{+})-\overrightarrow{k}^{\perp}.\overrightarrow{p}^{\perp}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+计算中的动量关系
+\end_layout
+
+\begin_layout Standard
+计算中采用的具体参考系是：
+\begin_inset Formula $p_{1}p_{2}$
+\end_inset
+
+分别是入射和出射动量，
+\begin_inset Formula $P=\frac{p_{1}+p_{2}}{2}=(P^{+},P^{-},0)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p_{1} & =(P^{+}-\frac{q^{+}}{2},P^{-}-\frac{q^{-}}{2},\frac{-\overrightarrow{q}^{\perp}}{2})\\
+p_{2} & =(P^{+}+\frac{q^{+}}{2},P^{-}+\frac{q^{-}}{2},\frac{\overrightarrow{q}^{\perp}}{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+分裂函数
+\end_layout
+
+\begin_layout Standard
+对于图1中的费曼图，根据GPD的定义我们所需要的分裂函数的定义为
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align}     
+\backslash
+bar{u}(p_{2})
+\backslash
+Gamma^{+}u(p_{1}) & =
+\backslash
+bar{u}(p_{2})[
+\backslash
+gamma^{+}f(y,
+\backslash
+xi,t)+
+\backslash
+frac{i
+\backslash
+sigma^{+
+\backslash
+alpha}q_{
+\backslash
+alpha}}{2M_{B}}g(y,
+\backslash
+xi,t)]u(p_{1})
+\backslash
+
+\backslash
+     & =
+\backslash
+bar{u}(p_{2})[
+\backslash
+gamma^{+}(f(y,
+\backslash
+xi,t)+g(y,
+\backslash
+xi,t))-
+\backslash
+frac{p_{1}^{+}+p_{2}^{+}}{2M_{B}}g(y,
+\backslash
+xi,t)]u(p_{1}) 
+\backslash
+end{align}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中使用了戈登恒等式替换掉了
+\begin_inset Formula $\sigma^{\mu\nu}$
+\end_inset
+
+，y是因为分裂函数描述的是具有一定的动量占比的中间粒子的状态，从而需要引入一个动量fraction 
+\begin_inset Formula $y$
+\end_inset
+
+来描述动量占比，具体定义在下面。
+\end_layout
+
+\begin_layout Standard
+为了提取出
+\begin_inset Formula $fg$
+\end_inset
+
+，我们定义如下的投影算符AB：
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align} A & =
+\backslash
+textrm{Tr}[
+\backslash
+Gamma^{+}(
+\backslash
+cancel{p_{1}}+M_{B})
+\backslash
+gamma^{+}(
+\backslash
+cancel{p_{2}}+M_{B})]
+\backslash
+
+\backslash
+ & =(f(y,
+\backslash
+xi,t)+g(y,
+\backslash
+xi,t))*
+\backslash
+textrm{Tr}[
+\backslash
+gamma^{+}(
+\backslash
+cancel{p_{1}}+M_{B})
+\backslash
+gamma^{+}(
+\backslash
+cancel{p_{2}}+M_{B})]
+\backslash
+
+\backslash
+ & -
+\backslash
+frac{p_{1}^{+}+p_{2}^{+}}{2M_{B}}g(y,
+\backslash
+xi,t)*
+\backslash
+textrm{Tr}[(
+\backslash
+cancel{p_{1}}+M_{B})
+\backslash
+gamma^{+}(
+\backslash
+cancel{p_{2}}+M_{B})]
+\backslash
+
+\backslash
+ B & =
+\backslash
+textrm{Tr}[
+\backslash
+Gamma^{+}(p_{1}+M_{B})(
+\backslash
+cancel{p_{2}}+M_{B})]
+\backslash
+frac{p_{1}^{+}+p_{2}^{+}}{2M_{B}}
+\backslash
+
+\backslash
+ & =(f(y,
+\backslash
+xi,t)+g(y,
+\backslash
+xi,t))*
+\backslash
+textrm{Tr}[
+\backslash
+gamma^{+}(p_{1}+M_{B})(
+\backslash
+cancel{p_{2}}+M_{B})]
+\backslash
+frac{p_{1}^{+}+p_{2}^{+}}{2M_{B}}
+\backslash
+
+\backslash
+ & -
+\backslash
+frac{p_{1}^{+}+p_{2}^{+}}{2M_{B}}g(y,
+\backslash
+xi,t)*
+\backslash
+textrm{Tr}[
+\backslash
+gamma^{+}(p_{1}+M_{B})(
+\backslash
+cancel{p_{2}}+M_{B})]
+\backslash
+frac{p_{1}^{+}+p_{2}^{+}}{2M_{B}} 
+\backslash
+end{align}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+反解得到
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align}     f= & 
+\backslash
+frac{4M_{B}^{2}
+\backslash
+xi^{2}B-Q^{2}A}{8P^{+2}(4M_{B}^{2}
+\backslash
+xi^{2}+(
+\backslash
+xi^{2}-1)Q^{2})}
+\backslash
+
+\backslash
+     g= & 
+\backslash
+frac{M_{B}^{2}(1-
+\backslash
+xi^{2})B-M_{B}^{2}A}{2P^{+2}(4M_{B}^{2}
+\backslash
+xi^{2}+(
+\backslash
+xi^{2}-1)Q^{2})} 
+\backslash
+end{align} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+所以计算中需要做的就是，以费曼图a为例：图a的振幅为
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{eqnarray}  
+\backslash
+bar{u}(p')
+\backslash
+, 
+\backslash
+Gamma_{(
+\backslash
+rm a)}^+
+\backslash
+, u(p)  &=& 
+\backslash
+bar{u}(p')
+\backslash
+, 
+\backslash
+frac{C^2_{B
+\backslash
+phi}}{f^2} 
+\backslash
+int
+\backslash
+!
+\backslash
+frac{
+\backslash
+dd[4]{k}}{(2
+\backslash
+pi)^4} (
+\backslash
+slashed{k}+
+\backslash
+slashed{q})
+\backslash
+gamma_5
+\backslash
+, 
+\backslash
+widetilde{F}(k+q)  
+\backslash
+frac{i}{D_
+\backslash
+phi(k+q)}
+\backslash
+, (2k^+ + q^+) 
+\backslash
+nonumber
+\backslash
+
+\backslash
+ &&
+\backslash
+hspace*{2.3cm} 
+\backslash
+times 
+\backslash
+frac{i}{D_
+\backslash
+phi(k)} 
+\backslash
+frac{i(
+\backslash
+slashed{p}-
+\backslash
+slashed{k}+M_B)}{D_B(p-k)} 
+\backslash
+gamma_5 
+\backslash
+slashed{k}
+\backslash
+,  
+\backslash
+widetilde{F}(k)
+\backslash
+, 
+\backslash
+delta
+\backslash
+Big(y+
+\backslash
+xi-
+\backslash
+frac{k^+}{P^+}
+\backslash
+Big)
+\backslash
+, u(p)                                          
+\backslash
+nonumber  
+\backslash
+
+\backslash
+ &
+\backslash
+equiv& 
+\backslash
+bar{u}(p') 
+\backslash
+bigg[   
+\backslash
+gamma^+ f_{
+\backslash
+phi B}^{({
+\backslash
+rm rbw})}(y,
+\backslash
+xi,t)   + 
+\backslash
+frac{i
+\backslash
+sigma^{+
+\backslash
+nu}q_
+\backslash
+nu}{2M} g_{
+\backslash
+phi B}^{({
+\backslash
+rm rbw})}(y,
+\backslash
+xi,t) 
+\backslash
+bigg] u(p),                        
+\backslash
+label{eq.splitfnproj} 
+\backslash
+end{eqnarray} % where the propagator factors $D_
+\backslash
+phi(k)$ and $D_B(p)$ are defined as % 
+\backslash
+begin{equation}  D_
+\backslash
+phi(k) = k^2 - m_
+\backslash
+phi^2 + i
+\backslash
+epsilon, 
+\backslash
+qquad
+\backslash
+qquad D_B(p)    = p^2 - M_B^2 + i
+\backslash
+epsilon, 
+\backslash
+end{equation} % and $m_
+\backslash
+phi$ and $M_B$ represent the pseudoscalar meson and baryon masses, respectively.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中通过
+\begin_inset Formula $\delta$
+\end_inset
+
+函数
+\begin_inset Formula $\delta(y+\xi-\frac{k^{+}}{P+})$
+\end_inset
+
+引入动量fraction 
+\begin_inset Formula $y$
+\end_inset
+
+来描述动量占比，具体的定义是通过bilocal operator推导出来的，需要注意的是y的定义在介子耦合和重子耦合中不同，不过重子图比较复杂，先只看介子圈的话
+y就都是一样的（也就是图1中的a、k、l、m图）
+\end_layout
+
+\begin_layout Standard
+将振幅
+\begin_inset Formula $\Gamma^{+}$
+\end_inset
+
+带入到上面的算符AB中(旋量已经被trace计算了)，计算trace之后对AB分别做四维积分即可得到分裂函数。而在光锥坐标中进行四维积分的方式则是：
+\end_layout
+
+\begin_layout Standard
+首先+分量是delta函数所以实际上不用积分，负分量使用留数定理计算，因为传播子中是含有
+\begin_inset Formula $i\epsilon$
+\end_inset
+
+的，即
+\begin_inset Formula $D(k)=k^{2}-m^{2}+i\epsilon$
+\end_inset
+
+，最后垂直分量则直接进行数值积分，从而得到了分裂函数。具体的话对照mma程序会更好理解，之后我把程序给你。
+\end_layout
+
+\begin_layout Section
+卷积计算
+\end_layout
+
+\begin_layout Standard
+得到分裂函数之后，只需要得到中间粒子gpd作为输入即可计算卷积。需要注意的是，第一节中的卷积公式的第四行实际上是不计算的，是通过对称性得到的，这是因为这一行是纯
+反夸克贡献，而我们计算中输入的gpd是只有
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+中的u夸克的。对于介子，输入gpd是
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{eqnarray} 
+\backslash
+label{eq:inputGPD}  H_{q/
+\backslash
+pi}(x,
+\backslash
+xi,t) &=& 
+\backslash
+int_{-1}^1 
+\backslash
+dd{
+\backslash
+beta} 
+\backslash
+int_{-1+|
+\backslash
+beta|}^{1-|
+\backslash
+beta|} 
+\backslash
+dd{
+\backslash
+alpha}
+\backslash
+, 
+\backslash
+delta(x-
+\backslash
+beta-
+\backslash
+xi 
+\backslash
+alpha)
+\backslash
+, h_b(
+\backslash
+beta,
+\backslash
+alpha)
+\backslash
+, H_{q/
+\backslash
+pi}(
+\backslash
+beta,0,t)   
+\backslash
+nonumber
+\backslash
+
+\backslash
+ &+&
+\backslash
+frac{
+\backslash
+xi}{|
+\backslash
+xi|} D_{q/
+\backslash
+pi}
+\backslash
+Big(
+\backslash
+frac{x}{
+\backslash
+xi},t
+\backslash
+Big)
+\backslash
+, 
+\backslash
+theta(
+\backslash
+xi-|x|), 
+\backslash
+end{eqnarray} % where the function $h_b$ is defined by % 
+\backslash
+begin{eqnarray}  h_b(
+\backslash
+beta,
+\backslash
+alpha) = 
+\backslash
+frac{
+\backslash
+Gamma(2b+2)}{2^{2b+1}
+\backslash
+Gamma^2(b+1)} 
+\backslash
+frac{
+\backslash
+big[(1-|
+\backslash
+beta|)^2-
+\backslash
+alpha^2
+\backslash
+big]^b}{(1-|
+\backslash
+beta|)^{2b+1}}.
+ 
+\backslash
+end{eqnarray} % We take the parameter $b=2$, and the GPD in the zero skewness
+ case is defined according to the {
+\backslash
+it ansatz}, $H_{q/
+\backslash
+pi}(
+\backslash
+beta,0,t) = H_{q/
+\backslash
+pi}(
+\backslash
+beta,0,0)
+\backslash
+, F_
+\backslash
+pi(t)$.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+更具体的参数之后在程序里给你。
+\end_layout
+
+\begin_layout Standard
+最后有一个使用对称性得到完整GPD的过程，这是因为第一我们只计算了
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+中的u夸克，想要得到d夸克就需要用对称性，其次是GPD在x<0的部分是反夸克的贡献，而反夸克也只能用对称性来得到，
+\end_layout
+
+\begin_layout Standard
+对于介子可以这么理解，输入的中间介子有
+\begin_inset Formula $\pi^{+},\pi^{0},\pi^{-}$
+\end_inset
+
+，但实际上计算中只算了
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+中的u夸克，其余夸克均是从对称性得到的，因为
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+中的
+\begin_inset Formula $u$
+\end_inset
+
+夸克分布=
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+中的
+\begin_inset Formula $\bar{d}$
+\end_inset
+
+夸克=
+\begin_inset Formula $\pi^{-}$
+\end_inset
+
+中的
+\begin_inset Formula $d$
+\end_inset
+
+夸克分布=
+\begin_inset Formula $\pi^{-}$
+\end_inset
+
+中的
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+夸克=2*
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+中的
+\begin_inset Formula $u,d$
+\end_inset
+
+夸克。举例来说，如果要计算
+\begin_inset Formula $\text{\ensuremath{\pi}}$
+\end_inset
+
+介子对
+\begin_inset Formula $u$
+\end_inset
+
+夸克分布的贡献，那么首先是
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+中的
+\begin_inset Formula $u$
+\end_inset
+
+夸克分布，其次是通过对称性得到
+\begin_inset Formula $\pi^{-}$
+\end_inset
+
+中的
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+夸克，以及
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+中的
+\begin_inset Formula $u,\bar{u}$
+\end_inset
+
+夸克，这部分反夸克我们把x加个负号就属于u夸克gpd在x<0部分的贡献，从而得到了x<0的部分，之后把它们加起来就好了
+\end_layout
+
+\end_body
+\end_document

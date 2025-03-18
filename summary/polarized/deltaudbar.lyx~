@@ -1,0 +1,278 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\end_preamble
+\options UTF8
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+现在计算极化的海夸克：
+\begin_inset Formula $\Delta\bar{u}-\Delta\bar{d}$
+\end_inset
+
+，首先是和JAM给出的曲线，图1，比较
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/polarxudbar.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+JAM的
+\begin_inset Formula $x(\Delta\bar{u}-\Delta\bar{d})$
+\end_inset
+
+曲线
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于这个曲线我们只需要考虑
+\begin_inset Formula $\pi^{+}$
+\end_inset
+
+的kr图，因此只有
+\begin_inset Formula $-x\bar{d}$
+\end_inset
+
+，计算结果为图2，图里的band是图1中的JAM结果，存在的震荡应该是mma画图的问题这个之后我调整一下。
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pic/xudbar.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+曲线为不同
+\begin_inset Formula $\Lambda$
+\end_inset
+
+的计算结果，band为上述JAM结果
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可以看到曲线符合的还比较好。但是计算积分的结果差别比较明显，因为我目前计算展开中kr图没有
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+耦合的顶点也就没有
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+夸克，如果计算积分为
+\begin_inset Formula 
+\begin{gather*}
+\int_{0.01}^{1}dx\Delta\bar{u}\\
+\int_{0.01}^{1}dx\Delta\bar{d}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+JAM这篇文章里的结果是：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather*}
+\int_{0.01}^{1}dx\Delta\bar{u}=0.044\\
+\int_{0.01}^{1}dx\Delta\bar{d}=-0.056
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+而我目前算的结果中
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+夸克的结果是0，
+\begin_inset Formula $\bar{d}$
+\end_inset
+
+夸克的结果是-0.115304，也就是
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather*}
+\int_{0.01}^{1}dx\Delta\bar{u}=0\\
+\int_{0.01}^{1}dx\Delta\bar{d}=-0.115
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+如果考虑
+\begin_inset Formula $\delta$
+\end_inset
+
+项也就是
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather*}
+\int_{0}^{1}dx\Delta\bar{u}\\
+\int_{0}^{1}dx\Delta\bar{d}
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+那么需要加上tadpole图的贡献，最后结果是
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather*}
+\int_{0}^{1}dx\Delta\bar{u}=0\\
+\int_{0}^{1}dx\Delta\bar{d}=-0.0126
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

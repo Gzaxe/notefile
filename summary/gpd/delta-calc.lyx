@@ -245,7 +245,20 @@
 \begin_inset Formula $\text{\ensuremath{\delta}}$
 \end_inset
 
-项的时候不能那么直接了，还是要使用消去的方式来看并且注意核心一定是和协变结果的比较。
+项的时候不能那么直接了，还是要使用消去的方式来看并且注意核心一定是和协变结果的比较。其次是端点奇异性的发散是高阶发散，例如线性发散，而一般的圈积分计算中可能会出
+现对数发散，我们忽略对数发散，只看线性发散以上的发散项从而可以不考虑分离之后的
+\begin_inset Formula $\int\frac{1}{D_{\phi}(k)D_{\Lambda}^{4}(k)D_{B}(p-k)}$
+\end_inset
+
+在
+\begin_inset Formula $k^{+}=0$
+\end_inset
+
+为
+\begin_inset Formula $\text{\ensuremath{\int\frac{1}{k^{-}}}}$
+\end_inset
+
+的对数发散。
 \end_layout
 
 \begin_layout Section
@@ -367,7 +380,8 @@ where
 \end_layout
 
 \begin_layout Standard
-不过这个等式的来历就不太清楚了，非常的it just works
+这个公式的来历详细可以参见杨明炀师兄光锥坐标gpdnote中第三章3.6节对k+积分结果的内容。大体上的意思是，利用其他的那些计算发散项的方式，例如chueng文
+章中的内容，结合一点对delta函数的合理猜测来给出这个公式
 \end_layout
 
 \begin_layout Standard
@@ -807,8 +821,24 @@ A是求导之后会出现一个常系数。然后偏导可以提出去到对
 
 \begin_layout Standard
 \begin_inset Formula 
+\begin{align*}
+\int\frac{1}{D_{\phi}(k)D_{\phi}(k+q)D_{\Lambda}^{2}(k)D_{\Lambda}^{2}(k+q)}dk^{-} & =\int_{0}^{1}dx_{1}dx_{2}dx_{3}dx_{4}\delta(x_{1}+x_{2}+x_{3}+x_{4}-1)\\
+ & \times\frac{\Gamma(6)}{\Gamma(1)\Gamma(1)\Gamma(2)\Gamma(2)}\frac{x_{3}x_{4}}{(x_{1}D_{\phi}(k)+x_{2}D_{\phi}(k+q)+x_{3}D_{\Lambda}(k)+x_{4}D_{\Lambda}(k+q))^{6}}\\
+ & =\int_{0}^{1}dx_{1}dx_{2}dx_{3}dx_{4}\delta(x_{1}+x_{2}+x_{3}+x_{4}-1)\frac{\Gamma(6)}{\Gamma(1)\Gamma(1)\Gamma(2)\Gamma(2)}\\
+ & \times\frac{x_{3}x_{4}}{(k^{2}-(x_{2}+x_{4})(\overrightarrow{q}^{\perp2}+\overrightarrow{k}^{\perp}.\overrightarrow{q}^{\perp})-(x_{1}+x_{2})m_{\phi}^{2}-(x_{3}+x_{4})\Lambda^{2}+i\epsilon)^{6}}\\
+ & =\int_{0}^{1}dx_{1}dx_{2}dx_{3}dx_{4}\delta(x_{1}+x_{2}+x_{3}+x_{4}-1)\frac{\Gamma(6)}{\Gamma(1)\Gamma(1)\Gamma(2)\Gamma(2)}\\
+ & \times\frac{x_{3}x_{4}}{(k^{2}-\Omega+i\epsilon)^{6}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
 \[
-\int\frac{1}{D_{\phi}(k)D_{\phi}(k+q)D_{\Lambda}^{2}(k)D_{\Lambda}^{2}(k+q)}dk^{-}
+\Omega=(x_{2}+x_{4})(\overrightarrow{q}^{\perp2}+\overrightarrow{k}^{\perp}.\overrightarrow{q}^{\perp})+(x_{1}+x_{2})m_{\phi}^{2}+(x_{3}+x_{4})\Lambda^{2}
 \]
 
 \end_inset
@@ -825,6 +855,55 @@ A是求导之后会出现一个常系数。然后偏导可以提出去到对
 \[
 \frac{1}{A_{1}^{m_{1}}...A_{n}^{m_{n}}}=\int_{0}^{1}dx_{1}...dx_{n}\delta(\Sigma x_{i}-1)\frac{\Gamma(m_{1}+...+m_{n})}{\Gamma(m_{1})*...*\Gamma(m_{n})}\frac{\Pi x_{i}^{m_{i}-1}}{(\Sigma x_{i}A_{i})^{\Sigma m_{i}}}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+约化
+\end_layout
+
+\begin_layout Standard
+order1和order2的如图
+\end_layout
+
+\begin_layout Standard
+找时间把order3的也补上，就是图o的计算。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/DELL/Desktop/未命名2-1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
